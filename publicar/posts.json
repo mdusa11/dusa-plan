@@ -1,0 +1,110 @@
+{
+  "post-03": {
+    "tipo": "imagen",
+    "titulo": "Marca (fijar)",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/post-03.jpg"
+    ],
+    "texto": "Convertimos ideas en productos digitales reales. 🔵\n\nEn Dusa Solutions desarrollamos aplicaciones web y móviles que la gente de verdad usa. Más de 15 productos entregados.\n\n¿Tienes una idea? Cuéntanosla por WhatsApp. Los primeros 15 minutos son gratis.\n\n#DesarrolloWeb #AppsMoviles #Guadalajara #GDL #Emprendedores"
+  },
+  "post-01": {
+    "tipo": "imagen",
+    "titulo": "Antes de pagar a una agencia",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/post-01.jpg"
+    ],
+    "texto": "Antes de pagarle a cualquier agencia de desarrollo, revisa que te den estos 4 puntos por escrito 👇\n\nGuárdalo, te va a ahorrar un dolor de cabeza (y dinero).\n\n¿Segunda opinión? Escríbenos por WhatsApp. Gratis. 🔵\n\n#DesarrolloWeb #AppsMoviles #Guadalajara #GDL #Emprendedores"
+  },
+  "post-02": {
+    "tipo": "imagen",
+    "titulo": "¿Idea atorada?",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/post-02.jpg"
+    ],
+    "texto": "Esa idea de app que traes dando vueltas… vamos a destrabarla. 🔵\n\nEscríbenos por WhatsApp y en 15 minutos te decimos si es viable, cuánto cuesta y qué construir primero.\n\n#DesarrolloDeApps #Startups #Guadalajara #GDL #Emprendedores"
+  },
+  "carrusel-idea": {
+    "tipo": "carrusel",
+    "titulo": "3 señales (carrusel)",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/car-idea-1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/car-idea-2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/car-idea-3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/car-idea-4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/car-idea-5.jpg"
+    ],
+    "texto": "3 señales de que tu idea de app SÍ puede funcionar 🔵\n\nDesliza 👉 y guárdalo.\n\n👉 ¿Cuál es tu idea de app? Cuéntamela en los comentarios 👇\n\n#Emprendimiento #Apps #Startups #Guadalajara #Emprendedores"
+  },
+  "post-04": {
+    "tipo": "imagen",
+    "titulo": "¿Cuánto cuesta una app?",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/post-04.jpg"
+    ],
+    "texto": "¿Cuánto cuesta una app? La verdad sin adornos. 🔵\n\nQue te expliquen POR QUÉ cuesta lo que cuesta. Si no lo hacen, corre.\n\n¿En qué rango cae tu idea? Escríbenos.\n\n#DesarrolloDeApps #Emprendedores #PyMEsMexico #Guadalajara #GDL"
+  },
+  "post-06": {
+    "tipo": "imagen",
+    "titulo": "De nota de voz a las tiendas",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/post-06.jpg"
+    ],
+    "texto": "De una nota de voz… a tu app publicada en las tiendas. 🔵\n\nTu idea también cabe en ese calendario. Cuéntanosla por WhatsApp.\n\n#DesarrolloDeApps #Startups #Guadalajara #GDL"
+  },
+  "carrusel-validar": {
+    "tipo": "carrusel",
+    "titulo": "Validar (carrusel)",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/car-validar-1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/car-validar-2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/car-validar-3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/car-validar-4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/car-validar-5.jpg"
+    ],
+    "texto": "Cómo validar tu idea de app SIN gastar en desarrollo 🔵\n\nLos 3 pasos que te ahorran miles. Desliza 👉\n\n👉 ¿Ya validaste tu idea? 👇\n\n#Emprendimiento #Startups #ValidaciónDeIdeas #Apps #Emprendedores"
+  },
+  "post-05": {
+    "tipo": "imagen",
+    "titulo": "No necesitas una app",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/post-05.jpg"
+    ],
+    "texto": "Tu negocio quizá NO necesita una app. 🔵\n\nLo primero que hacemos es decirte la verdad de qué necesitas, aunque sea menos.\n\n#TransformaciónDigital #PyMEsMexico #DesarrolloWeb #Guadalajara #GDL"
+  },
+  "post-08": {
+    "tipo": "imagen",
+    "titulo": "+15 productos",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/post-08.jpg"
+    ],
+    "texto": "+15 productos reales. No promesas. 🔵\n\nBellason, Fakturo, Coachly, ProofCam, TuLana y más ya están en las tiendas.\n\n¿El siguiente es el tuyo? Escríbenos.\n\n#DesarrolloDeApps #AppsMoviles #Guadalajara #GDL #Startups"
+  },
+  "carrusel-errores": {
+    "tipo": "carrusel",
+    "titulo": "Errores (carrusel)",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/car-errores-1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/car-errores-2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/car-errores-3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/car-errores-4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/car-errores-5.jpg"
+    ],
+    "texto": "3 errores que hunden una app antes de nacer 🔵\n\nEl #2 lo comete casi todo el mundo. Desliza 👉\n\n👉 ¿Cuál has cometido? Sé honesto 👇\n\n#Emprendimiento #Apps #Startups #ErroresComunes #Emprendedores"
+  },
+  "post-07": {
+    "tipo": "imagen",
+    "titulo": "Sin sorpresas",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/post-07.jpg"
+    ],
+    "texto": "Sin sorpresas. Sin humo. Así trabajamos. 🔵\n\nTodo por escrito, avances cada viernes, el código es tuyo.\n\n#Emprendedores #PyMEsMexico #Guadalajara #GDL #DesarrolloWeb"
+  },
+  "post-09": {
+    "tipo": "imagen",
+    "titulo": "¿Listo para tu proyecto?",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/post-09.jpg"
+    ],
+    "texto": "¿Listo para tu proyecto? 🔵\n\nCuéntanos tu idea por WhatsApp y en 15 min te decimos si es viable, cuánto y cómo empezar. Gratis.\n\n#DesarrolloDeApps #AppsMoviles #Guadalajara #GDL #Emprendedores"
+  }
+}
