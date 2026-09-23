@@ -1,6 +1,6 @@
 # Publicador Dusa — Instagram vía Graph API
 
-> **Oct-2026:** los posts de la etapa de agencia se retiraron (`posts.json` vacío, `img/` borrado). Para publicar octubre por API hay que exportar sus imágenes a `img/` y mapearlas aquí; mientras tanto se publica desde Meta Business Suite.
+> **Oct-2026:** `posts.json` lo genera `agencia/contenido/posts/_fuente/build_panel.py` con el plan de octubre (ids: `anuncio`, `anuncio-b`, `o1`…`o13`) y las imágenes públicas de `img/`. Ej.: `node publish.mjs o3 --dry`.
 
 Script para publicar tus posts en Instagram (y Facebook opcional) con un comando.
 **Tú lo controlas.** Tu token vive en un `.env` local que **nunca** se sube a git ni se comparte.

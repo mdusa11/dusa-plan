@@ -1,1 +1,159 @@
-{}
+{
+  "anuncio": {
+    "tipo": "carrusel",
+    "titulo": "Algo cambió en Dusa (anuncio)",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/anuncio/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/anuncio/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/anuncio/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/anuncio/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/anuncio/5.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/anuncio/6.jpg"
+    ],
+    "texto": "Algo cambió en Dusa. 🔵\n\nNacimos el 13 de abril de 2025 construyendo apps para otros negocios, y nos encanta. Pero siempre tuvimos ideas propias… así que empezamos a construirlas.\n\nYa en el mundo:\n🚻 BathMap — el mapa de baños que le faltaba a México (bathmap.online)\n🧩 Blokku — nuestro juego de puzzle, ya en Google Play\n\nMuy pronto:\n🧾 Fakturo — cotiza, factura y cobra\n💸 TuLana — tu lana, organizada sola\n💪 Coachly — tu coach de entrenamiento con IA\n\nDesde hoy Dusa es un estudio de apps hechas para México. Hacemos las nuestras… y seguimos haciendo la tuya.\n\n¿Tienes una idea? Escríbenos por WhatsApp 👉 311 485 7991\n\nSíguenos para ver cómo las construimos. 🪼\n\n#HechoEnMéxico #Apps #Startups #DesarrolloDeApps #Guadalajara #GDL #BuildInPublic"
+  },
+  "anuncio-b": {
+    "tipo": "carrusel",
+    "titulo": "Anuncio · plan B",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/anuncio-b/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/anuncio-b/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/anuncio-b/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/anuncio-b/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/anuncio-b/5.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/anuncio-b/6.jpg"
+    ],
+    "texto": "Algo cambió en Dusa. 🔵\n\nNacimos el 13 de abril de 2025 construyendo apps para otros negocios, y nos encanta. Pero siempre tuvimos ideas propias… así que empezamos a construirlas.\n\nYa en el mundo:\n🚻 BathMap — el mapa de baños que le faltaba a México (bathmap.online)\n🧩 Blokku — nuestro juego de puzzle: juega la demo en blokku.online, muy pronto en Google Play\n\nMuy pronto:\n🧾 Fakturo — cotiza, factura y cobra\n💸 TuLana — tu lana, organizada sola\n💪 Coachly — tu coach de entrenamiento con IA\n\nDesde hoy Dusa es un estudio de apps hechas para México. Hacemos las nuestras… y seguimos haciendo la tuya.\n\n¿Tienes una idea? Escríbenos por WhatsApp 👉 311 485 7991\n\nSíguenos para ver cómo las construimos. 🪼\n\n#HechoEnMéxico #Apps #Startups #DesarrolloDeApps #Guadalajara #GDL #BuildInPublic"
+  },
+  "o1": {
+    "tipo": "imagen",
+    "titulo": "Blokku ya está en Google Play",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/o1/1.jpg"
+    ],
+    "texto": "¡Blokku ya está en Google Play! 🧩\n\nNuestro primer juego: un puzzle de bloques para despejar la mente. Gratis, funciona sin conexión y está hecho aquí en México por el equipo de Dusa.\n\nDescárgalo: busca \"Blokku\" en Google Play o entra a blokku.online 👉\n\nSi te gusta, déjanos tu reseña ⭐ — nos ayuda muchísimo.\n\n#Blokku #JuegosMóviles #Puzzle #HechoEnMéxico #IndieDev #Android"
+  },
+  "o2": {
+    "tipo": "carrusel",
+    "titulo": "BathMap: cómo usarlo en 3 pasos",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/o2/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/o2/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/o2/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/o2/4.jpg"
+    ],
+    "texto": "¿Urgencia? 🚻 Así encuentras un baño en segundos con BathMap:\n\n1️⃣ Abre el mapa y filtra: gratis, $5 o menos, con papel o jabón\n2️⃣ Revisa la ficha: precio, cómo llegar y reseñas\n3️⃣ ¿Conoces uno que no está? Agrégalo y ayuda a otros\n\nEs gratis y funciona desde el navegador 👉 bathmap.online\n\nGuárdalo para cuando lo necesites 🔖 y compártelo con quien siempre anda buscando baño 😅\n\n#BathMap #HechoEnMéxico #Guadalajara #CDMX #Apps"
+  },
+  "o3": {
+    "tipo": "carrusel",
+    "titulo": "Cómo cobrar sin perseguir a nadie",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/o3/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/o3/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/o3/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/o3/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/o3/5.jpg"
+    ],
+    "texto": "Freelancer: si alguna vez mandaste \"¿cómo vas con el pago? 🙏\"… esto es para ti.\n\n4 hábitos para cobrar sin perseguir a nadie:\n1️⃣ Pide anticipo (30–50%) antes de empezar\n2️⃣ Todo por escrito: qué incluye, cuánto y cuándo se paga\n3️⃣ Pon fecha de pago y avisa un día antes\n4️⃣ Haz fácil pagarte: transferencia, tarjeta o link\n\nGuárdalo 🔖 y compártelo con ese amigo freelancer que siempre anda cobrando.\n\nP.D. Estamos creando Fakturo justo para esto. Muy pronto 🧾\n\n#Freelancer #Emprendedores #PyMEsMexico #Finanzas #Guadalajara"
+  },
+  "o4": {
+    "tipo": "carrusel",
+    "titulo": "Así fue lanzar Blokku en Google Play",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/o4/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/o4/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/o4/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/o4/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/o4/5.jpg"
+    ],
+    "texto": "Así fue lanzar nuestra primera app en Google Play 🧩\n\n📅 14 días de prueba cerrada (Google lo pide a las cuentas nuevas)\n👥 24 testers en México, Argentina, Bolivia y Ecuador — nos pedían 12\n✅ 3 días para que aprobaran la publicación\n\nLa lección: programar es la mitad. La otra mitad es probar, pulir y cumplir requisitos.\n\nGracias a los 24 que probaron Blokku 💙 ¿Quieres probar nuestra próxima app antes que nadie? Escríbenos y te apuntamos.\n\n#DetrásDeCámaras #IndieDev #GooglePlay #HechoEnMéxico #BuildInPublic"
+  },
+  "o5": {
+    "tipo": "carrusel",
+    "titulo": "Muy pronto: Fakturo",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/o5/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/o5/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/o5/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/o5/4.jpg"
+    ],
+    "texto": "Muy pronto: Fakturo 🧾\n\nLa app que estamos construyendo para freelancers y pequeños negocios en México:\n✅ Cotiza y factura desde tu cel\n✅ Cobra por WhatsApp en un toque\n✅ PDFs con tu logo y tus colores\n✅ Ve cuánto cobraste, cuánto te deben y en qué gastas\n\n¿Quieres ser de los primeros en usarla? Mándanos la palabra FAKTURO por DM o por WhatsApp (311 485 7991) y te avisamos primero 👀\n\n#Fakturo #Freelancer #PyMEsMexico #Facturación #HechoEnMéxico"
+  },
+  "o6": {
+    "tipo": "imagen",
+    "titulo": "Qué debe llevar una cotización profesional",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/o6/1.jpg"
+    ],
+    "texto": "Tu cotización dice mucho de ti antes de que empieces a trabajar 📄\n\nChecklist de una cotización profesional:\n✓ Tus datos y los de tu cliente\n✓ Qué incluye… y qué NO incluye\n✓ Precio con IVA desglosado\n✓ Tiempos de entrega\n✓ Forma y fechas de pago\n✓ Vigencia (ej. 15 días)\n\nCon esto te ahorras malentendidos, cambios infinitos y pagos atrasados.\n\nGuárdala 🔖 para tu próxima cotización.\n\n#Freelancer #Emprendedores #PyMEsMexico #Negocios #Guadalajara"
+  },
+  "o7": {
+    "tipo": "imagen",
+    "titulo": "Lo que construimos para nosotros, lo construimos para ti",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/o7/1.jpg"
+    ],
+    "texto": "Hacemos nuestras propias apps (BathMap, Blokku y las que vienen)… y también hacemos la tuya 🪼\n\nAsí trabajamos:\n1️⃣ Platicamos 15 minutos, gratis\n2️⃣ Te mandamos una propuesta por escrito: qué, cuánto y cuándo\n3️⃣ Cada semana ves avances\n4️⃣ El código es tuyo, siempre\n\n¿Tienes una idea dando vueltas? Escríbenos por WhatsApp 👉 311 485 7991\n\n#DesarrolloDeApps #DesarrolloWeb #Emprendedores #Guadalajara #HechoEnMéxico"
+  },
+  "o8": {
+    "tipo": "carrusel",
+    "titulo": "Muy pronto: TuLana",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/o8/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/o8/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/o8/3.jpg"
+    ],
+    "texto": "Muy pronto: TuLana 💸 Tu lana, organizada sola.\n\n✅ Detecta cada cargo leyendo las notificaciones de tu banco\n✅ Sin login y sin dar tu clave: todo se queda en tu cel\n✅ ¿Pagaste en efectivo? Escríbelo como hablas: \"350 tacos con el jefe\" y listo\n\nSabes en qué se te va la quincena sin anotar nada.\n\nLlega primero a Android. Síguenos para enterarte del lanzamiento 🔔\n\n#TuLana #FinanzasPersonales #Ahorro #Quincena #HechoEnMéxico"
+  },
+  "o9": {
+    "tipo": "carrusel",
+    "titulo": "Separa tu lana personal de la del negocio",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/o9/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/o9/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/o9/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/o9/4.jpg"
+    ],
+    "texto": "¿Cobras y todo cae en la misma cuenta que usas para el súper? 😬\n\n3 pasos para separar tu lana de la del negocio:\n1️⃣ Dos cuentas: una del negocio y otra personal\n2️⃣ Págate un \"sueldo\" fijo cada quincena\n3️⃣ Aparta un porcentaje de cada cobro para impuestos (tu contador te dice cuánto)\n\nParece poco, pero cambia todo: sabes cuánto ganas de verdad.\n\nGuárdalo 🔖 y empieza este mes.\n\n#Freelancer #FinanzasPersonales #Emprendedores #PyMEsMexico #Quincena"
+  },
+  "o10": {
+    "tipo": "carrusel",
+    "titulo": "BathMap nos cuesta ~$0 al mes",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/o10/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/o10/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/o10/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/o10/4.jpg"
+    ],
+    "texto": "BathMap es gratis para todos… y a nosotros nos cuesta ~$0 al mes en servidores 🤯\n\n¿Cómo?\n⚡ Cloudflare Workers: corre cerca de cada usuario y su plan gratis nos alcanza\n🗺️ OpenStreetMap: mapas y datos abiertos, sin licencias caras\n🐘 Neon (Postgres): base de datos en plan gratis\n\nLa lección: una buena idea no necesita un presupuesto enorme, necesita las decisiones correctas.\n\n¿Tienes una idea y crees que es muy cara de hacer? Platiquemos 👉 311 485 7991\n\n#DetrásDeCámaras #BuildInPublic #Startups #Tecnología #HechoEnMéxico"
+  },
+  "o11": {
+    "tipo": "carrusel",
+    "titulo": "Muy pronto: Coachly",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/o11/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/o11/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/o11/3.jpg"
+    ],
+    "texto": "Muy pronto: Coachly 💪 Tu coach de entrenamiento con IA.\n\n✅ Rutinas para cada nivel: fuerza, cardio, HIIT, yoga\n✅ Cada ejercicio explicado paso a paso\n✅ Tu progreso: rachas, récords y medidas\n\nPara que entrenes con un plan, no a ciegas.\n\nSíguenos para enterarte del lanzamiento 🔔\n\n#Coachly #Fitness #Entrenamiento #Gym #HechoEnMéxico"
+  },
+  "o12": {
+    "tipo": "carrusel",
+    "titulo": "¿Tu negocio necesita app o le basta una web?",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/o12/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/o12/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/o12/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/o12/4.jpg"
+    ],
+    "texto": "¿Tu negocio necesita una app… o le basta una web? 🤔\n\nTe basta una WEB si:\n✓ Quieres que te encuentren en Google\n✓ Muestras tu catálogo o servicios\n✓ Recibes pedidos o citas por mensaje\n\nNecesitas una APP si:\n✓ Tus clientes regresan seguido\n✓ Necesitas avisarles con notificaciones\n✓ Usas funciones del cel: cámara, ubicación, pagos\n\n¿Sigues con la duda? Te decimos qué te conviene, gratis, en 15 minutos 👉 WhatsApp 311 485 7991\n\n#DesarrolloWeb #DesarrolloDeApps #PyMEsMexico #Emprendedores #Guadalajara"
+  },
+  "o13": {
+    "tipo": "imagen",
+    "titulo": "Día de Muertos: ideas que no deben morir",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/o13/1.jpg"
+    ],
+    "texto": "Este Día de Muertos recordamos a los que se fueron… 🕯️🌼\n\n…y también a todas esas ideas que se quedaron en el cajón: la app que nunca se hizo, el negocio que nunca abrió su página, el \"algún día lo hago\".\n\nQue la tuya no sea una. Escríbenos y la platicamos 👉 311 485 7991\n\n#DíaDeMuertos #HechoEnMéxico #Emprendedores #Ideas #Guadalajara"
+  }
+}
