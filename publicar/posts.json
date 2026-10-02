@@ -116,12 +116,16 @@
     "texto": "¿Tu negocio necesita una app… o le basta una web? 🤔\n\nTe basta una WEB si:\n✓ Quieres que te encuentren en Google\n✓ Muestras tu catálogo o servicios\n✓ Recibes pedidos o citas por mensaje\n\nNecesitas una APP si:\n✓ Tus clientes regresan seguido\n✓ Necesitas avisarles con notificaciones\n✓ Usas funciones del cel: cámara, ubicación, pagos\n\n¿Sigues con la duda? Te decimos qué te conviene, gratis, en 15 minutos 👉 WhatsApp 311 485 7991\n\n#DesarrolloWeb #DesarrolloDeApps #PyMEsMexico #Emprendedores #Guadalajara"
   },
   "o11": {
-    "tipo": "imagen",
-    "titulo": "Halloween: lo que de verdad da miedo",
+    "tipo": "carrusel",
+    "titulo": "Halloween: los 3 sustos de todo freelancer",
     "imagenes": [
-      "https://mdusa11.github.io/dusa-plan/img/o11/1.jpg"
+      "https://mdusa11.github.io/dusa-plan/img/o11/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/o11/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/o11/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/o11/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/o11/5.jpg"
     ],
-    "texto": "Feliz Halloween 🎃👻\n\nEste año no nos asustan los fantasmas. Lo que de verdad da miedo:\n👻 El cliente que dice \"te pago la otra semana\"\n🕸️ Tu página que no abre en el celular\n🧟 La cotización que mandaste por WhatsApp y nadie volvió a ver\n\nSi alguno te dio escalofríos, escríbenos y lo resolvemos 👉 WhatsApp 311 485 7991\n\n#Halloween #Freelancer #Emprendedores #PyMEsMexico #Guadalajara"
+    "texto": "Feliz Halloween 🎃 Los 3 sustos de todo freelancer (y cómo espantarlos):\n\n👻 \"Te pago la otra semana\" → fecha límite desde la cotización, anticipo antes de empezar y tus datos de pago en la factura.\n\n🕸️ Tu página no abre en el celular → ábrela hoy en tu teléfono, con datos. WhatsApp visible y precios claros.\n\n🧟 La cotización que nadie volvió a ver → en PDF, con vigencia, y seguimiento a los 3 días.\n\n¿Cuál te dio más miedo? Cuéntanos en los comentarios 👇\nY si alguno es tuyo, escríbenos 👉 WhatsApp 311 485 7991\n\n#Halloween #Freelancer #Emprendedores #PyMEsMexico #Guadalajara"
   },
   "o12": {
     "tipo": "imagen",
