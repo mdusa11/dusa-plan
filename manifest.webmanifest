@@ -1,0 +1,17 @@
+{
+  "name": "Dusa · Plan de contenido",
+  "short_name": "Plan Dusa",
+  "description": "Calendario de posts de Dusa Solutions: qué publicar, imágenes y textos.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#05070F",
+  "theme_color": "#F5F7FB",
+  "lang": "es-MX",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
