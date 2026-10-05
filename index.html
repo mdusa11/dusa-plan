@@ -254,12 +254,12 @@ footer{margin-top:28px;text-align:center;font-size:12px;color:var(--faint)}
     </div>
     <div class="dots" id="dots"></div>
     <p class="note" id="mNote" hidden></p>
+    <button class="btn" id="bCopy" style="width:100%;margin-top:14px">① Copiar texto (sirve para las dos)</button>
     <div class="actions">
-      <button class="btn" id="bCopy">① Copiar texto</button>
-      <button class="btn primary" id="bShare">② Compartir</button>
+      <button class="btn primary" id="bIg">② Instagram</button>
+      <button class="btn primary" id="bFb" style="background:linear-gradient(135deg,#1b5fd1,#2f74e8)">② Facebook</button>
     </div>
     <p class="hint" id="hint"></p>
-    <button class="btn" id="bVideo" style="width:100%;margin-top:10px" hidden>▶ Video de portada (para que el post se mueva)</button>
     <div class="mstatus"><div class="seg" id="mStatus">
       <button data-s="listo">En cola</button><button data-s="programado">Programado</button><button data-s="publicado">Publicado</button>
     </div></div>
@@ -452,40 +452,47 @@ function paintSheetStatus() {
   document.querySelectorAll('#mStatus button').forEach(b => b.setAttribute('aria-pressed', b.dataset.s === s));
 }
 
+// Instagram: carrusel = video de portada + resto de fotos; una sola imagen = el video.
+// Facebook: carrusel = solo fotos (lo muestra como mosaico); una sola imagen = el video.
+function sets(p) {
+  const imgs = p.slides.map((s, i) => ({ url: s.full, name: `${i + 1}.jpg`, type: 'image/jpeg' }));
+  const vid = p.video ? { url: p.video, name: '1-video.mp4', type: 'video/mp4' } : null;
+  if (imgs.length === 1) { const one = [vid || imgs[0]]; return { ig: one, fb: one }; }
+  return { ig: [vid || imgs[0], ...imgs.slice(1).map((f, k) => ({ ...f, name: `${k + 2}.jpg` }))], fb: imgs };
+}
+let pack = null;
 async function prepareFiles(p) {
-  files = null;
-  const btn = $('#bShare');
-  btn.disabled = true; btn.textContent = '② Preparando…';
+  pack = null;
+  const bIg = $('#bIg'), bFb = $('#bFb');
+  bIg.disabled = bFb.disabled = true; bIg.textContent = bFb.textContent = 'Preparando…';
+  const toFile = async (f) => new File([await (await fetch(f.url)).blob()], `dusa-${p.id}-${f.name}`, { type: f.type });
+  const s = sets(p);
   try {
-    const list = await Promise.all(p.slides.map(async (s, i) => {
-      const blob = await (await fetch(s.full)).blob();
-      return new File([blob], `dusa-${p.id}-${i + 1}.jpg`, { type: 'image/jpeg' });
-    }));
+    const ig = await Promise.all(s.ig.map(toFile)), fb = await Promise.all(s.fb.map(toFile));
     if (current !== p) return;
-    files = list;
-    const canShare = navigator.canShare && navigator.canShare({ files });
-    btn.textContent = canShare ? '② Compartir' : '② Descargar';
-    $('#hint').textContent = canShare
-      ? 'Elige Instagram (o “Guardar imágenes”) y pega el texto que copiaste.'
-      : 'Se descargan en orden. Súbelas en Meta Business Suite y pega el texto.';
-    btn.disabled = false;
-  } catch {
-    btn.textContent = '② Descargar'; btn.disabled = false; files = null;
-  }
+    pack = { ig, fb };
+  } catch { pack = null; }
+  const can = (list) => list && navigator.canShare && navigator.canShare({ files: list });
+  bIg.textContent = `② Instagram (${s.ig.length})`; bFb.textContent = `② Facebook (${s.fb.length})`;
+  bIg.disabled = bFb.disabled = false;
+  $('#hint').textContent = can(pack && pack.ig)
+    ? 'Toca la red, elige la app y pega el texto. Se comparten ya en orden.'
+    : 'Se descargan en orden (1, 2, 3…). Súbelas en Meta Business Suite y pega el texto.';
 }
 
-async function shareOrDownload() {
-  if (files && navigator.canShare && navigator.canShare({ files })) {
-    try { await navigator.share({ files }); } catch (e) { if (e.name !== 'AbortError') toast('No se pudo compartir; usa los links de abajo'); }
-    return;
+async function shareOrDownload(net) {
+  const list = pack && pack[net];
+  if (list && navigator.canShare && navigator.canShare({ files: list })) {
+    try { await navigator.share({ files: list }); return; } catch (e) { if (e.name === 'AbortError') return; }
   }
-  for (const [i, s] of current.slides.entries()) {
+  const s = sets(current)[net];
+  for (const [i, f] of s.entries()) {
     const a = document.createElement('a');
-    a.href = files ? URL.createObjectURL(files[i]) : s.full; a.download = `dusa-${current.id}-${i + 1}.jpg`;
+    a.href = list ? URL.createObjectURL(list[i]) : f.url; a.download = `dusa-${current.id}-${f.name}`;
     document.body.appendChild(a); a.click(); a.remove();
-    await new Promise(r => setTimeout(r, 350));
+    await new Promise(r => setTimeout(r, 400));
   }
-  toast(`${current.slides.length} imagen${current.slides.length > 1 ? 'es' : ''} descargada${current.slides.length > 1 ? 's' : ''}`);
+  toast(`${s.length} archivo${s.length > 1 ? 's' : ''} para ${net === 'ig' ? 'Instagram' : 'Facebook'}`);
 }
 
 function openSheet(p, from) {
@@ -497,7 +504,7 @@ function openSheet(p, from) {
   slidesEl.innerHTML = p.slides.map((s, i) => (i === 0 && p.video)
     ? `<figure><video src="${p.video}" poster="${s.full}" autoplay muted loop playsinline aria-label="${esc(p.title)} — video de portada"></video><span class="vtag">VIDEO</span></figure>`
     : `<figure><img src="${s.full}" alt="${esc(p.title)} — ${i + 1} de ${p.slides.length}" ${i ? 'loading="lazy"' : ''}></figure>`).join('');
-  $('#bVideo').hidden = !p.video;
+
   slidesEl.scrollLeft = 0;
   $('#slider').classList.toggle('multi', p.slides.length > 1);
   $('#dots').innerHTML = p.slides.length > 1 ? p.slides.map((_, i) => `<i class="${i ? '' : 'on'}"></i>`).join('') : '';
@@ -511,7 +518,7 @@ function openSheet(p, from) {
   prepareFiles(p);
 }
 function closeSheet() {
-  ov.hidden = true; document.body.style.overflow = ''; current = null; files = null;
+  ov.hidden = true; document.body.style.overflow = ''; current = null; pack = null;
   lastFocus && lastFocus.focus && lastFocus.focus();
 }
 
@@ -527,16 +534,8 @@ $('#mClose').onclick = closeSheet;
 ov.addEventListener('click', (e) => { if (e.target === ov) closeSheet(); });
 $('#bCopy').onclick = copyCaption;
 $('#bCopy2').onclick = copyCaption;
-$('#bShare').onclick = shareOrDownload;
-$('#bVideo').onclick = async () => {
-  const name = `dusa-${current.id}-portada.mp4`;
-  try {
-    const f = new File([await (await fetch(current.video)).blob()], name, { type: 'video/mp4' });
-    if (navigator.canShare && navigator.canShare({ files: [f] })) { await navigator.share({ files: [f] }); return; }
-    const a = document.createElement('a'); a.href = URL.createObjectURL(f); a.download = name; document.body.appendChild(a); a.click(); a.remove();
-    toast('Video descargado');
-  } catch (e) { if (e.name !== 'AbortError') toast('No se pudo; intenta de nuevo'); }
-};
+$('#bIg').onclick = () => shareOrDownload('ig');
+$('#bFb').onclick = () => shareOrDownload('fb');
 $('#mStatus').addEventListener('click', (e) => {
   const b = e.target.closest('button'); if (!b) return;
   setStatus(current, b.dataset.s); toast(`Marcado como ${ST[b.dataset.s].toLowerCase()}`);
