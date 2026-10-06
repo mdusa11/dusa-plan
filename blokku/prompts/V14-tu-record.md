@@ -1,7 +1,7 @@
-# V14-tu-record — Muéstrame tu récord
+# V14-tu-record — ¿Le ganas a nuestro bot?
 
 **Duración:** 12 s · **Publicación:** sáb 7 nov · **Sale en:** TikTok + Instagram Reels (el mismo archivo)
-**Grabaciones que necesita:** G17 (ver 00-GRABACIONES.md)
+**Grabaciones que necesita:** G07 nuevo (Game Over real de 56 000) (ver 00-GRABACIONES.md)
 
 ## Objetivo
 Generar respuestas con video y comentarios con capturas.
@@ -16,13 +16,14 @@ comercial de TikTok al subirlo).
 
 | Tiempo | Imagen | Texto en pantalla (exacto) |
 |---|---|---|
-| 0.0–2.5 | Fondo con `GemRain`; tarjeta tapada con signo de interrogación. | Este es / mi récord 🏆 (oro) |
-| 2.5–6.0 | G17: la tarjeta se voltea y aparece la pantalla real con el récord (zoom al número). | — |
-| 6.0–9.0 | Mismo frame con confeti de gemas. | ¿Me superas? / Responde con el tuyo (rosa) |
-| 9.0–12.0 | EndCard, frase "¿Me superas?". | — |
+| 0.0–2.5 | Fondo con `GemRain`; tarjeta tapada con signo de interrogación. | Nuestro bot de pruebas / hizo esto 🤖 (oro) |
+| 2.5–6.0 | G07: la tarjeta se voltea y aparece la pantalla real de Game Over con el récord (zoom al número). | — |
+| 6.0–9.0 | Mismo frame con confeti de gemas. | ¿Le ganas? / Responde con tu récord (rosa) |
+| 9.0–12.0 | EndCard, frase "¿Le ganas al bot?". | — |
 
 ## Notas
-- El récord que se muestra tiene que ser real (del teléfono que grabe).
+- Decidido por Manuel: el récord es del bot de pruebas y así se dice. Nada de «mi récord».
+- El récord que se muestra tiene que ser real: el Game Over de G07 nuevo.
 - Entrega: `V14-tu-record.mp4` (1080×1920) + un frame limpio para portada. La portada diseñada ya existe en la carpeta del día.
 
 ## Contexto de marca (no cambiar)
