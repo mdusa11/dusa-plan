@@ -18,12 +18,12 @@ comercial de TikTok al subirlo).
 |---|---|---|
 | 0.0–3.0 | G16: menú con el chip de racha (llamita y número) y el anillo de nivel. Zoom a la llamita. | No rompas / la racha 🔥 (naranja) |
 | 3.0–7.0 | G10: misiones diarias, tocar RECLAMAR. | Misiones / diarias |
-| 7.0–10.5 | G16: subida de nivel real ("¡NIVEL X!") con `levelup.mp3`. | Sube de / nivel |
+| 7.0–10.5 | G16: el anillo de nivel se llena y cambia el rango en la barra superior del menú (en el menú no hay cartel de nivel; no lo inventes). `levelup.mp3` al cambiar. | Sube de / nivel |
 | 10.5–12.0 | Stickers 3 · 7 · 14 · 30 días apareciendo en fila. | Hitos de racha |
 | 12.0–15.0 | EndCard. | — |
 
 ## Notas
-- Los hitos de racha del juego son 3, 7, 14 y 30 días. El número de la racha en pantalla tiene que ser el real del teléfono.
+- Los hitos de racha del juego son 3, 7, 14 y 30 días (stickers gráficos). El número de la racha en pantalla tiene que ser el real del teléfono, aunque sea 1: el texto no dice cuántos días lleva.
 - Entrega: `V12-racha-misiones.mp4` (1080×1920) + un frame limpio para portada. La portada diseñada ya existe en la carpeta del día.
 
 ## Contexto de marca (no cambiar)

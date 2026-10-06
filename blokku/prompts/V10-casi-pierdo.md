@@ -18,7 +18,7 @@ comercial de TikTok al subirlo).
 |---|---|---|
 | 0.0–3.0 | G18: tablero casi lleno, la pieza no cabe. Viñeta roja que late, latido. | POV: ya no cabe / NADA (rosa) |
 | 3.0–5.5 | Silencio de 0.3 s. El dedo toca RETROCESO: la última pieza vuelve a la bandeja. | …y te acuerdas de / RETROCESO (menta) |
-| 5.5–9.0 | La coloca en otro lugar → revientan líneas (combo real). Vuelve la música fuerte, `Bursts`. | 😮‍💨 |
+| 5.5–9.0 | La coloca en otro lugar → revienta al menos una línea (si hay combo real, mejor). Vuelve la música fuerte, `Bursts`. | 😮‍💨 |
 | 9.0–12.0 | EndCard, frase "Ninguna partida está perdida". | — |
 
 ## Notas
