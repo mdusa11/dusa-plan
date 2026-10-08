@@ -40,7 +40,7 @@ comercial de TikTok al subirlo).
 - **Tipografía:** Fredoka Bold/SemiBold (títulos), Nunito SemiBold (textos). Ya están en `blokku-ads/public/fonts`.
 - **Títulos:** Fredoka 700, blancos con UNA línea resaltada en color, contorno `#0A1433` de ~9 % del tamaño
   (`-webkit-text-stroke` + `paint-order: stroke fill`), sombra sólida `0 8px 0 #050C24`. Entran con "pop" (spring).
-- **Wordmark:** `BLO` azul + `KKU` rosa, Fredoka Bold. Icono: 4 gemas 2×2 (azul, rosa, oro, menta) → `public/brand/icon.png`.
+- **Wordmark:** `BLO` azul + `KKU` rosa, Fredoka Bold. Icono (nuevo, oct-2026): 4 gemas 2×2 inclinadas con canto 3D (azul, rosa, oro, menta) → `public/brand/icon.png`.
 - **Recursos que hacen que se vea Blokku:** gemas brillantes flotando en los bordes (componente `Gem`/`Atmosphere`),
   partículas de colores al reventar líneas (`Particles`/`Bursts`), etiquetas tipo píldora (`Sticker`), el juego dentro
   de un marco con bisel azul (`GameView`).
