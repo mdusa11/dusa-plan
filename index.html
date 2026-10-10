@@ -125,6 +125,10 @@ h3{font-size:17px;font-weight:700;letter-spacing:-.01em}
 .asset.circle img{width:88px;height:88px;border-radius:50%}
 .asset.wide img{width:100%;max-width:420px;aspect-ratio:1702/630;border-radius:12px}
 .asset.wide{flex:1 1 100%;align-items:flex-start}
+.tiles{display:flex;gap:10px;flex-wrap:wrap;padding:12px 16px 2px}
+.tiles .asset img{width:62px;aspect-ratio:4/5;border-radius:9px}
+.tiles .asset{position:relative}
+.tiles .asset b{position:absolute;top:4px;left:4px;font-size:9px;background:#000a;color:#fff;border-radius:5px;padding:1px 4px}
 .asset.story img{width:64px;height:64px;border-radius:50%;object-position:center}
 .asset em{font-style:normal;color:var(--blue)}
 .asset.st img{width:66px;aspect-ratio:9/16;border-radius:10px}
@@ -299,6 +303,10 @@ footer{margin-top:28px;text-align:center;font-size:12px;color:var(--faint)}
 #bk .asset img{border:1px solid var(--line);object-fit:cover;background:#000}
 #bk .asset.circle img{width:80px;height:80px;border-radius:50%}
 #bk .asset.st img{width:60px;aspect-ratio:9/16;border-radius:9px}
+#bk .tiles{display:flex;gap:10px;flex-wrap:wrap;padding:12px 16px 2px}
+#bk .tiles .asset{position:relative}
+#bk .tiles .asset img{width:56px;border-radius:9px}
+#bk .tiles .asset b{position:absolute;top:4px;left:4px;font-size:9px;background:#000a;color:#fff;border-radius:5px;padding:1px 4px}
 #bk .cap{margin-top:12px;border:1px solid var(--line);border-radius:14px;overflow:hidden}
 #bk .caphead{display:flex;justify-content:space-between;align-items:center;padding:9px 12px;background:var(--surf2);font-size:12.5px;font-weight:800;color:var(--muted)}
 #bk .caphead button{color:var(--blue);font-weight:800;font-size:12.5px}
@@ -441,6 +449,7 @@ footer{margin-top:28px;text-align:center;font-size:12px;color:var(--faint)}
       <div class="actions" id="bk-vacts" hidden><button class="btn" id="bk-prompt">Copiar prompt del video</button><a class="btn" id="bk-promptdl" download>Descargar prompt</a></div>
       <div class="slider"><div class="slides" id="bk-slides"></div></div>
       <div class="dots" id="bk-dots"></div>
+      <div id="bk-dl"></div>
       <div class="actions"><button class="btn" id="bk-copy">① Copiar texto</button><button class="btn pri" id="bk-share">② Subir</button></div>
       <div class="actions" id="bk-coverrow" hidden><a class="btn" id="bk-cover" download>Portada del Reel ↓</a><span></span></div>
       <p class="hint" id="bk-hint"></p>
@@ -595,6 +604,10 @@ function fill() {
     : sl.map((s, i) => `<figure><img src="${s.full}" alt="${esc(p.title)} — ${i + 1}" ${i ? 'loading="lazy"' : ''}></figure>`).join('');
   slidesEl.scrollLeft = 0;
   $('#bk-dots').innerHTML = sl.length > 1 ? sl.map((_, i) => `<i class="${i ? '' : 'on'}"></i>`).join('') : '';
+  // Igual que las destacadas: cada miniatura se descarga con un toque, en orden.
+  const dl = files(p, net).concat(p.type === 'video' && p.video ? [{ url: p.cover.full, name: `blokku-${p.id}-portada.jpg`, type: 'image/jpeg' }] : []);
+  $('#bk-dl').innerHTML = `<p class="muted" style="font-size:12.5px;padding:0 16px">Toca cada una para descargarla, en orden:</p><div class="tiles">${dl.map((f, i) =>
+    `<a class="asset" href="${f.url}" download="${f.name}"><img src="${(p.type === 'video' ? p.cover : sl[i]).thumb}" alt="" loading="lazy" style="aspect-ratio:${tall ? '9/16' : '4/5'}">${f.type === 'video/mp4' ? '<b>VIDEO</b>' : f.name.includes('portada') ? '<b>PORTADA</b>' : ''}<span>${f.type === 'video/mp4' ? 'Video' : f.name.includes('portada') ? 'Portada' : i + 1} ↓</span></a>`).join('')}</div>`;
   $('#bk-capT').textContent = net === 'ig' ? 'Texto para Instagram' : 'Texto para TikTok';
   $('#bk-caption').textContent = net === 'ig' ? p.ig_text : p.tt_text;
   const n = files(p, net).length, b = $('#bk-share');
@@ -931,7 +944,9 @@ function openSheet(p, from) {
   $('#dots').innerHTML = p.slides.length > 1 ? p.slides.map((_, i) => `<i class="${i ? '' : 'on'}"></i>`).join('') : '';
   const note = $('#mNote'); note.hidden = !p.note; note.textContent = p.note ? '⚠️ ' + p.note : '';
   $('#mCaption').textContent = p.caption;
-  $('#dl').innerHTML = `Imágenes: ${p.slides.map((s, i) => `<a href="${s.full}" download="dusa-${p.id}-${i + 1}.jpg">${p.slides.length > 1 ? i + 1 : 'descargar'}</a>`).join(' · ')}`;
+  // Igual que las destacadas: cada miniatura se descarga con un toque, en el orden en que se sube (el 1 es el video si lo hay).
+  $('#dl').innerHTML = `<p class="muted" style="font-size:12.5px;padding:0 16px">Toca cada una para descargarla, en orden:</p><div class="tiles">${sets(p).ig.map((f, i) =>
+    `<a class="asset" href="${f.url}" download="dusa-${p.id}-${f.name}"><img src="${p.slides[i] ? p.slides[i].thumb : p.slides[0].thumb}" alt="" loading="lazy">${f.type === 'video/mp4' ? '<b>VIDEO</b>' : ''}<span>${i + 1} <em>↓</em></span></a>`).join('')}</div>`;
   $('#hint').textContent = '';
   paintSheetStatus();
   ov.hidden = false; document.body.style.overflow = 'hidden';
