@@ -476,11 +476,16 @@ function render() {
   const pend0 = ITEMS.filter(p => status(p) !== 'publicado');
   const hoy = pend0.filter(p => days(p.date) === 0), late = pend0.filter(p => days(p.date) < 0);
   const nxt = hoy[0] || pend0.find(p => days(p.date) > 0);
+  // Lo de hoy que ya está marcado como publicado se sigue viendo (por si se marcó sin querer).
+  const hoyHecho = ITEMS.filter(p => days(p.date) === 0 && status(p) === 'publicado');
+  const hechoHtml = hoyHecho.length ? `<div class="late-box"><div class="kicker" style="color:var(--mint)">Hoy · ya marcado como publicado</div>
+      ${hoyHecho.map(p => `<div class="laterow"><span class="lt">✓ ${esc(p.title)}</span><button class="btn sm" data-bk-open="${p.id}">Abrir</button>
+        <button class="btn sm" data-bk-undo="${p.id}">No lo he subido</button></div>`).join('')}</div>` : '';
   const lateHtml = late.length ? `<div class="late-box"><div class="kicker" style="color:var(--gold)">De días anteriores (${late.length})</div>
       <p class="muted" style="font-size:12.5px;margin:4px 0 8px">Si ya los subiste, márcalos; si no, ábrelos y súbelos cuando puedas.</p>
       ${late.map(p => `<div class="laterow"><span class="lt">${esc(cap(fmt(p.date)))} · ${esc(p.title)}</span>
         <button class="btn sm" data-bk-open="${p.id}">Abrir</button><button class="btn sm ok" data-bk-done="${p.id}">Ya lo subí ✓</button></div>`).join('')}</div>` : '';
-  if (!nxt) $('#bk-next').innerHTML = `<div class="card"><div class="kicker">Blokku</div><div class="t2">¡Todo publicado! 🎉</div>${lateHtml}</div>`;
+  if (!nxt) $('#bk-next').innerHTML = `<div class="card"><div class="kicker">Blokku</div><div class="t2">¡Todo publicado! 🎉</div>${lateHtml}${hechoHtml}</div>`;
   else {
     const w = whenLabel(nxt), same = pend0.filter(p => p.date === nxt.date && p !== nxt);
     $('#bk-next').innerHTML = `<div class="card"><div class="kicker">${days(nxt.date) === 0 ? 'Hoy toca en Blokku' : 'Lo que sigue en Blokku'}</div>
@@ -488,7 +493,7 @@ function render() {
       <div class="t2">${esc(nxt.title)}</div><div class="pmeta"><span class="pill" style="--c:${color(nxt)}">${nxt.type === 'video' ? 'Video' : 'Post'}</span><span class="fmt">${format(nxt)}</span></div>
       ${vchip(nxt)}${same.length ? `<span class="fmt">Ese día también: ${same.map(s => esc(s.title)).join(', ')}</span>` : ''}</div></div>
       <button class="btn pri" style="width:100%" data-bk-open="${nxt.id}">Abrir para publicar</button>
-      ${same.map(s => `<button class="btn" style="width:100%;margin-top:8px" data-bk-open="${s.id}">Abrir: ${esc(s.title)}</button>`).join('')}${lateHtml}</div>`;
+      ${same.map(s => `<button class="btn" style="width:100%;margin-top:8px" data-bk-open="${s.id}">Abrir: ${esc(s.title)}</button>`).join('')}${lateHtml}${hechoHtml}</div>`;
   }
   const dA = days(BK.apertura), hechos = BK.pendientes.filter(t => pend[t.id]).length;
   $('#bk-pend').innerHTML = `<div class="ptop"><span class="kicker">Tus pendientes</span><b>${hechos} de ${BK.pendientes.length}</b></div>
@@ -626,6 +631,7 @@ R.addEventListener('click', (e) => {
   const td = e.target.closest('[data-bk-todo]');
   if (td) { const id = td.dataset.bkTodo; pend[id] = !pend[id]; try { localStorage.setItem(KEYP, JSON.stringify(pend)); } catch {} render(); return; }
   const bb = e.target.closest('[data-bk-bio]'); if (bb) { copy(BK.perfil.bio[+bb.dataset.bkBio].text); return; }
+  const un = e.target.closest('[data-bk-undo]'); if (un) { setStatus(byId[un.dataset.bkUndo], 'listo'); toast('De vuelta en cola'); return; }
   const dn = e.target.closest('[data-bk-done]'); if (dn) { setStatus(byId[dn.dataset.bkDone], 'publicado'); toast('Marcado: publicado'); return; }
   const o = e.target.closest('[data-bk-open]'); if (o) { openSheet(byId[o.dataset.bkOpen], o); return; }
   const fb = e.target.closest('#bk-filter button'); if (fb) { R.querySelectorAll('#bk-filter button').forEach(b => b.setAttribute('aria-pressed', b === fb)); render(); }
