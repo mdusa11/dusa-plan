@@ -208,7 +208,7 @@ footer{margin-top:28px;text-align:center;font-size:12px;color:var(--faint)}
 .tabs a img,.tabs a i{width:20px;height:20px;border-radius:6px;display:block}
 .tabs a[aria-current="page"]{background:var(--ink);color:var(--surf);border-color:var(--ink)}
 @media (max-width:420px){.tabs a{padding:8px 12px;font-size:13.5px}}
-body[data-tab="bk"] .wrap>*:not(#bk),body[data-tab="cg"] .wrap>*:not(#cg),body[data-tab="dusa"] #bk,body[data-tab="dusa"] #cg{display:none!important}
+body[data-tab="bk"] .wrap>*:not(#bk),body[data-tab="cg"] .wrap>*:not(#cg),body[data-tab="cl"] .wrap>*:not(#cl),body[data-tab="dusa"] #bk,body[data-tab="dusa"] #cg,body[data-tab="dusa"] #cl{display:none!important}
 .mlabel{font-size:14px;font-weight:800;text-transform:capitalize;margin:18px 0 8px}.mlabel:first-child{margin-top:0}.cell.blank{background:transparent}
 .calbig .grid7{gap:8px}@media(min-width:960px){.calbig .cell{aspect-ratio:1.35;font-size:14px}}
 </style>
@@ -218,6 +218,7 @@ body[data-tab="bk"] .wrap>*:not(#bk),body[data-tab="cg"] .wrap>*:not(#cg),body[d
   <a href="#dusa" data-t="dusa"><img src="img/medusa.png" alt="">Dusa</a>
   <a href="#bk" data-t="bk"><i style="background:linear-gradient(135deg,#4EA1FF,#FF5D8F)"></i>Blokku</a>
   <a href="#cg" data-t="cg"><i style="background:linear-gradient(135deg,#5b7cff,#ffd23f)"></i>Cumplegratis</a>
+  <a href="#cl" data-t="cl"><img src="clipo/icons/icon-192.png" alt="">Clipo</a>
 </nav>
 <div class="wrap" id="top">
   <!--BKTOP-->
@@ -1171,6 +1172,430 @@ render();
 })();
 </script>
 <!--/CG-->
+  <!--CL--><!-- Sección Clipo dentro del plan de Dusa. Todo va bajo #cl (estilos, ids cl-*, atributos data-cl-*)
+     para no chocar con el código del plan de Dusa. La genera build_panel_clipo.py. -->
+<style>
+#cl{--bg:#0b0b0b;--surf:#1f1938;--surf2:#2d2450;--ink:#f3f0e8;--muted:#cbc4e0;--faint:#938bb0;--line:#3d3363;
+  --blue:#6B3DF5;--blue-t:#B9A2FF;--pink:#FF5D8F;--gold:#ffd23f;--mint:#43D9A3;--cyan:#7cd6ff;--red:#ff9bd9;
+  margin:34px 0 0;padding:22px 16px 24px;border-radius:26px;color:var(--ink);scroll-margin-top:12px;
+  background:#17112e;box-shadow:0 10px 30px rgba(20,8,60,.4)}
+#cl *{box-sizing:border-box}
+#cl a{color:var(--blue-t)}
+#cl .cl-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+#cl .cl-brand{display:flex;align-items:center;gap:10px}
+#cl .cl-brand img{width:44px;height:44px;border-radius:11px;box-shadow:0 4px 12px rgba(0,0,0,.4)}
+#cl .cl-brand b{display:block;font-size:17px;line-height:1.1;font-weight:800}#cl .cl-brand b span{color:var(--pink)}
+#cl .cl-brand small{font-size:12.5px;color:var(--muted)}
+#cl .cl-links{display:flex;gap:8px;flex-wrap:wrap}
+#cl .cl-links a{font-size:12.5px;font-weight:700;color:var(--ink);text-decoration:none;background:var(--surf);border:1px solid var(--line);padding:7px 12px;border-radius:999px}
+#cl h2.cl-h{margin-top:16px;font-size:clamp(28px,7vw,40px);line-height:1;letter-spacing:-.025em;font-weight:800}
+#cl h2.cl-h span{color:var(--blue-t)}#cl h2.cl-h em{font-style:normal;color:var(--pink)}
+#cl .cl-sub{margin:8px 0 16px;color:var(--muted);font-size:14.5px}
+#cl .cols{display:grid;gap:14px}
+@media(min-width:960px){#cl .cols{grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);align-items:start}}
+#cl .card{background:var(--surf);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 8px 22px rgba(0,0,0,.25)}
+#cl .stack{display:grid;gap:14px}
+#cl .cols>*,#cl .stack>*{min-width:0}
+#cl .kicker{font-size:11.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan)}
+#cl h3{font-size:17px;font-weight:800}
+#cl .t2{font-size:21px;line-height:1.2;font-weight:800}
+#cl .muted{color:var(--muted)}
+#cl .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 14px;border-radius:14px;font-weight:800;font-size:14.5px;
+  background:var(--surf2);border:1px solid var(--line);color:var(--ink);text-decoration:none}
+#cl .btn.pri{background:var(--blue);border-color:transparent;color:#fff}
+#cl .btn.tt{background:#FF5D8F;border-color:transparent;color:#2A0614}#cl .btn.yt{background:#E5322D;border-color:transparent;color:#fff}
+#cl .pill{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:800;color:var(--muted)}
+#cl .pill::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--c)}
+#cl .st{font-size:11px;font-weight:800;padding:4px 9px;border-radius:999px;white-space:nowrap}
+#cl .st-listo{background:var(--surf2);color:var(--muted)}#cl .st-programado{background:#2b2160;color:#cbb9ff}#cl .st-publicado{background:#0F4A36;color:#7EF0C3}
+#cl .when{display:inline-flex;font-size:13px;font-weight:800;color:var(--blue-t);background:#2b2160;padding:5px 10px;border-radius:999px}
+#cl .when.today{background:#0F4A36;color:#7EF0C3}#cl .when.late{background:#4A1424;color:#FFB0C4}#cl .when.cond{background:#4A3A0E;color:#FFE08A}
+#cl .nextrow{display:flex;gap:14px;align-items:flex-start;margin:12px 0 14px}
+#cl .nthumb{width:92px;aspect-ratio:9/16;object-fit:cover;border-radius:12px;flex:0 0 auto;background:#000}
+#cl .nbody{display:grid;gap:8px;justify-items:start}
+#cl .bar{height:10px;border-radius:6px;background:var(--surf2);overflow:hidden;margin-top:10px;display:flex}
+#cl .bar i{display:block;height:100%}#cl .b-pub{background:var(--mint)}#cl .b-prog{background:var(--blue)}
+#cl .ptop{display:flex;justify-content:space-between;align-items:baseline}
+#cl .legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px;font-size:12.5px;color:var(--muted)}
+#cl .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}
+#cl .calhead{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+#cl .dow,#cl .grid7{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}
+#cl .dow{font-size:11px;font-weight:800;color:var(--faint);text-align:center;margin-bottom:6px}
+#cl .cell{position:relative;aspect-ratio:1;border-radius:10px;background:var(--surf2);font-size:12px;font-weight:800;color:var(--faint);padding:5px 6px;overflow:hidden;text-align:left;display:block;width:100%}
+#cl .cell.post{background-size:cover;background-position:center 30%;color:#fff;box-shadow:inset 0 -3px 0 var(--c)}
+#cl .cell.post::before{content:"";position:absolute;inset:0;background:rgba(10,5,30,.4)}
+#cl .cell span{position:relative}
+#cl .cell.today{outline:2.5px solid var(--gold);outline-offset:1px}
+#cl .cell .n2{position:absolute;right:5px;top:5px;width:11px;height:11px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 2px #17112e;font-size:0}
+#cl .cell .mk{position:absolute;right:4px;bottom:5px;width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:900;color:#17112e;font-style:normal}
+#cl .mk.publicado{background:var(--mint)}#cl .mk.programado{background:var(--blue-t)}
+#cl .pgroup{margin-top:16px}#cl .pgroup h4{font-size:13px;font-weight:800;margin-bottom:8px}#cl .pgroup h4 span{font-weight:500;color:var(--faint);margin-left:6px}
+#cl .prow{display:flex;gap:10px;flex-wrap:wrap}
+#cl .late-box{margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+#cl .laterow{display:flex;align-items:center;gap:8px;margin-top:8px}
+#cl .laterow .lt{flex:1;min-width:0;font-size:13px;font-weight:700;color:var(--ink)}
+#cl .btn.sm{padding:8px 10px;font-size:12.5px;min-height:auto;flex:none}
+#cl .btn.sm.ok{background:var(--mint);color:#17112e}
+#cl .asset{display:flex;flex-direction:column;align-items:center;gap:6px;text-decoration:none;color:var(--muted);font-size:11.5px;font-weight:800}
+#cl .asset img{border:1px solid var(--line);object-fit:cover;background:#000}
+#cl .asset.circle img{width:80px;height:80px;border-radius:50%}
+#cl .asset.st img{width:60px;aspect-ratio:9/16;border-radius:9px}
+#cl .tiles{display:flex;gap:10px;flex-wrap:wrap;padding:12px 16px 2px}
+#cl .tiles .asset{position:relative}
+#cl .tiles .asset img{width:56px;border-radius:9px}
+#cl .tiles .asset b{position:absolute;top:4px;left:4px;font-size:9px;background:#000a;color:#fff;border-radius:5px;padding:1px 4px}
+#cl .cap{margin-top:12px;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+#cl .caphead{display:flex;justify-content:space-between;align-items:center;padding:9px 12px;background:var(--surf2);font-size:12.5px;font-weight:800;color:var(--muted)}
+#cl .caphead button,#cl .caphead a{color:var(--blue-t);font-weight:800;font-size:12.5px}
+#cl .cap pre{white-space:pre-wrap;font:14px/1.55 "Avenir Next","SF Pro Text",system-ui,sans-serif;padding:12px;color:var(--ink);max-height:320px;overflow:auto;margin:0}
+#cl .lhead{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:6px}
+#cl .seg{display:inline-flex;background:var(--surf2);border:1px solid var(--line);border-radius:12px;padding:3px}
+#cl .seg button{font-size:12.5px;font-weight:800;color:var(--muted);padding:7px 11px;border-radius:9px}
+#cl .seg button[aria-pressed="true"]{background:var(--blue);color:#fff}
+#cl .week{margin-top:14px}#cl .wlabel{font-size:12px;font-weight:800;color:var(--faint);letter-spacing:.06em;text-transform:uppercase;margin:0 2px 8px}
+#cl .plist{display:grid;gap:10px}
+#cl .pcard{display:flex;gap:12px;align-items:center;text-align:left;width:100%;background:var(--surf);border:1px solid var(--line);border-radius:16px;padding:10px;color:var(--ink)}
+#cl .pcard.done{opacity:.6}
+#cl .pthumb{width:52px;aspect-ratio:9/16;object-fit:cover;border-radius:9px;flex:0 0 auto;background:#000}
+#cl .pbody{flex:1;min-width:0;display:grid;gap:3px}
+#cl .pdate{font-size:12.5px;font-weight:800;color:var(--blue-t)}#cl .pdate .late{color:var(--red)}#cl .pdate .cond{color:var(--gold)}
+#cl .ptitle{font-size:15px;font-weight:700;line-height:1.25}
+#cl .pmeta{display:flex;gap:10px;align-items:center;flex-wrap:wrap}#cl .fmt{font-size:11.5px;color:var(--faint);font-weight:700}
+#cl .empty{padding:26px 10px;text-align:center;color:var(--muted)}
+#cl-ov{position:fixed;inset:0;z-index:70;background:rgba(2,6,20,.66);backdrop-filter:blur(4px);display:flex;align-items:flex-end;justify-content:center}
+#cl-ov[hidden]{display:none}
+#cl .sheet{background:#1b1438;border:1px solid var(--line);width:100%;max-width:560px;max-height:94vh;overflow-y:auto;border-radius:22px 22px 0 0;
+  padding:10px 16px calc(22px + env(safe-area-inset-bottom));outline:none;animation:clup .25s cubic-bezier(.2,.8,.2,1)}
+@media(min-width:700px){#cl-ov{align-items:center}#cl .sheet{border-radius:22px;max-height:90vh}}
+@keyframes clup{from{transform:translateY(40px);opacity:.4}to{transform:none;opacity:1}}
+#cl .grab{width:40px;height:5px;border-radius:3px;background:var(--line);margin:0 auto 10px}
+#cl .mhead{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+#cl .mdate{font-size:13px;font-weight:800;color:var(--blue-t);display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+#cl .x{width:36px;height:36px;border-radius:50%;background:var(--surf2);font-size:18px;flex:0 0 auto;color:var(--ink)}
+#cl .netseg{margin-top:14px;display:flex}#cl .netseg .seg{width:100%}#cl .netseg .seg button{flex:1;font-size:14px;padding:9px}
+#cl .slider{position:relative;margin:14px -16px 0}
+#cl .slides{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;gap:10px;padding:0 16px}
+#cl .slides::-webkit-scrollbar{display:none}
+#cl .slides figure{position:relative;scroll-snap-align:center;border-radius:14px;overflow:hidden;background:#000;margin:0}
+#cl .slides.p figure{aspect-ratio:4/5;flex:0 0 auto;height:min(52vh,560px)}#cl .slides.t figure{aspect-ratio:9/16;flex:0 0 auto;height:min(52vh,600px)}
+#cl .slides.one figure{margin:0 auto}
+#cl .slides img,#cl .slides video{width:100%;height:100%;object-fit:cover;display:block}
+#cl .dots{display:flex;justify-content:center;gap:6px;margin-top:10px}#cl .dots i{width:7px;height:7px;border-radius:50%;background:var(--line)}#cl .dots i.on{background:var(--blue);width:18px;border-radius:4px}
+#cl .note{margin-top:14px;background:#4A3A0E;color:#FFE08A;border-radius:12px;padding:10px 12px;font-size:13.5px;font-weight:700}
+#cl .actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+#cl .hint{font-size:12.5px;color:var(--muted);margin-top:8px;text-align:center}
+#cl .mstatus{margin-top:16px;display:flex}#cl .mstatus .seg{width:100%}#cl .mstatus .seg button{flex:1}
+#cl .how{display:grid;gap:12px;margin-bottom:14px}
+#cl .steps4{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+#cl .step{background:var(--surf);border:1px solid var(--line);border-radius:14px;padding:12px 14px;display:grid;gap:4px}
+#cl .step b{font-size:14.5px;font-weight:800}#cl .step span{font-size:13px;color:var(--muted);line-height:1.45}
+#cl .step i{font-style:normal;display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:8px;font-weight:900;color:#17112e;font-size:13px;margin-bottom:2px}
+#cl details{background:var(--surf);border:1px solid var(--line);border-radius:14px;padding:0 14px}
+#cl details summary{cursor:pointer;padding:12px 0;font-weight:800;font-size:14px;list-style:none}
+#cl details summary::-webkit-details-marker{display:none}
+#cl details summary::after{content:"＋";float:right;color:var(--blue-t)}#cl details[open] summary::after{content:"－"}
+#cl details ul{margin:0 0 12px 18px;font-size:13.5px;color:var(--muted);line-height:1.6}#cl details li b{color:var(--ink)}
+#cl details code{font-size:12px;background:var(--surf2);padding:1px 6px;border-radius:6px;color:var(--ink)}
+#cl .todo{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-top:1px solid var(--line);cursor:pointer;text-align:left;width:100%;color:var(--ink)}
+#cl .todo:first-of-type{border-top:0}
+#cl .todo .box{flex:0 0 auto;width:24px;height:24px;border-radius:7px;border:2px solid var(--blue-t);display:flex;align-items:center;justify-content:center;font-weight:900;color:#17112e;margin-top:1px}
+#cl .todo.done .box{background:var(--mint);border-color:var(--mint)}#cl .todo.done .tx{opacity:.5;text-decoration:line-through}
+#cl .todo .tx{font-size:14px;line-height:1.45}#cl .todo small{display:block;font-size:11.5px;font-weight:800;color:var(--gold);letter-spacing:.04em;text-transform:uppercase}
+#cl .vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(74px,1fr));gap:10px;margin-top:12px}
+#cl .vt{position:relative;display:block;border-radius:10px;overflow:hidden;aspect-ratio:9/16;background:#000;border:2px solid var(--vc);padding:0}
+#cl .vt img{width:100%;height:100%;object-fit:cover;opacity:.9}
+#cl .vt b{position:absolute;left:4px;top:4px;font-size:10px;font-weight:900;background:rgba(5,10,30,.75);color:#fff;border-radius:6px;padding:1px 5px}
+#cl .vt em{position:absolute;left:0;right:0;bottom:0;font-style:normal;font-size:10px;font-weight:900;text-align:center;padding:3px 0;background:var(--vc);color:#17112e}
+#cl .estado{margin-top:14px;border-radius:12px;padding:12px;font-size:13.5px;font-weight:600;line-height:1.45}
+#cl .estado b{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:3px}
+#cl .howto{margin-top:14px;background:var(--surf);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+#cl .howto>b{font-size:12px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:var(--cyan)}
+#cl .howto ol b{color:#fff;font-weight:800}
+#cl .howto ol{margin:8px 0 0 20px;font-size:13.5px;line-height:1.6;color:var(--ink)}
+#cl .vchip{font-size:10.5px;font-weight:900;padding:3px 8px;border-radius:999px;color:#17112e;background:var(--vc)}
+#cl-toast{position:fixed;left:50%;bottom:calc(22px + env(safe-area-inset-bottom));transform:translateX(-50%) translateY(20px);background:#F3EEFF;color:#17112e;
+  font-size:14px;font-weight:800;padding:11px 16px;border-radius:12px;opacity:0;pointer-events:none;transition:.2s;z-index:80}
+#cl-toast.on{opacity:1;transform:translateX(-50%)}
+#cl .mlabel{font-size:14px;font-weight:800;text-transform:capitalize;margin:18px 0 8px}#cl .mlabel:first-child{margin-top:0}#cl .cell.blank{background:transparent}
+#cl .calbig .grid7{gap:8px}@media(min-width:960px){#cl .calbig .cell{aspect-ratio:1.35;font-size:14px}}
+</style>
+
+<section id="cl" aria-labelledby="cl-h">
+  <div class="cl-head">
+    <div class="cl-brand"><img src="clipo/icons/icon-192.png" alt="" width="44" height="44"><div><b>CLIPO</b><small>Instagram + TikTok + YouTube Shorts · su propia marca</small></div></div>
+    <nav class="cl-links"><a href="#top">↑ Dusa</a><a href="https://mdusa11.github.io/clipo-landing/" target="_blank" rel="noopener">Landing ↗</a></nav>
+  </div>
+  <h2 class="cl-h" id="cl-h"></h2>
+  <p class="cl-sub" id="cl-sub"></p>
+  <div class="how" id="cl-how">
+    <details><summary>¿Cómo funciona este plan?</summary>
+    <div class="steps4">
+      <div class="step"><i style="background:var(--blue-t)">1</i><b>Los videos ya están hechos</b><span>Cinco videos verticales con su portada y sus textos para cada red.</span></div>
+      <div class="step"><i style="background:var(--gold)">2</i><b>Primero las cuentas</b><span>Faltan crear las cuentas de Instagram, TikTok y YouTube y conectarlas en Metricool. Por eso las fechas son tentativas.</span></div>
+      <div class="step"><i style="background:var(--pink)">3</i><b>Revisa la música</b><span>Escucha la música de 1–2 videos antes de programar.</span></div>
+      <div class="step"><i style="background:var(--mint)">4</i><b>Publica desde aquí</b><span>Abre lo del día → ① copia el texto → ② sube a la red → márcalo como Publicado.</span></div>
+    </div>
+    </details>
+    <details><summary>¿Dónde está cada cosa?</summary><ul>
+      <li>Todo vive en tu carpeta de Clipo: <code>Escritorio/Clipo/03-Marketing/Redes/</code></li>
+      <li><b>1-PERFIL/</b>: foto de perfil y bio.</li>
+      <li><b>2-PUBLICACIONES/</b>: una carpeta por video, con portada y los textos de Instagram, TikTok y YouTube.</li>
+    </ul></details>
+    <details><summary>Ritmo y reglas</summary><ul>
+      <li>3 videos por semana (lun, mié, vie) a las 7 pm. <b>Tentativo</b>: arranca cuando existan las cuentas.</li>
+      <li>El <b>mismo video</b> va a Reels, TikTok y YouTube Shorts.</li>
+      <li>La app aún no está en App Store: siempre decir «Muy pronto en App Store».</li>
+      <li>Enlace de las tres redes: <b>mdusa11.github.io/clipo-landing</b>.</li>
+    </ul></details>
+  </div>
+  <div class="stack" style="margin-bottom:14px">
+      <div id="cl-next"></div>
+      <div class="card calbig">
+        <div class="calhead"><h3>Calendario de Clipo</h3><div class="legend" style="margin:0"><span class="pill" style="--c:var(--pink)">Video</span></div></div>
+        <div id="cl-grid"></div>
+      </div>
+  </div>
+  <div class="cols">
+    <div class="stack">
+      <div class="card" id="cl-pend"></div>
+      <div class="card" id="cl-vids"></div>
+      <div class="card" id="cl-prog"></div>
+      <div class="card" id="cl-perfil"></div>
+    </div>
+    <div class="card">
+      <div class="lhead"><h3>Videos de Clipo</h3>
+        <div class="seg" id="cl-filter"><button data-f="pend" aria-pressed="true">Pendientes</button><button data-f="done" aria-pressed="false">Publicados</button><button data-f="all" aria-pressed="false">Todos</button></div>
+      </div>
+      <div id="cl-list"></div>
+    </div>
+  </div>
+
+  <div id="cl-ov" hidden>
+    <div class="sheet" id="cl-sheet" role="dialog" aria-modal="true" aria-labelledby="cl-mTitle" tabindex="-1">
+      <div class="grab"></div>
+      <div class="mhead"><div><div class="mdate" id="cl-mDate"></div><div class="t2" id="cl-mTitle"></div></div><button class="x" id="cl-close" aria-label="Cerrar">✕</button></div>
+      <div class="netseg"><div class="seg" id="cl-net"><button data-n="ig" aria-pressed="true">Instagram</button><button data-n="tt" aria-pressed="false">TikTok</button><button data-n="yt" aria-pressed="false">YouTube</button></div></div>
+      <p class="note" id="cl-note" hidden></p>
+      <div class="estado" id="cl-estado" hidden></div>
+      <div class="slider"><div class="slides" id="cl-slides"></div></div>
+      <div class="dots" id="cl-dots"></div>
+      <div id="cl-dl"></div>
+      <div class="cap" id="cl-corto" hidden><div class="caphead"><span id="cl-cortoT"></span><a id="cl-cortodl" download>Descargar ↓</a></div><video id="cl-cortov" controls playsinline preload="none" style="width:100%;max-height:420px;background:#000;display:block"></video></div>
+      <div class="actions"><button class="btn" id="cl-copy">① Copiar texto</button><button class="btn pri" id="cl-share">② Subir</button></div>
+      <div class="actions" id="cl-coverrow" hidden><a class="btn" id="cl-cover" download>Portada del Reel ↓</a><span></span></div>
+      <p class="hint" id="cl-hint"></p>
+      <div class="howto" id="cl-howto"></div>
+      <div class="mstatus"><div class="seg" id="cl-status"><button data-s="listo">En cola</button><button data-s="programado">Programado</button><button data-s="publicado">Publicado</button></div></div>
+      <div class="cap"><div class="caphead"><span id="cl-capT">Texto</span><button id="cl-copy2">Copiar</button></div><pre id="cl-caption"></pre></div>
+    </div>
+  </div>
+  <div id="cl-toast" role="status" aria-live="polite"></div>
+</section>
+
+<script>
+const CL = {"items": [{"id": "v02", "type": "video", "status": "listo", "date": "2026-11-30", "title": "Presentación 3D", "when": "Tentativo: falta crear la cuenta", "note": "", "secs": 22, "ig_text": "¿Copiaste algo y ya no está? 📋\n\nClipo es un teclado en español de México que guarda lo que copias y te lo pone arriba de las teclas: un toque y se pega.\n\nReconoce CLABE, RFC, CURP y códigos que se borran solos. Todo se queda en tu iPhone, con Face ID.\n\nMuy pronto en App Store. Link en la bio.\n\n#Clipo #HechoEnMexico #Teclado #Productividad #AppsMexicanas", "tt_text": "Tu teclado ahora recuerda lo que copias 📋 Muy pronto en App Store, link en la bio #Clipo #HechoEnMexico", "yt_text": "Clipo: el teclado que guarda lo que copias 📋 Muy pronto en App Store #Shorts", "video": "clipo/img/v02/video.mp4?v=28665da8", "cover": {"full": "clipo/img/v02/portada.jpg?v=c52fe77f", "thumb": "clipo/img/v02/tportada.jpg?v=2dd0e989"}, "corto": {"video": "clipo/img/v02/corto.mp4?v=5d47c4ff", "secs": 11}}, {"id": "v01", "type": "video", "status": "listo", "date": "2026-12-02", "title": "¿Me pasas tu CLABE?", "when": "Tentativo: falta crear la cuenta", "note": "", "secs": 20, "ig_text": "¿Me pasas tu CLABE? 😅\nSalir del chat, buscar en notas, copiar, regresar…\no un toque en la barra de tu teclado.\nClipo guarda lo que copias y te lo pone arriba de las teclas.\nMuy pronto en App Store. Link en la bio.\n#Clipo #CLABE #iPhone #Productividad #México", "tt_text": "¿Me pasas tu CLABE? Con Clipo ya está arriba de las teclas, un toque y listo. Muy pronto en App Store, link en la bio. #Clipo #iPhone #CLABE #México", "yt_text": "¿Me pasas tu CLABE? Un toque y listo #Shorts", "video": "clipo/img/v01/video.mp4?v=7f8e801f", "cover": {"full": "clipo/img/v01/portada.jpg?v=dcde1314", "thumb": "clipo/img/v01/tportada.jpg?v=753b6dee"}}, {"id": "v03", "type": "video", "status": "listo", "date": "2026-12-04", "title": "@@", "when": "Tentativo: falta crear la cuenta", "note": "", "secs": 18, "ig_text": "¿Cuántas veces al día escribes tu correo? 📧\nFija tu correo en Clipo, ponle el atajo @@ y listo: se escribe solo.\nMenos teclear, más vivir.\nMuy pronto en App Store. Link en la bio.\n#Clipo #iPhone #Atajos #Productividad #México", "tt_text": "¿Cuántas veces al día escribes tu correo? Con @@ se escribe solo. Muy pronto en App Store, link en la bio. #Clipo #iPhone #Productividad", "yt_text": "Escribe @@ y tu correo aparece solo #Shorts", "video": "clipo/img/v03/video.mp4?v=455ee88f", "cover": {"full": "clipo/img/v03/portada.jpg?v=de68872f", "thumb": "clipo/img/v03/tportada.jpg?v=75a33cfc"}}, {"id": "v05", "type": "video", "status": "listo", "date": "2026-12-07", "title": "como estas", "when": "Tentativo: falta crear la cuenta", "note": "", "secs": 20, "ig_text": "como estas → cómo estás ✨\nClipo pone las tildes mientras escribes y entiende cómo hablamos: no manches, raite, porfi, órale.\nUn teclado que escribe como hablas.\nMuy pronto en App Store. Link en la bio.\n#Clipo #iPhone #Teclado #México #NoManches", "tt_text": "como estas → cómo estás. Clipo pone las tildes y entiende no manches, raite, porfi, órale. Muy pronto en App Store, link en la bio. #Clipo #iPhone #México", "yt_text": "como estas → cómo estás: tildes automáticas #Shorts", "video": "clipo/img/v05/video.mp4?v=b509c6c6", "cover": {"full": "clipo/img/v05/portada.jpg?v=47c040a5", "thumb": "clipo/img/v05/tportada.jpg?v=87b04274"}}, {"id": "v06", "type": "video", "status": "listo", "date": "2026-12-09", "title": "¿Cuál eres?", "when": "Tentativo: falta crear la cuenta", "note": "", "secs": 23, "ig_text": "¿Cuál eres? 💜💙💚💛💗🖤\nUva, Mar, Lima, Mango, Chicle o Tinta: 6 temas con ícono alterno.\nLos temas cambian la app y el ícono; el teclado se queda como el de tu iPhone.\nMuy pronto en App Store. Link en la bio.\n#Clipo #iPhone #Personaliza #México", "tt_text": "¿Cuál eres? Uva, Mar, Lima, Mango, Chicle o Tinta. Muy pronto en App Store, link en la bio. #Clipo #iPhone #Personaliza", "yt_text": "¿Cuál eres? 6 temas, 6 íconos #Shorts", "video": "clipo/img/v06/video.mp4?v=5f386d5a", "cover": {"full": "clipo/img/v06/portada.jpg?v=af87e112", "thumb": "clipo/img/v06/tportada.jpg?v=62f361c8"}}], "perfil": {"foto": {"file": "clipo/img/perfil/perfil.png?v=4beb454a", "thumb": "clipo/img/perfil/t-perfil.jpg?v=3e6cc983", "name": "clipo-perfil.png"}, "bio": [{"title": "Usuario (las tres redes)", "text": "clipo.app  (alternativa: clipoapp)"}, {"title": "Nombre (las tres redes)", "text": "Clipo · Teclado con portapapeles"}, {"title": "Bio de Instagram", "text": "El teclado que guarda lo que copias 📋\nUn toque y se pega · Hecho en México 🇲🇽\nMuy pronto en App Store 👇"}, {"title": "Bio de TikTok", "text": "El teclado que guarda lo que copias 📋 Muy pronto en App Store"}, {"title": "Descripción de YouTube", "text": "Clipo es un teclado para iPhone en español de México que guarda lo que copias y te lo pone arriba de las teclas. Todo se queda en tu iPhone, sin cuentas ni servidores. Muy pronto en App Store. Hecho por Dusa Solutions."}, {"title": "Enlace (las tres redes)", "text": "https://mdusa11.github.io/clipo-landing/"}]}, "calStart": "2026-11-23", "apertura": "2026-11-30", "pendientes": [{"id": "p1", "cuando": "Antes de publicar", "texto": "Crear las cuentas de Instagram, TikTok y YouTube (usuario sugerido clipo.app o clipoapp)"}, {"id": "p2", "cuando": "Después de crearlas", "texto": "Conectarlas en Metricool como marca nueva"}, {"id": "p3", "cuando": "Antes de programar", "texto": "Escuchar la música de 1–2 videos antes de programar"}], "h1": "Clipo", "sub": "Cuenta nueva · Instagram + TikTok + YouTube Shorts · Muy pronto en App Store"};
+(() => {
+const R = document.getElementById('cl');
+const $ = (s) => R.querySelector(s);
+const esc = (s) => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const ST = { listo: 'En cola', programado: 'Programado', publicado: 'Publicado' };
+const DOW = ['dom', 'lun', 'mar', 'mié', 'jue', 'vie', 'sáb'], MON = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+const KEY = 'clipoPlan.v1', KEYP = 'clipoPend.v1';
+const EST = { listo: ['Listo', 'var(--mint)'], respaldo: ['De respaldo', 'var(--gold)'], falta: ['Falta video', 'var(--red)'], decision: ['Decides tú', 'var(--cyan)'] };
+const parse = (iso) => { const [y, m, d] = iso.split('-').map(Number); return new Date(y, m - 1, d); };
+const qHoy = new URLSearchParams(location.search).get('hoy');
+const TODAY = qHoy ? parse(qHoy) : new Date(new Date().setHours(0, 0, 0, 0));
+const days = (iso) => Math.round((parse(iso) - TODAY) / 864e5);
+const fmt = (iso) => { const d = parse(iso); return `${DOW[d.getDay()]} ${d.getDate()} ${MON[d.getMonth()]}`; };
+const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+const color = () => 'var(--pink)';
+const NET = { ig: 'Instagram', tt: 'TikTok', yt: 'YouTube Shorts' };
+const textOf = (p, n) => p[n + '_text'];
+let saved = {};
+try { saved = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch {}
+const status = (p) => saved[p.id] || p.status || 'listo';
+let pend = {};
+try { pend = JSON.parse(localStorage.getItem(KEYP) || '{}'); } catch {}
+const est = (p) => p.estado || ['listo', ''];
+const vchip = (p) => { const e = est(p); return e ? `<span class="vchip" style="--vc:${EST[e[0]][1]}">${EST[e[0]][0]}</span>` : ''; };
+const setStatus = (p, s) => { saved[p.id] = s; try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch {} render(); };
+const ITEMS = CL.items, byId = Object.fromEntries(ITEMS.map(p => [p.id, p]));
+const thumb = (p) => p.cover.thumb;
+const format = (p) => `Video ${p.secs} s · Reels + TikTok + Shorts`;
+
+function whenLabel(p) {
+  const d = days(p.date);
+  if (status(p) === 'publicado') return { txt: cap(fmt(p.date)), cls: '' };
+  if (p.when && d >= 0) return { txt: `${cap(fmt(p.date))} · 7 pm · ${p.when}`, cls: 'cond' };
+  if (d === 0) return { txt: 'Hoy · 7 pm', cls: 'today' };
+  if (d === 1) return { txt: `Mañana · ${fmt(p.date)}`, cls: '' };
+  if (d > 1) return { txt: `${cap(fmt(p.date))} · en ${d} días`, cls: '' };
+  return { txt: `Atrasado ${-d} día${d === -1 ? '' : 's'} · era el ${fmt(p.date)}`, cls: 'late' };
+}
+const asset = (a, cls, label) => `<a class="asset ${cls}" href="${a.file}" download="${esc(a.name)}"><img src="${a.thumb}" alt="" loading="lazy"><span>${esc(label)} ↓</span></a>`;
+
+function render() {
+  $('#cl-h').innerHTML = CL.h1; $('#cl-sub').textContent = CL.sub;
+  // Lo de HOY va primero; lo atrasado sale aparte, con un toque para marcarlo como publicado.
+  const pend0 = ITEMS.filter(p => status(p) !== 'publicado');
+  const hoy = pend0.filter(p => days(p.date) === 0), late = pend0.filter(p => days(p.date) < 0);
+  const nxt = hoy[0] || pend0.find(p => days(p.date) > 0);
+  // Lo de hoy que ya está marcado como publicado se sigue viendo (por si se marcó sin querer).
+  const hoyHecho = ITEMS.filter(p => days(p.date) === 0 && status(p) === 'publicado');
+  const hechoHtml = hoyHecho.length ? `<div class="late-box"><div class="kicker" style="color:var(--mint)">Hoy · ya marcado como publicado</div>
+      ${hoyHecho.map(p => `<div class="laterow"><span class="lt">✓ ${esc(p.title)}</span><button class="btn sm" data-cl-open="${p.id}">Abrir</button>
+        <button class="btn sm" data-cl-undo="${p.id}">No lo he subido</button></div>`).join('')}</div>` : '';
+  const lateHtml = late.length ? `<div class="late-box"><div class="kicker" style="color:var(--gold)">De días anteriores (${late.length})</div>
+      <p class="muted" style="font-size:12.5px;margin:4px 0 8px">Si ya los subiste, márcalos; si no, ábrelos y súbelos cuando puedas.</p>
+      ${late.map(p => `<div class="laterow"><span class="lt">${esc(cap(fmt(p.date)))} · ${esc(p.title)}</span>
+        <button class="btn sm" data-cl-open="${p.id}">Abrir</button><button class="btn sm ok" data-cl-done="${p.id}">Ya lo subí ✓</button></div>`).join('')}</div>` : '';
+  if (!nxt) $('#cl-next').innerHTML = `<div class="card"><div class="kicker">Clipo</div><div class="t2">¡Todo publicado! 🎉</div>${lateHtml}${hechoHtml}</div>`;
+  else {
+    const w = whenLabel(nxt), same = pend0.filter(p => p.date === nxt.date && p !== nxt);
+    $('#cl-next').innerHTML = `<div class="card"><div class="kicker">${days(nxt.date) === 0 ? 'Hoy toca en Clipo' : 'Lo que sigue en Clipo'}</div>
+      <div class="nextrow"><img class="nthumb" src="${thumb(nxt)}" alt=""><div class="nbody"><span class="when ${w.cls}">${esc(w.txt)}</span>
+      <div class="t2">${esc(nxt.title)}</div><div class="pmeta"><span class="pill" style="--c:${color(nxt)}">Video</span><span class="fmt">${format(nxt)}</span></div>
+      ${vchip(nxt)}${same.length ? `<span class="fmt">Ese día también: ${same.map(s => esc(s.title)).join(', ')}</span>` : ''}</div></div>
+      <button class="btn pri" style="width:100%" data-cl-open="${nxt.id}">Abrir para publicar</button>
+      ${same.map(s => `<button class="btn" style="width:100%;margin-top:8px" data-cl-open="${s.id}">Abrir: ${esc(s.title)}</button>`).join('')}${lateHtml}${hechoHtml}</div>`;
+  }
+  $('#cl-pend').hidden = !CL.pendientes.length;
+  const dA = days(CL.apertura), hechos = CL.pendientes.filter(t => pend[t.id]).length;
+  $('#cl-pend').innerHTML = `<div class="ptop"><span class="kicker">Tus pendientes</span><b>${hechos} de ${CL.pendientes.length}</b></div>
+    <p class="muted" style="font-size:13px;margin:4px 0 6px">${dA > 0 ? `Primer video (tentativo): <b style="color:var(--ink)">${fmt(CL.apertura)}</b>, en ${dA} día${dA > 1 ? 's' : ''}. Falta crear las cuentas.` : 'Toca una tarea para marcarla.'}</p>
+    ${CL.pendientes.map(t => `<button class="todo${pend[t.id] ? ' done' : ''}" data-cl-todo="${t.id}"><span class="box">${pend[t.id] ? '✓' : ''}</span><span class="tx"><small>${esc(t.cuando)}</small>${esc(t.texto)}</span></button>`).join('')}`;
+  const V = ITEMS.filter(p => p.type === 'video'), cuenta = (k) => V.filter(p => est(p)[0] === k).length;
+  $('#cl-vids').innerHTML = `<div class="ptop"><span class="kicker">Videos</span><b>${cuenta('listo') + cuenta('respaldo')} de ${V.length} listos</b></div>
+    <div class="legend">${Object.entries(EST).map(([k, [t, c]]) => `<span><i class="dot" style="background:${c}"></i>${cuenta(k)} ${t.toLowerCase()}</span>`).join('')}</div>
+    <div class="vgrid">${V.map(p => `<button class="vt" style="--vc:${EST[est(p)[0]][1]}" data-cl-open="${p.id}" aria-label="${p.id.toUpperCase()} ${esc(p.title)}: ${EST[est(p)[0]][0]}"><img src="${p.cover.thumb}" alt="" loading="lazy"><b>${p.id.toUpperCase()}</b><em>${EST[est(p)[0]][0]}</em></button>`).join('')}</div>`;
+  const n = { publicado: 0, programado: 0, listo: 0 }; ITEMS.forEach(p => n[status(p)]++);
+  const pct = (x) => (100 * x / ITEMS.length).toFixed(1) + '%';
+  $('#cl-prog').innerHTML = `<div class="ptop"><span class="kicker">Nov – dic</span><b>${n.publicado} de ${ITEMS.length} publicados</b></div>
+    <div class="bar"><i class="b-pub" style="width:${pct(n.publicado)}"></i><i class="b-prog" style="width:${pct(n.programado)}"></i></div>
+    <div class="legend"><span><i class="dot" style="background:var(--mint)"></i>${n.publicado} publicados</span><span><i class="dot" style="background:var(--blue)"></i>${n.programado} programados</span><span><i class="dot" style="background:var(--surf2)"></i>${n.listo} en cola</span></div>`;
+  let start = parse(CL.calStart), cells = [], months = [], byDate = {};
+  ITEMS.forEach(p => (byDate[p.date] ||= []).push(p));
+  const END = (() => { const last = ITEMS.map(p => p.date).filter(Boolean).sort().pop() || ''; const e = last ? parse(last) : new Date(start); return new Date(e.getFullYear(), e.getMonth() + 1, 0); })();
+  for (let i = 0; ; i++) {
+    const d = new Date(start); d.setDate(start.getDate() + i);
+    if (d > END) break;
+    if (i === 0 || d.getDate() === 1) { cells = []; months.push({ d: new Date(d), cells }); for (let k = 0; k < (d.getDay() + 6) % 7; k++) cells.push('<div class="cell blank"></div>'); }
+    const iso = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+    const ps = byDate[iso], today = +d === +TODAY ? ' today' : '';
+    if (ps) {
+      const p = ps[0], s = status(p);
+      cells.push(`<button class="cell post${today}" data-cl-open="${p.id}" style="--c:${color(p)};background-image:url('${thumb(p)}')" aria-label="${fmt(iso)}: ${esc(ps.map(x => x.title).join(' + '))}"><span>${d.getDate()}</span>${ps.length > 1 ? '<i class="n2">+1</i>' : ''}${s !== 'listo' ? `<i class="mk ${s}">${s === 'publicado' ? '✓' : '⏱'}</i>` : ''}</button>`);
+    } else cells.push(`<div class="cell${today}">${d.getDate()}</div>`);
+  }
+  $('#cl-grid').innerHTML = months.map(m => `<div class="mlabel">${m.d.toLocaleDateString('es-MX', { month: 'long' }) + ' ' + m.d.getFullYear()}</div><div class="dow"><span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span></div><div class="grid7">${m.cells.join('')}</div>`).join('');
+  const P = CL.perfil;
+  $('#cl-perfil').innerHTML = `<h3>Perfil de Clipo</h3><p class="muted" style="font-size:13px;margin-top:4px">Todo esto va al crear las cuentas. Toca la foto para descargarla.</p>
+    <div class="pgroup"><h4>Foto de perfil<span>Instagram, TikTok y YouTube</span></h4><div class="prow">${asset(P.foto, 'circle', 'Foto')}</div></div>
+    ${P.bio.map((b, i) => `<div class="cap"><div class="caphead">${esc(b.title)} <button data-cl-bio="${i}">Copiar</button></div><pre>${esc(b.text)}</pre></div>`).join('')}`;
+  const f = R.querySelector('#cl-filter [aria-pressed="true"]').dataset.f;
+  const keep = (p) => f === 'all' || (f === 'done' ? status(p) === 'publicado' : status(p) !== 'publicado');
+  const weeks = {};
+  ITEMS.filter(keep).forEach(p => {
+    const d = parse(p.date), mon = new Date(d); mon.setDate(d.getDate() - ((d.getDay() + 6) % 7));
+    const sun = new Date(mon); sun.setDate(mon.getDate() + 6);
+    (weeks[+mon] ||= { label: `${mon.getDate()} ${MON[mon.getMonth()]} – ${sun.getDate()} ${MON[sun.getMonth()]}`, items: [] }).items.push(p);
+  });
+  const card = (p) => { const s = status(p), w = whenLabel(p); return `<button class="pcard${s === 'publicado' ? ' done' : ''}" data-cl-open="${p.id}">
+    <img class="pthumb" src="${thumb(p)}" alt="" loading="lazy"><div class="pbody"><div class="pdate"><span class="${w.cls}">${esc(w.txt)}</span></div>
+    <div class="ptitle">${p.id.toUpperCase()} · ${esc(p.title)}</div><div class="pmeta"><span class="pill" style="--c:${color(p)}">Video</span>${vchip(p)}<span class="fmt">${format(p)}</span></div></div>
+    <span class="st st-${s}">${ST[s]}</span></button>`; };
+  const ks = Object.keys(weeks).sort((a, b) => a - b);
+  $('#cl-list').innerHTML = ks.length ? ks.map(k => `<div class="week"><div class="wlabel">Semana del ${weeks[k].label}</div><div class="plist">${weeks[k].items.map(card).join('')}</div></div>`).join('')
+    : `<p class="empty">${f === 'done' ? 'Todavía no hay nada publicado.' : '¡No queda nada pendiente! 🎉'}</p>`;
+  if (current) paint();
+}
+
+function toast(m) { const t = $('#cl-toast'); t.textContent = m; t.classList.add('on'); clearTimeout(toast.t); toast.t = setTimeout(() => t.classList.remove('on'), 2200); }
+async function copy(txt, msg) {
+  try { await navigator.clipboard.writeText(txt); } catch { const ta = document.createElement('textarea'); ta.value = txt; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); }
+  toast(msg || 'Copiado ✓');
+}
+let current = null, net = 'ig', lastFocus = null;
+const ov = $('#cl-ov'), slidesEl = $('#cl-slides');
+function files(p) { return [{ url: p.video, name: `clipo-${p.id}.mp4`, type: 'video/mp4' }]; }
+function paint() {
+  const p = current, s = status(p), w = whenLabel(p);
+  R.querySelectorAll('#cl-status button').forEach(b => b.setAttribute('aria-pressed', b.dataset.s === s));
+  R.querySelectorAll('#cl-net button').forEach(b => b.setAttribute('aria-pressed', b.dataset.n === net));
+  $('#cl-mDate').innerHTML = `<span>${esc(w.txt)}</span><span class="pill" style="--c:${color(p)}">Video</span><span class="fmt">${format(p)}</span>`;
+}
+const PASOS = {
+  ig: ['Toca <b>① Copiar texto</b>.', 'Toca <b>Portada del Reel ↓</b> para bajar la portada.', 'Toca <b>② Subir a Instagram</b> y elige Instagram → <b>Reel</b>.', 'Al final: <b>Editar portada → Agregar desde la galería</b> y elige la portada que bajaste.', 'Pega el texto → <b>Compartir</b>. Márcalo como <b>Publicado</b>.'],
+  tt: ['Toca <b>① Copiar texto</b>.', 'Toca <b>② Subir a TikTok</b> y elige TikTok.', '<b>Siguiente</b> → pega el texto. La portada en TikTok se elige con un cuadro del video (<b>Editar portada</b>).', '<b>Publicar</b> y márcalo como <b>Publicado</b>.'],
+  yt: ['Toca <b>① Copiar título</b> (ya trae #Shorts).', 'Toca <b>② Subir a YouTube Shorts</b> y elige YouTube. Si no aparece, descarga el video y súbelo desde YouTube → <b>＋ → Subir un Short</b>.', 'Pega el título → <b>Siguiente</b> → <b>Subir Short</b>.', 'Márcalo como <b>Publicado</b>.'],
+};
+function fill() {
+  const p = current;
+  R.querySelectorAll('#cl-net button').forEach(b => b.setAttribute('aria-pressed', b.dataset.n === net));
+  slidesEl.className = 'slides t one';
+  slidesEl.innerHTML = `<figure><video src="${p.video}" poster="${p.cover.full}" controls playsinline preload="metadata"></video></figure>`;
+  slidesEl.scrollLeft = 0;
+  $('#cl-dots').innerHTML = '';
+  $('#cl-dl').innerHTML = `<p class="muted" style="font-size:12.5px;padding:0 16px">Toca cada una para descargarla:</p><div class="tiles">
+    <a class="asset" href="${p.video}" download="clipo-${p.id}.mp4"><img src="${p.cover.thumb}" alt="" loading="lazy" style="aspect-ratio:9/16"><b>VIDEO</b><span>Video ↓</span></a>
+    <a class="asset" href="${p.cover.full}" download="clipo-${p.id}-portada.jpg"><img src="${p.cover.thumb}" alt="" loading="lazy" style="aspect-ratio:9/16"><b>PORTADA</b><span>Portada ↓</span></a></div>`;
+  const co = $('#cl-corto'); co.hidden = !p.corto;
+  if (p.corto) { $('#cl-cortoT').textContent = `Corte de ${p.corto.secs} s para anuncios`; $('#cl-cortov').src = p.corto.video; $('#cl-cortov').poster = p.cover.full; $('#cl-cortodl').href = p.corto.video; $('#cl-cortodl').setAttribute('download', `clipo-${p.id}-corto.mp4`); }
+  $('#cl-capT').textContent = net === 'yt' ? 'Título para YouTube Shorts' : `Texto para ${NET[net]}`;
+  $('#cl-caption').textContent = textOf(p, net);
+  $('#cl-copy').textContent = net === 'yt' ? '① Copiar título' : '① Copiar texto';
+  const b = $('#cl-share');
+  b.className = 'btn ' + (net === 'ig' ? 'pri' : net);
+  b.textContent = `② Subir a ${NET[net]}`;
+  $('#cl-howto').innerHTML = `<b>Cómo publicarlo en ${NET[net]}</b><ol>${PASOS[net].map(x => `<li>${x}</li>`).join('')}</ol>`;
+  $('#cl-coverrow').hidden = net !== 'ig';
+  $('#cl-cover').href = p.cover.full; $('#cl-cover').setAttribute('download', `clipo-${p.id}-portada.jpg`);
+  $('#cl-hint').textContent = '';
+}
+function openSheet(p, from) {
+  current = p; lastFocus = from || document.activeElement;
+  $('#cl-mTitle').textContent = `${p.id.toUpperCase()} · ${p.title}`;
+  const note = $('#cl-note'); note.hidden = !p.note; note.textContent = p.note ? '⚠️ ' + p.note : '';
+  const eb = $('#cl-estado'), e = est(p);
+  eb.hidden = !(e && e[1]);
+  if (e && e[1]) { const [t, c] = EST[e[0]]; eb.style.background = `color-mix(in srgb, ${c} 18%, #1b1438)`; eb.style.border = `1px solid ${c}`; eb.innerHTML = `<b style="color:${c}">${t}</b>${esc(e[1])}`; }
+  paint(); fill();
+  ov.hidden = false; document.body.style.overflow = 'hidden'; $('#cl-sheet').scrollTop = 0; $('#cl-sheet').focus();
+}
+function closeSheet() { ov.hidden = true; document.body.style.overflow = ''; current = null; lastFocus && lastFocus.focus && lastFocus.focus(); }
+async function share() {
+  const list = files(current);
+  try {
+    const fl = await Promise.all(list.map(async f => new File([await (await fetch(f.url)).blob()], f.name, { type: f.type })));
+    if (navigator.canShare && navigator.canShare({ files: fl })) { await navigator.share({ files: fl }); return; }
+  } catch (e) { if (e && e.name === 'AbortError') return; }
+  for (const f of list) { const a = document.createElement('a'); a.href = f.url; a.download = f.name; document.body.appendChild(a); a.click(); a.remove(); await new Promise(r => setTimeout(r, 400)); }
+  toast(`${list.length} archivo${list.length > 1 ? 's' : ''} descargado${list.length > 1 ? 's' : ''}`);
+}
+R.addEventListener('click', (e) => {
+  const td = e.target.closest('[data-cl-todo]');
+  if (td) { const id = td.dataset.clTodo; pend[id] = !pend[id]; try { localStorage.setItem(KEYP, JSON.stringify(pend)); } catch {} render(); return; }
+  const bb = e.target.closest('[data-cl-bio]'); if (bb) { copy(CL.perfil.bio[+bb.dataset.clBio].text); return; }
+  const un = e.target.closest('[data-cl-undo]'); if (un) { setStatus(byId[un.dataset.clUndo], 'listo'); toast('De vuelta en cola'); return; }
+  const dn = e.target.closest('[data-cl-done]'); if (dn) { setStatus(byId[dn.dataset.clDone], 'publicado'); toast('Marcado: publicado'); return; }
+  const o = e.target.closest('[data-cl-open]'); if (o) { openSheet(byId[o.dataset.clOpen], o); return; }
+  const fb = e.target.closest('#cl-filter button'); if (fb) { R.querySelectorAll('#cl-filter button').forEach(b => b.setAttribute('aria-pressed', b === fb)); render(); }
+});
+slidesEl.addEventListener('scroll', () => {
+  const w = slidesEl.firstElementChild?.getBoundingClientRect().width || 1, i = Math.round(slidesEl.scrollLeft / (w + 10));
+  R.querySelectorAll('#cl-dots i').forEach((d, k) => d.classList.toggle('on', k === i));
+}, { passive: true });
+$('#cl-net').addEventListener('click', (e) => { const b = e.target.closest('button'); if (!b) return; net = b.dataset.n; paint(); fill(); });
+$('#cl-close').onclick = closeSheet;
+ov.addEventListener('click', (e) => { if (e.target === ov) closeSheet(); });
+$('#cl-copy').onclick = $('#cl-copy2').onclick = () => copy(textOf(current, net), net === 'yt' ? 'Título copiado ✓' : 'Texto copiado ✓');
+$('#cl-share').onclick = share;
+$('#cl-status').addEventListener('click', (e) => { const b = e.target.closest('button'); if (!b) return; setStatus(current, b.dataset.s); toast(`Marcado: ${ST[b.dataset.s].toLowerCase()}`); });
+document.addEventListener('keydown', (e) => { if (!ov.hidden && e.key === 'Escape') closeSheet(); });
+render();
+})();
+</script>
+<!--/CL-->
   <footer id="foot"></footer>
 </div>
 
@@ -1501,7 +1926,7 @@ if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catc
 </script>
 <script>
 (() => {
-  const pick = () => { const h = location.hash.slice(1); return h === 'bk' || h.startsWith('bk-') ? 'bk' : h === 'cg' || h.startsWith('cg-') ? 'cg' : 'dusa'; };
+  const pick = () => { const h = location.hash.slice(1); return h === 'bk' || h.startsWith('bk-') ? 'bk' : h === 'cg' || h.startsWith('cg-') ? 'cg' : h === 'cl' || h.startsWith('cl-') ? 'cl' : 'dusa'; };
   const go = () => { const t = pick(); document.body.dataset.tab = t;
     document.querySelectorAll('#tabs a').forEach(a => a.dataset.t === t ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current'));
     try { localStorage.setItem('dusaTab', t); } catch {} };
