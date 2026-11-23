@@ -1,347 +1,572 @@
 {
-  "o16": {
+  "du01": {
     "tipo": "carrusel",
-    "titulo": "Empezamos de cero. Otra vez.",
+    "titulo": "Fakturo ya está en Google Play: por dentro",
     "imagenes": [
-      "https://mdusa11.github.io/dusa-plan/img/o16/1.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o16/2.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o16/3.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o16/4.jpg"
+      "https://mdusa11.github.io/dusa-plan/img/du01/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du01/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du01/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du01/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du01/5.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du01/6.jpg"
     ],
-    "texto": "Empezamos de cero. Otra vez. 🔥🪼\n\nSe fueron nuestras cuentas de Instagram y Facebook, con todo y publicaciones. No se pudieron recuperar, así que volvemos desde aquí.\n\nLo importante sigue en pie:\n🚻 BathMap — funcionando\n🧩 Blokku — ya en Google Play\n🎂 Cumplegratis — cumplegratis.fun\n🧾 Fakturo — muy pronto\n\nSi ya nos seguías, gracias por volver. Si eres nuevo, bienvenido 🙌\n\n#DusaSolutions #HechoEnMéxico #Guadalajara #Apps #IndieDev"
+    "texto": "Fakturo por dentro 🧾 Ya está en Google Play (Android). Así se ve:\n\n📊 Tu tablero: cobrado del mes, pendiente, vencido y gastos\n💬 Cobro por WhatsApp: registra pagos y abonos, y manda el recordatorio en un toque\n📄 Facturas en PDF con tu logo y tus colores, con CLABE y QR (ojo: son PDF, no CFDI timbrado ante el SAT)\n📈 Reportes: ingresos por cliente y utilidad\n\nBúscala en Google Play como «Fakturo: Facturas y Cobranza» o entra a fakturo.cloud 👉 En iPhone, muy pronto.\n\n#Fakturo #Freelancer #PyMEsMexico #Cobranza #HechoEnMéxico"
   },
-  "o17": {
+  "du02": {
     "tipo": "carrusel",
-    "titulo": "Lo que no se perdió: nuestras apps",
+    "titulo": "Blokku: tres modos, tres formas de jugar",
     "imagenes": [
-      "https://mdusa11.github.io/dusa-plan/img/o17/1.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o17/2.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o17/3.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o17/4.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o17/5.jpg"
+      "https://mdusa11.github.io/dusa-plan/img/du02/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du02/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du02/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du02/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du02/5.jpg"
     ],
-    "texto": "Las redes se van. Las apps se quedan. 🔥\n\nEsto es lo que seguimos construyendo en Dusa:\n\n🚻 BathMap — el mapa de baños que le faltaba a México (bathmap.online)\n🧩 Blokku — nuestro puzzle de bloques, gratis en Google Play (blokku.online)\n🎂 Cumplegratis — lo que te regalan en tu cumpleaños (cumplegratis.fun)\n🧾 Fakturo — facturas y cobranza desde tu celular, muy pronto. Escríbenos FAKTURO si quieres probarla primero.\n\n¿Cuál ya usaste? 👇\n\n#DusaSolutions #HechoEnMéxico #Apps #Guadalajara"
+    "texto": "Blokku tiene tres modos 🧩\n\n🎮 Clásico: sin fin, cada partida cuenta para tu récord\n⏳ Contra reloj: 90 segundos para hacer el máximo score\n🌱 Zen: sin game over, solo relájate\n\n¿Cuál es el tuyo? 👇\n\nGratis en Google Play y App Store 👉 blokku.online\n\n#Blokku #JuegosMóviles #Puzzle #HechoEnMéxico #IndieDev"
   },
-  "o6": {
-    "tipo": "carrusel",
-    "titulo": "Nuevo: Cumplegratis, tu cumple sale gratis",
-    "imagenes": [
-      "https://mdusa11.github.io/dusa-plan/img/o6/1.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o6/2.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o6/3.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o6/4.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o6/5.jpg"
-    ],
-    "texto": "Nuevo en Dusa: Cumplegratis 🎂 Tu cumple sale gratis.\n\nJuntamos las promociones de cumpleaños de México en un solo lugar: café, pastel, cine, descuentos y regalos.\n\n1️⃣ Pones tu fecha y tu ciudad\n2️⃣ Te armamos tu plan: a qué registrarte y hasta cuándo (muchas marcas piden hacerlo antes)\n3️⃣ Cobras tus regalos\n\n+510 promos en los 32 estados, 192 verificadas en la fuente oficial. Cada una dice qué tan segura es, y si vence, la quitamos.\n\nGratis y sin cuenta 👉 cumplegratis.fun\n\nLas marcas no están afiliadas a Cumplegratis.\n\n#Cumpleaños #PromosDeCumpleaños #HechoEnMéxico #Ahorro #Cumplegratis"
-  },
-  "o1": {
-    "tipo": "imagen",
-    "titulo": "Blokku ya está en Google Play",
-    "imagenes": [
-      "https://mdusa11.github.io/dusa-plan/img/o1/1.jpg"
-    ],
-    "texto": "¡Blokku ya está en Google Play! 🧩\n\nNuestro primer juego: un puzzle de bloques para despejar la mente. Gratis, funciona sin conexión y está hecho aquí en México por el equipo de Dusa.\n\nDescárgalo: busca \"Blokku\" en Google Play o entra a blokku.online 👉\n\nSi te gusta, déjanos tu reseña ⭐ — nos ayuda muchísimo.\n\n#Blokku #JuegosMóviles #Puzzle #HechoEnMéxico #IndieDev #Android"
-  },
-  "anuncio": {
-    "tipo": "carrusel",
-    "titulo": "Esto es Dusa: el estudio (anuncio)",
-    "imagenes": [
-      "https://mdusa11.github.io/dusa-plan/img/anuncio/1.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/anuncio/2.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/anuncio/3.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/anuncio/4.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/anuncio/5.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/anuncio/6.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/anuncio/7.jpg"
-    ],
-    "texto": "Algo cambió en Dusa. 🔵\n\nNacimos el 13 de abril de 2025 construyendo apps para otros negocios, y nos encanta. Pero siempre tuvimos ideas propias… así que empezamos a construirlas.\n\nYa en el mundo:\n🚻 BathMap — el mapa de baños que le faltaba a México (bathmap.online)\n🧩 Blokku — nuestro juego de puzzle, gratis en Google Play y App Store\n🎂 Cumplegratis — lo que te regalan en tu cumpleaños (cumplegratis.fun)\n\nMuy pronto:\n🧾 Fakturo — cotiza, factura y cobra\n💸 TuLana — tu lana, organizada sola\n💪 Coachly — tu coach de entrenamiento con IA\n\nDesde hoy Dusa es un estudio de apps hechas para México. Hacemos las nuestras… y seguimos haciendo la tuya.\n\n¿Tienes una idea? Escríbenos por WhatsApp 👉 311 485 7991\n\nSíguenos para ver cómo las construimos. 🪼\n\n#HechoEnMéxico #Apps #Startups #DesarrolloDeApps #Guadalajara #GDL #BuildInPublic"
-  },
-  "o2": {
-    "tipo": "carrusel",
-    "titulo": "BathMap: cómo usarlo en 3 pasos",
-    "imagenes": [
-      "https://mdusa11.github.io/dusa-plan/img/o2/1.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o2/2.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o2/3.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o2/4.jpg"
-    ],
-    "texto": "¿Urgencia? 🚻 Así encuentras un baño en segundos con BathMap:\n\n1️⃣ Abre el mapa y filtra: gratis, $5 o menos, con papel o jabón\n2️⃣ Revisa la ficha: precio, cómo llegar y reseñas\n3️⃣ ¿Conoces uno que no está? Agrégalo y ayuda a otros\n\nEs gratis y funciona desde el navegador 👉 bathmap.online\n\nGuárdalo para cuando lo necesites 🔖 y compártelo con quien siempre anda buscando baño 😅\n\n#BathMap #HechoEnMéxico #Guadalajara #CDMX #Apps"
-  },
-  "o4": {
-    "tipo": "carrusel",
-    "titulo": "Muy pronto: Fakturo",
-    "imagenes": [
-      "https://mdusa11.github.io/dusa-plan/img/o4/1.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o4/2.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o4/3.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o4/4.jpg"
-    ],
-    "texto": "Muy pronto: Fakturo 🧾\n\nLa app que estamos construyendo para freelancers y pequeños negocios en México:\n✅ Cotiza y factura desde tu cel\n✅ Cobra por WhatsApp en un toque\n✅ PDFs con tu logo y tus colores\n✅ Ve cuánto cobraste, cuánto te deben y en qué gastas\n\n¿Quieres ser de los primeros en usarla? Mándanos la palabra FAKTURO por DM o por WhatsApp (311 485 7991) y te avisamos primero 👀\n\n#Fakturo #Freelancer #PyMEsMexico #Facturación #HechoEnMéxico"
-  },
-  "o3": {
-    "tipo": "carrusel",
-    "titulo": "Cómo cobrar sin perseguir a nadie",
-    "imagenes": [
-      "https://mdusa11.github.io/dusa-plan/img/o3/1.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o3/2.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o3/3.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o3/4.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o3/5.jpg"
-    ],
-    "texto": "Freelancer: si alguna vez mandaste \"¿cómo vas con el pago? 🙏\"… esto es para ti.\n\n4 hábitos para cobrar sin perseguir a nadie:\n1️⃣ Pide anticipo (30–50%) antes de empezar\n2️⃣ Todo por escrito: qué incluye, cuánto y cuándo se paga\n3️⃣ Pon fecha de pago y avisa un día antes\n4️⃣ Haz fácil pagarte: transferencia, tarjeta o link\n\nGuárdalo 🔖 y compártelo con ese amigo freelancer que siempre anda cobrando.\n\nP.D. Estamos creando Fakturo justo para esto. Muy pronto 🧾\n\n#Freelancer #Emprendedores #PyMEsMexico #Finanzas #Guadalajara"
-  },
-  "o12": {
-    "tipo": "carrusel",
-    "titulo": "¿Cumples en noviembre? Regístrate ya",
-    "imagenes": [
-      "https://mdusa11.github.io/dusa-plan/img/o12/1.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o12/2.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o12/3.jpg"
-    ],
-    "texto": "¿Cumples en noviembre? 🎂 Hay regalos que se pierden si no te registras antes de que empiece tu mes.\n\nHazlo esta semana:\n🍦 Nutrisa: una compra de $35 con la app en los 60 días previos a tu mes (o sea, antes del 1 de noviembre)\n☕ Starbucks: 1 compra en Starbucks Rewards en los 90 días previos\n🎬🍰💄 Cinépolis, Toks y Sephora: date de alta en su programa con tu fecha de nacimiento\n\n¿La marca no dice cuánto antes? Regístrate 30 días antes. Así calcula Cumplegratis las fechas límite de tu plan 👉 cumplegratis.fun\n\nRequisitos revisados en la fuente oficial en octubre de 2026. Marcas no afiliadas.\n\n#Cumpleaños #Noviembre #PromosDeCumpleaños #Cumplegratis"
-  },
-  "o15": {
-    "tipo": "carrusel",
-    "titulo": "Día de Muertos: ideas que no deben morir",
-    "imagenes": [
-      "https://mdusa11.github.io/dusa-plan/img/o15/1.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o15/2.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o15/3.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o15/4.jpg"
-    ],
-    "texto": "Este Día de Muertos le ponemos ofrenda a las ideas que se fueron sin despedirse 🕯️🌼\n\n📱 La app que \"algún día\" ibas a hacer\n🌐 La página que nunca se publicó\n💡 El negocio que se quedó en plática\n\nPero las ideas se pueden revivir:\n✍️ Escríbela: qué problema resuelve, para quién y cómo cobras\n🗣️ Pregúntale a 10 personas si la necesitan\n🚀 Pruébala en chiquito antes de construir todo\n\nQue la tuya no sea una. Escríbenos y la platicamos 👉 WhatsApp 311 485 7991\n\n#DíaDeMuertos #HechoEnMéxico #Emprendedores #Ideas #Guadalajara"
-  },
-  "o5": {
-    "tipo": "imagen",
-    "titulo": "Qué debe llevar una cotización profesional",
-    "imagenes": [
-      "https://mdusa11.github.io/dusa-plan/img/o5/1.jpg"
-    ],
-    "texto": "Tu cotización dice mucho de ti antes de que empieces a trabajar 📄\n\nChecklist de una cotización profesional:\n✓ Tus datos y los de tu cliente\n✓ Qué incluye… y qué NO incluye\n✓ Precio con IVA desglosado\n✓ Tiempos de entrega\n✓ Forma y fechas de pago\n✓ Vigencia (ej. 15 días)\n\nCon esto te ahorras malentendidos, cambios infinitos y pagos atrasados.\n\nGuárdala 🔖 para tu próxima cotización.\n\n#Freelancer #Emprendedores #PyMEsMexico #Negocios #Guadalajara"
-  },
-  "o7": {
-    "tipo": "carrusel",
-    "titulo": "Separa tu lana personal de la del negocio",
-    "imagenes": [
-      "https://mdusa11.github.io/dusa-plan/img/o7/1.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o7/2.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o7/3.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o7/4.jpg"
-    ],
-    "texto": "¿Cobras y todo cae en la misma cuenta que usas para el súper? 😬\n\n3 pasos para separar tu lana de la del negocio:\n1️⃣ Dos cuentas: una del negocio y otra personal\n2️⃣ Págate un \"sueldo\" fijo cada quincena\n3️⃣ Aparta un porcentaje de cada cobro para impuestos (tu contador te dice cuánto)\n\nParece poco, pero cambia todo: sabes cuánto ganas de verdad.\n\nGuárdalo 🔖 y empieza este mes.\n\n#Freelancer #FinanzasPersonales #Emprendedores #PyMEsMexico #Quincena"
-  },
-  "o8": {
-    "tipo": "carrusel",
-    "titulo": "8 regalos de cumpleaños que sí existen",
-    "imagenes": [
-      "https://mdusa11.github.io/dusa-plan/img/o8/1.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o8/2.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o8/3.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o8/4.jpg"
-    ],
-    "texto": "8 regalos de cumpleaños que sí existen 🎂 (verificados en la fuente oficial):\n\n☕ Starbucks: bebida gratis de cualquier tamaño (Starbucks Rewards + 1 compra en los 90 días previos)\n🎬 Cinépolis: 2x1 en boletos y dulcería todo tu mes (Club Cinépolis)\n🍰 Toks: rebanada de pastel gratis (A Comer Club)\n🍦 Nutrisa: helado suave gratis (app + compra de $35 en los 60 días previos)\n🍽️ Liverpool: 50% en Restaurante Liverpool (solo tu INE)\n🛍️ Springfield, Women'secret y más: 4 vales de $250 (compra mínima de $500 por vale)\n💄 Sephora: regalo o 10-20% de descuento (Sephora Rewards)\n🐶 Petco: galleta gratis para tu mascota (Petco App)\n\nY hay +510 en todo México 👉 cumplegratis.fun\n\nRevisado en octubre de 2026; las marcas pueden cambiar sus promos y no están afiliadas a Cumplegratis.\n\n#Cumpleaños #PromosDeCumpleaños #Ahorro #Cumplegratis"
-  },
-  "o10": {
-    "tipo": "carrusel",
-    "titulo": "Así fue lanzar Blokku en Google Play",
-    "imagenes": [
-      "https://mdusa11.github.io/dusa-plan/img/o10/1.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o10/2.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o10/3.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o10/4.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o10/5.jpg"
-    ],
-    "texto": "Así fue lanzar nuestra primera app en Google Play 🧩\n\n📅 14 días de prueba cerrada (Google lo pide a las cuentas nuevas)\n👥 24 testers en México, Argentina, Bolivia y Ecuador — nos pedían 12\n✅ 10 días para que aprobaran la publicación\n\nLa lección: programar es la mitad. La otra mitad es probar, pulir y cumplir requisitos.\n\nGracias a los 24 que probaron Blokku 💙 ¿Quieres probar nuestra próxima app antes que nadie? Escríbenos y te apuntamos.\n\n#DetrásDeCámaras #IndieDev #GooglePlay #HechoEnMéxico #BuildInPublic"
-  },
-  "o11": {
-    "tipo": "carrusel",
-    "titulo": "BathMap nos cuesta ~$0 al mes",
-    "imagenes": [
-      "https://mdusa11.github.io/dusa-plan/img/o11/1.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o11/2.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o11/3.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o11/4.jpg"
-    ],
-    "texto": "BathMap es gratis para todos… y a nosotros nos cuesta ~$0 al mes en servidores 🤯\n\n¿Cómo?\n⚡ Cloudflare Workers: corre cerca de cada usuario y su plan gratis nos alcanza\n🗺️ OpenStreetMap: mapas y datos abiertos, sin licencias caras\n🐘 Neon (Postgres): base de datos en plan gratis\n\nLa lección: una buena idea no necesita un presupuesto enorme, necesita las decisiones correctas.\n\n¿Tienes una idea y crees que es muy cara de hacer? Platiquemos 👉 311 485 7991\n\n#DetrásDeCámaras #BuildInPublic #Startups #Tecnología #HechoEnMéxico"
-  },
-  "o9": {
-    "tipo": "carrusel",
-    "titulo": "Muy pronto: TuLana",
-    "imagenes": [
-      "https://mdusa11.github.io/dusa-plan/img/o9/1.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o9/2.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o9/3.jpg"
-    ],
-    "texto": "Muy pronto: TuLana 💸 Tu lana, organizada sola.\n\n✅ Detecta cada cargo leyendo las notificaciones de tu banco\n✅ Sin login y sin dar tu clave: todo se queda en tu cel\n✅ ¿Pagaste en efectivo? Escríbelo como hablas: \"350 tacos con el jefe\" y listo\n\nSabes en qué se te va la quincena sin anotar nada.\n\nLlega primero a Android. Síguenos para enterarte del lanzamiento 🔔\n\n#TuLana #FinanzasPersonales #Ahorro #Quincena #HechoEnMéxico"
-  },
-  "o13": {
-    "tipo": "carrusel",
-    "titulo": "Muy pronto: Coachly",
-    "imagenes": [
-      "https://mdusa11.github.io/dusa-plan/img/o13/1.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o13/2.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o13/3.jpg"
-    ],
-    "texto": "Muy pronto: Coachly 💪 Tu coach de entrenamiento con IA.\n\n✅ Rutinas para cada nivel: fuerza, cardio, HIIT, yoga\n✅ Cada ejercicio explicado paso a paso\n✅ Tu progreso: rachas, récords y medidas\n\nPara que entrenes con un plan, no a ciegas.\n\nSíguenos para enterarte del lanzamiento 🔔\n\n#Coachly #Fitness #Entrenamiento #Gym #HechoEnMéxico"
-  },
-  "o20": {
-    "tipo": "carrusel",
-    "titulo": "Blokku ya está en iPhone",
-    "imagenes": [
-      "https://mdusa11.github.io/dusa-plan/img/o20/1.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o20/2.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o20/3.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o20/4.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o20/5.jpg"
-    ],
-    "texto": "¡Blokku ya está en iPhone! 🧩🍎\n\nAhora lo encuentras en App Store, además de Google Play. Y con la versión 1.0.5 trae novedades:\n✨ Efectos nuevos al limpiar líneas, como el Portal\n🏆 Ranking\n🎨 Personalizar: elige tus temas\n🎁 Cofres y premios\n\nEs gratis y está hecho aquí en México por el equipo de Dusa.\n\nBúscalo como \"Blokku\" o entra a blokku.online 👉\n\nSi te gusta, déjanos tu reseña ⭐ — nos ayuda muchísimo.\n\n#Blokku #JuegosMóviles #Puzzle #iPhone #HechoEnMéxico #IndieDev"
-  },
-  "o91": {
-    "tipo": "carrusel",
-    "titulo": "¿Tu negocio necesita app o le basta una web?",
-    "imagenes": [
-      "https://mdusa11.github.io/dusa-plan/img/o91/1.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o91/2.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o91/3.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o91/4.jpg"
-    ],
-    "texto": "¿Tu negocio necesita una app… o le basta una web? 🤔\n\nTe basta una WEB si:\n✓ Quieres que te encuentren en Google\n✓ Muestras tu catálogo o servicios\n✓ Recibes pedidos o citas por mensaje\n\nNecesitas una APP si:\n✓ Tus clientes regresan seguido\n✓ Necesitas avisarles con notificaciones\n✓ Usas funciones del cel: cámara, ubicación, pagos\n\n¿Sigues con la duda? Te decimos qué te conviene, gratis, en 15 minutos 👉 WhatsApp 311 485 7991\n\n#DesarrolloWeb #DesarrolloDeApps #PyMEsMexico #Emprendedores #Guadalajara"
-  },
-  "o27": {
+  "du03": {
     "tipo": "carrusel",
     "titulo": "Cumplegratis en números",
     "imagenes": [
-      "https://mdusa11.github.io/dusa-plan/img/o27/1.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o27/2.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o27/3.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o27/4.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o27/5.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o27/6.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o27/7.jpg"
+      "https://mdusa11.github.io/dusa-plan/img/du03/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du03/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du03/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du03/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du03/5.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du03/6.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du03/7.jpg"
     ],
     "texto": "Cumplegratis en números 🎂 (lo que hay detrás de la app):\n\n🎁 515 promos de cumpleaños\n✅ 192 con confianza alta (confirmadas en la fuente oficial)\n🇲🇽 87 con cobertura nacional\n📍 66 ciudades distintas\n🍽️ 280 son de restaurantes, la categoría con más promos\n\nPon tu fecha y mira qué te toca 👉 cumplegratis.fun (gratis y sin cuenta)\n\nLas marcas pueden cambiar sus promos y no están afiliadas a Cumplegratis.\n\n#Cumplegratis #PromosDeCumpleaños #DetrásDeCámaras #HechoEnMéxico #BuildInPublic"
   },
-  "o90": {
-    "tipo": "imagen",
-    "titulo": "Lo que construimos para nosotros, lo construimos para ti",
-    "imagenes": [
-      "https://mdusa11.github.io/dusa-plan/img/o90/1.jpg"
-    ],
-    "texto": "Hacemos nuestras propias apps (BathMap, Blokku y las que vienen)… y también hacemos la tuya 🪼\n\nAsí trabajamos:\n1️⃣ Platicamos 15 minutos, gratis\n2️⃣ Te mandamos una propuesta por escrito: qué, cuánto y cuándo\n3️⃣ Cada semana ves avances\n4️⃣ El código es tuyo, siempre\n\n¿Tienes una idea dando vueltas? Escríbenos por WhatsApp 👉 311 485 7991\n\n#DesarrolloDeApps #DesarrolloWeb #Emprendedores #Guadalajara #HechoEnMéxico"
-  },
-  "o24": {
+  "du04": {
     "tipo": "carrusel",
-    "titulo": "5 errores al pedir una app (y cómo evitarlos)",
+    "titulo": "Black Friday: 5 preguntas antes de comprar",
     "imagenes": [
-      "https://mdusa11.github.io/dusa-plan/img/o24/1.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o24/2.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o24/3.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o24/4.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o24/5.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o24/6.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o24/7.jpg"
+      "https://mdusa11.github.io/dusa-plan/img/du04/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du04/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du04/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du04/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du04/5.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du04/6.jpg"
     ],
-    "texto": "¿Vas a pedir una app? Evita estos 5 errores 📱\n\n1️⃣ No definir qué problema resuelve\n2️⃣ Pedir todo desde la versión 1: empieza con lo esencial\n3️⃣ No tener todo por escrito: alcance, precio y fechas\n4️⃣ No pensar en quién la mantiene después\n5️⃣ No ser dueño del código ni de las cuentas (tiendas, dominio, servidores)\n\nSi construimos las nuestras (BathMap, Blokku y las que vienen), podemos construir la tuya. Platiquemos 15 min, gratis 👉 WhatsApp 311 485 7991\n\nGuárdalo 🔖 antes de cotizar tu app.\n\n#DesarrolloDeApps #Emprendedores #PyMEsMexico #Startups #Guadalajara"
+    "texto": "Black Friday 🛍️ 5 preguntas antes de comprar:\n\n1️⃣ ¿Ya lo querías? Si no, espera 24 horas\n2️⃣ ¿Es descuento real? Compara con el precio de hace unas semanas\n3️⃣ ¿Es a meses? Suma el total con intereses\n4️⃣ ¿Cabe en tu tope? Define cuánto vas a gastar antes de salir\n5️⃣ ¿Y si no te gusta? Revisa cambios, devoluciones y envío\n\nGuárdalo 🔖 y compártelo con quien compra de más.\n\n#BlackFriday #FinanzasPersonales #Ahorro #Compras #Quincena"
   },
-  "o28": {
-    "tipo": "carrusel",
-    "titulo": "Así se hace un juego en México: de la idea a 2 tiendas",
-    "imagenes": [
-      "https://mdusa11.github.io/dusa-plan/img/o28/1.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o28/2.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o28/3.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o28/4.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o28/5.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o28/6.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o28/7.jpg"
-    ],
-    "texto": "Así se hace un juego en México: de la idea a 2 tiendas 🧩\n\n📅 14 días de prueba cerrada\n👥 24 testers en 4 países\n✅ ~10 días para que Google aprobara la publicación\n🔁 De la 1.0.1 a la 1.0.5 en un mes\n📱 Con la 1.0.5 llegó también a App Store\n\nBlokku es gratis en Google Play y en App Store. Gracias a quienes lo probaron 💙\n\n¿Tienes una idea de app o de juego? Escríbenos y la platicamos 👉 WhatsApp 311 485 7991\n\n#Blokku #DetrásDeCámaras #IndieDev #HechoEnMéxico #BuildInPublic"
-  },
-  "o21": {
-    "tipo": "carrusel",
-    "titulo": "Fakturo por dentro",
-    "imagenes": [
-      "https://mdusa11.github.io/dusa-plan/img/o21/1.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o21/2.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o21/3.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o21/4.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o21/5.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o21/6.jpg"
-    ],
-    "texto": "Fakturo por dentro 🧾 Muy pronto. Todavía no está en tiendas, pero te enseñamos cómo va:\n\n📊 Tu tablero: cobrado del mes, pendiente, vencido y gastos\n💬 Cobro por WhatsApp: registra pagos y abonos, y manda el recordatorio en un toque\n📄 Facturas en PDF con tu logo y tus colores (ojo: son PDF, no CFDI timbrado ante el SAT)\n📈 Reportes: ingresos por cliente y utilidad\n\n¿Quieres probarla primero? Escríbenos la palabra FAKTURO por WhatsApp (311 485 7991) 👀\n\n#Fakturo #Freelancer #PyMEsMexico #Cobranza #HechoEnMéxico"
-  },
-  "o25": {
-    "tipo": "carrusel",
-    "titulo": "Cotización vs. factura vs. recibo: cuál mandar",
-    "imagenes": [
-      "https://mdusa11.github.io/dusa-plan/img/o25/1.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o25/2.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o25/3.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o25/4.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o25/5.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o25/6.jpg"
-    ],
-    "texto": "Cotización, factura o recibo: ¿cuál mando? 🧾\n\n📄 Cotización: antes de trabajar. Dice qué vas a hacer, cuánto cuesta y hasta cuándo vale el precio.\n🧾 Factura: es el comprobante fiscal (CFDI). Se emite cuando cobras y tu cliente la necesita; se relaciona con tus impuestos.\n✍️ Recibo o nota: comprobante simple de que recibiste un pago. No tiene valor fiscal.\n\nEsto es una guía general, no asesoría fiscal: consulta a tu contador para tu caso.\n\nP.D. Estamos creando Fakturo para cotizar y cobrar con PDFs desde tu cel (no timbra CFDI). Muy pronto 👀\n\nGuárdalo 🔖 para tu próximo cobro.\n\n#Freelancer #Emprendedores #PyMEsMexico #Facturación #Cotización #Guadalajara"
-  },
-  "o26": {
-    "tipo": "carrusel",
-    "titulo": "¿Cuánto cuesta mantener una app al mes?",
-    "imagenes": [
-      "https://mdusa11.github.io/dusa-plan/img/o26/1.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o26/2.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o26/3.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o26/4.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o26/5.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o26/6.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o26/7.jpg"
-    ],
-    "texto": "¿Cuánto cuesta mantener una app al mes? 💸 Los costos fijos, con cifras públicas:\n\n🍎 Apple Developer Program: 99 USD al año\n🤖 Google Play: 25 USD, pago único\n🌐 Dominio .com: ~10–20 USD al año\n☁️ Servidores: desde $0 en planes gratuitos (Cloudflare, Supabase y Firebase tienen capa gratis); pagas más conforme crece el uso\n✉️ Correo y otros extras: opcionales\n\nSon precios de lista y pueden cambiar: revísalos con cada proveedor.\n\nUn ejemplo real: BathMap nos cuesta ~$0 al mes en servidores.\n\n¿Tienes una idea y no sabes cuánto costaría mantenerla? Platiquemos 👉 WhatsApp 311 485 7991\n\nGuárdalo 🔖 para tu presupuesto.\n\n#DesarrolloDeApps #Emprendedores #Startups #Tecnología #HechoEnMéxico"
-  },
-  "o22": {
+  "du05": {
     "tipo": "carrusel",
     "titulo": "3 trucos para encontrar baño rápido con BathMap",
     "imagenes": [
-      "https://mdusa11.github.io/dusa-plan/img/o22/1.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o22/2.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o22/3.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o22/4.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o22/5.jpg"
+      "https://mdusa11.github.io/dusa-plan/img/du05/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du05/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du05/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du05/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du05/5.jpg"
     ],
     "texto": "¿Urgencia? 🚻 3 trucos para encontrar baño más rápido con BathMap:\n\n1️⃣ Usa los filtros: gratis, $5 o menos, con papel o con jabón\n2️⃣ Revisa la ficha: cuánto cuesta, cómo llegar y la limpieza\n3️⃣ Agrégala a tu pantalla de inicio: es web, no descargas nada\n\nY si conoces un baño que no está, agrégalo: aparece al instante para todos.\n\nGratis y desde el navegador 👉 bathmap.online\n\nGuárdalo 🔖 para cuando lo necesites.\n\n#BathMap #HechoEnMéxico #Guadalajara #CDMX #Apps"
   },
-  "o29": {
+  "du06": {
     "tipo": "carrusel",
-    "titulo": "Nuestro 2026 en 6 apps",
+    "titulo": "Con qué hacemos nuestras apps",
     "imagenes": [
-      "https://mdusa11.github.io/dusa-plan/img/o29/1.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o29/2.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o29/3.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o29/4.jpg"
+      "https://mdusa11.github.io/dusa-plan/img/du06/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du06/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du06/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du06/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du06/5.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du06/6.jpg"
     ],
-    "texto": "Nuestro 2026 en 6 apps 🪼\n\nYa en vivo:\n🚻 BathMap — mapa de baños públicos (bathmap.online)\n🧩 Blokku — puzzle de bloques, gratis en Google Play y App Store\n🎂 Cumplegratis — promos de cumpleaños de México (cumplegratis.fun)\n\nEn camino:\n🧾 Fakturo — cotiza, factura y cobra · muy pronto\n💸 TuLana — finanzas personales · muy pronto\n💪 Coachly — coach de entrenamiento con IA · muy pronto\n\nSeis apps hechas en Guadalajara, México. ¿Cuál ya usaste? 👇\n\n¿Quieres una app propia? Escríbenos 👉 WhatsApp 311 485 7991\n\n#DusaSolutions #HechoEnMéxico #Guadalajara #Apps #IndieDev"
+    "texto": "Con qué hacemos nuestras apps 🛠️\n\n📱 Flutter: un mismo código para Android y iPhone (Blokku y Fakturo)\n🗄️ Supabase: base de datos y cuentas del ranking de Blokku\n⚡ Cloudflare Workers: BathMap y Cumplegratis\n🗺️ OpenStreetMap: mapas y datos abiertos para BathMap\n\nLa idea: herramientas que cuestan poco al empezar, para probar sin un presupuesto enorme.\n\n¿Qué herramienta usas tú? 👇\n\n#DetrásDeCámaras #BuildInPublic #Flutter #IndieDev #HechoEnMéxico"
   },
-  "o23": {
+  "du07": {
+    "tipo": "carrusel",
+    "titulo": "Regla 50/30/20: un punto de partida para tu quincena",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du07/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du07/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du07/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du07/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du07/5.jpg"
+    ],
+    "texto": "La regla 50/30/20 🧮 Una forma sencilla de repartir lo que ganas (ejemplo con $10,000):\n\n🏠 50% necesidades: $5,000\n🎉 30% gustos: $3,000\n💰 20% ahorro y deudas: $2,000\n\nEs una guía, no una ley: ajústala a tu realidad. Si hoy no te alcanza para el 20%, empieza con lo que puedas.\n\nGuárdalo 🔖 para tu próxima quincena.\n\n#FinanzasPersonales #Presupuesto #Ahorro #Quincena #EducaciónFinanciera"
+  },
+  "du08": {
+    "tipo": "imagen",
+    "titulo": "Qué debe llevar una cotización profesional",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du08/1.jpg"
+    ],
+    "texto": "Tu cotización dice mucho de ti antes de que empieces a trabajar 📄\n\nChecklist de una cotización profesional:\n✓ Tus datos y los de tu cliente\n✓ Qué incluye… y qué NO incluye\n✓ Precio con IVA desglosado\n✓ Tiempos de entrega\n✓ Forma y fechas de pago\n✓ Vigencia (ej. 15 días)\n\nCon esto te ahorras malentendidos, cambios infinitos y pagos atrasados.\n\nGuárdala 🔖 para tu próxima cotización.\n\n#Freelancer #Emprendedores #PyMEsMexico #Negocios #Guadalajara"
+  },
+  "du09": {
     "tipo": "carrusel",
     "titulo": "¿Cumples en diciembre? Esto te regalan",
     "imagenes": [
-      "https://mdusa11.github.io/dusa-plan/img/o23/1.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o23/2.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o23/3.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o23/4.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o23/5.jpg"
+      "https://mdusa11.github.io/dusa-plan/img/du09/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du09/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du09/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du09/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du09/5.jpg"
     ],
-    "texto": "¿Cumples en diciembre? 🎂 Esto te regalan (verificado en la fuente oficial):\n\n☕ Starbucks: Bebida gratis de cualquier tamaño (Cuenta Starbucks Rewards con fecha de nacimiento registrada · Al menos 1 compra en los 90 días previos · Identificación oficial)\n🎬 Cinépolis: 2x1 en boletos y dulcería todo tu mes (Ser socio Club Cinépolis (gratis) · Fecha de nacimiento registrada · Identificación oficial · No aplica en salas VIP, 4DX ni IMAX)\n🍰 Toks: Rebanada de pastel gratis (Registro en A Comer Club con fecha de nacimiento)\n🍦 Nutrisa: Helado suave sencillo gratis (Cuenta en la app Nutrisa con fecha de nacimiento · Compra de al menos $35 con la app en los 60 días previos al mes de cumpleaños · Identificación oficial)\n🍽 Liverpool: 50% de descuento en Restaurante Liverpool (Identificación oficial vigente)\n️ Sephora: Regalo de cumpleaños o 10-20% de descuento (Estar inscrito en Sephora Rewards con fecha de nacimiento · Identificación oficial)\n\nY hay +510 en todo México 👉 cumplegratis.fun\n\nRequisitos revisados en octubre de 2026; las marcas pueden cambiar sus promos y no están afiliadas a Cumplegratis.\n\n#Cumpleaños #Diciembre #PromosDeCumpleaños #Ahorro #Cumplegratis"
+    "texto": "¿Cumples en diciembre? 🎂 Esto te regalan (verificado en la fuente oficial):\n\n☕ Starbucks: Bebida gratis de cualquier tamaño (Cuenta Starbucks Rewards con fecha de nacimiento registrada · Al menos 1 compra en los 90 días previos · Identificación oficial)\n🎬 Cinépolis: 2x1 en boletos y dulcería todo tu mes (Ser socio Club Cinépolis (gratis) · Fecha de nacimiento registrada · Identificación oficial · No aplica en salas VIP, 4DX ni IMAX)\n🍰 Toks: Rebanada de pastel gratis (Registro en A Comer Club con fecha de nacimiento)\n🍦 Nutrisa: Helado suave sencillo gratis (Cuenta en la app Nutrisa con fecha de nacimiento · Compra de al menos $35 con la app en los 60 días previos al mes de cumpleaños · Identificación oficial)\n🍽️ Liverpool: 50% de descuento en Restaurante Liverpool (Identificación oficial vigente)\n💄 Sephora: Regalo de cumpleaños o 10-20% de descuento (Estar inscrito en Sephora Rewards con fecha de nacimiento · Identificación oficial)\n\nY hay +510 en todo México 👉 cumplegratis.fun\n\nRequisitos revisados en octubre de 2026; las marcas pueden cambiar sus promos y no están afiliadas a Cumplegratis.\n\n#Cumpleaños #Diciembre #PromosDeCumpleaños #Ahorro #Cumplegratis"
   },
-  "o30": {
+  "du10": {
     "tipo": "carrusel",
-    "titulo": "Gracias, 2026. Lo que viene en 2027",
+    "titulo": "Así se hace un juego en México: de la idea a 2 tiendas",
     "imagenes": [
-      "https://mdusa11.github.io/dusa-plan/img/o30/1.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o30/2.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o30/3.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o30/4.jpg",
-      "https://mdusa11.github.io/dusa-plan/img/o30/5.jpg"
+      "https://mdusa11.github.io/dusa-plan/img/du10/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du10/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du10/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du10/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du10/5.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du10/6.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du10/7.jpg"
     ],
-    "texto": "Gracias, 2026 🪼💙\n\nDusa nació el 13 de abril de 2025 y desde entonces hemos construido más de 15 productos para clientes. Gracias a quienes nos probaron, nos escribieron y nos confiaron su idea.\n\nLo que construimos: BathMap, Blokku (Google Play y App Store) y Cumplegratis.\n\nLo que viene en 2027: Fakturo, TuLana y Coachly.\n\n¿Tu idea para 2027? La construimos. Escríbenos por WhatsApp 👉 311 485 7991\n\n#DusaSolutions #HechoEnMéxico #Guadalajara #Apps #2027"
+    "texto": "Así se hace un juego en México: de la idea a 2 tiendas 🧩\n\n📅 14 días de prueba cerrada\n👥 24 testers en 4 países\n✅ ~10 días para que Google aprobara la publicación\n🔁 De la 1.0.1 (septiembre) a la 1.1.3 (noviembre)\n📱 Desde el 18 de octubre, también en App Store\n\nBlokku es gratis en Google Play y en App Store. Gracias a quienes lo probaron 💙\n\nDescárgalo 👉 blokku.online\n\n#Blokku #DetrásDeCámaras #IndieDev #HechoEnMéxico #BuildInPublic"
+  },
+  "du11": {
+    "tipo": "carrusel",
+    "titulo": "Blokku: ranking con 100 lugares",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du11/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du11/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du11/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du11/4.jpg"
+    ],
+    "texto": "El ranking de Blokku ahora muestra 100 lugares 🏆\n\nEntra, mira dónde estás y sube jugando. Con la barra «Tú» ves tu posición, incluso cuando hay empates.\n\nViene en la versión 1.1.3, ya disponible en Google Play y App Store. Gratis 👉 blokku.online\n\n¿En qué lugar vas? 👇\n\n#Blokku #Ranking #JuegosMóviles #Puzzle #HechoEnMéxico"
+  },
+  "du12": {
+    "tipo": "carrusel",
+    "titulo": "Cotización vs. factura vs. recibo: cuál mandar",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du12/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du12/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du12/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du12/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du12/5.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du12/6.jpg"
+    ],
+    "texto": "Cotización, factura o recibo: ¿cuál mando? 🧾\n\n📄 Cotización: antes de trabajar. Dice qué vas a hacer, cuánto cuesta y hasta cuándo vale el precio.\n🧾 Factura: es el comprobante fiscal (CFDI). Se emite cuando cobras y tu cliente la necesita; se relaciona con tus impuestos.\n✍️ Recibo o nota: comprobante simple de que recibiste un pago. No tiene valor fiscal.\n\nEsto es una guía general, no asesoría fiscal: consulta a tu contador para tu caso.\n\nP.D. Fakturo, nuestra app, ya está en Google Play: cotiza y cobra con PDFs desde tu cel (no timbra CFDI) 👉 fakturo.cloud\n\nGuárdalo 🔖 para tu próximo cobro.\n\n#Freelancer #Emprendedores #PyMEsMexico #Facturación #Cotización #Guadalajara"
+  },
+  "du13": {
+    "tipo": "carrusel",
+    "titulo": "Aguinaldo: lo básico que debes saber",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du13/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du13/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du13/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du13/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du13/5.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du13/6.jpg"
+    ],
+    "texto": "Aguinaldo: lo básico 🎄 (Ley Federal del Trabajo)\n\n1️⃣ Mínimo 15 días de salario\n2️⃣ Se paga antes del 20 de diciembre\n3️⃣ Si trabajaste menos de un año, te toca la parte proporcional\n4️⃣ Si cobras por honorarios (freelance) no hay aguinaldo: aparta tú tu propio «aguinaldo» cada mes\n\nEs una guía general, no asesoría legal ni fiscal: consulta a un contador o abogado para tu caso.\n\nGuárdalo 🔖 para diciembre.\n\n#Aguinaldo #FinanzasPersonales #Diciembre #Freelancer #Trabajo"
+  },
+  "du14": {
+    "tipo": "carrusel",
+    "titulo": "5 cosas de Fakturo que quizá no sabías",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du14/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du14/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du14/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du14/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du14/5.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du14/6.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du14/7.jpg"
+    ],
+    "texto": "5 cosas de Fakturo que quizá no sabías 🧾\n\n📸 Escanea tus tickets: el OCR corre en tu teléfono, incluso sin internet\n✍️ Tu cliente puede firmar con el dedo en la pantalla\n⏱️ Convierte tus horas en factura\n💱 8 monedas (MXN, USD, COP, ARS, CLP, PEN, BRL, EUR) y 3 idiomas\n🔒 Datos cifrados en tu teléfono, sin crear cuenta\n\nYa está en Google Play como «Fakturo: Facturas y Cobranza» 👉 fakturo.cloud. En iPhone, muy pronto.\n\nOjo: sus facturas son PDF para cobrar, no CFDI timbrado ante el SAT.\n\n#Fakturo #Freelancer #PyMEsMexico #Cobranza #HechoEnMéxico"
+  },
+  "du15": {
+    "tipo": "carrusel",
+    "titulo": "¿Cuánto cuesta mantener una app al mes?",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du15/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du15/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du15/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du15/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du15/5.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du15/6.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du15/7.jpg"
+    ],
+    "texto": "¿Cuánto cuesta mantener una app al mes? 💸 Los costos fijos, con cifras públicas:\n\n🍎 Apple Developer Program: 99 USD al año\n🤖 Google Play: 25 USD, pago único\n🌐 Dominio .com: ~10–20 USD al año\n☁️ Servidores: desde $0 en planes gratuitos (Cloudflare, Supabase y Firebase tienen capa gratis); pagas más conforme crece el uso\n✉️ Correo y otros extras: opcionales\n\nSon precios de lista y pueden cambiar: revísalos con cada proveedor.\n\nUn ejemplo real: BathMap nos cuesta ~$0 al mes en servidores.\n\nGuárdalo 🔖 para tu presupuesto.\n\n#DesarrolloDeApps #Emprendedores #Startups #Tecnología #HechoEnMéxico"
+  },
+  "du16": {
+    "tipo": "carrusel",
+    "titulo": "Auditoría de suscripciones en 10 minutos",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du16/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du16/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du16/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du16/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du16/5.jpg"
+    ],
+    "texto": "Auditoría de suscripciones en 10 minutos 🔍\n\n1️⃣ Abre tu estado de cuenta de los últimos 2 o 3 meses\n2️⃣ Marca todo lo que se repite: streaming, música, apps, gimnasio…\n3️⃣ Pregúntate: ¿lo usé este mes?\n4️⃣ Cancela una hoy. Y pon una alarma antes de que se renueven las anuales\n\nEsos cargos chiquitos suman.\n\nGuárdalo 🔖 y hazlo hoy.\n\n#FinanzasPersonales #Ahorro #Suscripciones #Presupuesto #Quincena"
+  },
+  "du17": {
+    "tipo": "carrusel",
+    "titulo": "Separa tu lana personal de la del negocio",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du17/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du17/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du17/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du17/4.jpg"
+    ],
+    "texto": "¿Cobras y todo cae en la misma cuenta que usas para el súper? 😬\n\n3 pasos para separar tu lana de la del negocio:\n1️⃣ Dos cuentas: una del negocio y otra personal\n2️⃣ Págate un \"sueldo\" fijo cada quincena\n3️⃣ Aparta un porcentaje de cada cobro para impuestos (tu contador te dice cuánto)\n\nParece poco, pero cambia todo: sabes cuánto ganas de verdad.\n\nGuárdalo 🔖 y empieza este mes.\n\n#Freelancer #FinanzasPersonales #Emprendedores #PyMEsMexico #Quincena"
+  },
+  "du18": {
+    "tipo": "carrusel",
+    "titulo": "Cómo probamos una app antes de publicarla",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du18/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du18/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du18/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du18/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du18/5.jpg"
+    ],
+    "texto": "Cómo probamos una app antes de publicarla 🧪\n\n🤖 Más de 1,400 pruebas automáticas en Blokku y en Fakturo, para que lo que ya funcionaba siga funcionando\n👥 24 testers en 4 países probaron Blokku antes de salir en Google Play\n📅 14 días de prueba cerrada, que Google pide a las cuentas nuevas\n\nLo repetitivo lo prueba una máquina. Lo demás, una persona 💙\n\n#DetrásDeCámaras #BuildInPublic #IndieDev #QA #HechoEnMéxico"
+  },
+  "du19": {
+    "tipo": "carrusel",
+    "titulo": "8 regalos de cumpleaños que sí existen",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du19/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du19/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du19/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du19/4.jpg"
+    ],
+    "texto": "8 regalos de cumpleaños que sí existen 🎂 (verificados en la fuente oficial):\n\n☕ Starbucks: bebida gratis de cualquier tamaño (Starbucks Rewards + 1 compra en los 90 días previos)\n🎬 Cinépolis: 2x1 en boletos y dulcería todo tu mes (Club Cinépolis)\n🍰 Toks: rebanada de pastel gratis (A Comer Club)\n🍦 Nutrisa: helado suave gratis (app + compra de $35 en los 60 días previos)\n🍽️ Liverpool: 50% en Restaurante Liverpool (solo tu INE)\n🛍️ Springfield, Women'secret y más: 4 vales de $250 (compra mínima de $500 por vale)\n💄 Sephora: regalo o 10-20% de descuento (Sephora Rewards)\n🐶 Petco: galleta gratis para tu mascota (Petco App)\n\nY hay +510 en todo México 👉 cumplegratis.fun\n\nRevisado en octubre de 2026; las marcas pueden cambiar sus promos y no están afiliadas a Cumplegratis.\n\n#Cumpleaños #PromosDeCumpleaños #Ahorro #Cumplegratis"
+  },
+  "du20": {
+    "tipo": "carrusel",
+    "titulo": "Cierra el año: 5 pendientes de tu dinero",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du20/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du20/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du20/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du20/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du20/5.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du20/6.jpg"
+    ],
+    "texto": "Cierra el año con tu dinero en orden 📋 5 pendientes antes del 31 de diciembre:\n\n1️⃣ Cobra lo pendiente: haz la lista y escribe esta semana\n2️⃣ Junta tus comprobantes del año\n3️⃣ Revisa tus deudas y cuál cobra más intereses\n4️⃣ Aparta para enero: la cuesta llega sí o sí\n5️⃣ Elige una meta 2027, concreta y medible\n\nGuárdalo 🔖 para fin de año.\n\n#FinanzasPersonales #FinDeAño #Freelancer #Ahorro #Presupuesto"
+  },
+  "du21": {
+    "tipo": "carrusel",
+    "titulo": "Así fue lanzar Blokku en Google Play",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du21/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du21/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du21/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du21/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du21/5.jpg"
+    ],
+    "texto": "Así fue lanzar nuestra primera app en Google Play 🧩\n\n📅 14 días de prueba cerrada (Google lo pide a las cuentas nuevas)\n👥 24 testers en México, Argentina, Bolivia y Ecuador — nos pedían 12\n✅ 10 días para que aprobaran la publicación\n\nLa lección: programar es la mitad. La otra mitad es probar, pulir y cumplir requisitos.\n\nGracias a los 24 que probaron Blokku 💙 Hoy es gratis en Google Play y App Store 👉 blokku.online\n\n#DetrásDeCámaras #IndieDev #GooglePlay #HechoEnMéxico #BuildInPublic"
+  },
+  "du22": {
+    "tipo": "carrusel",
+    "titulo": "Presupuesto de posadas y regalos en 4 pasos",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du22/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du22/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du22/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du22/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du22/5.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du22/6.jpg"
+    ],
+    "texto": "Posadas sin cuesta de enero 🎄 4 pasos:\n\n1️⃣ Suma todo: regalos, cena, intercambio, transporte\n2️⃣ Pon un tope por persona\n3️⃣ Cuidado con los meses: que no te estés pagando en febrero un regalo de diciembre\n4️⃣ En el intercambio, mejor un regalo útil y dentro del tope\n\nFelices posadas 💙\n\nGuárdalo 🔖\n\n#Posadas #Navidad #FinanzasPersonales #Presupuesto #Diciembre"
+  },
+  "du23": {
+    "tipo": "carrusel",
+    "titulo": "Cobra lo pendiente antes de que cierre el año",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du23/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du23/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du23/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du23/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du23/5.jpg"
+    ],
+    "texto": "Antes de que cierre el año, cobra lo pendiente 💬 3 pasos:\n\n1️⃣ Haz la lista: quién te debe, cuánto y desde cuándo\n2️⃣ Escribe corto y amable, con el monto y la fecha\n3️⃣ Da una fecha: «¿te lo transfiero el jueves?» facilita el sí\n\nY si quieres que te ayude con el recordatorio por WhatsApp, Fakturo (en Google Play) lo hace en un toque 👉 fakturo.cloud\n\nGuárdalo 🔖\n\n#Freelancer #Cobranza #PyMEsMexico #Emprendedores #FinDeAño"
+  },
+  "du24": {
+    "tipo": "carrusel",
+    "titulo": "BathMap nos cuesta ~$0 al mes",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du24/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du24/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du24/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du24/4.jpg"
+    ],
+    "texto": "BathMap es gratis para todos… y a nosotros nos cuesta ~$0 al mes en servidores 🤯\n\n¿Cómo?\n⚡ Cloudflare Workers: corre cerca de cada usuario y su plan gratis nos alcanza\n🗺️ OpenStreetMap: mapas y datos abiertos, sin licencias caras\n🐘 Neon (Postgres): base de datos en plan gratis\n\nLa lección: una buena idea no necesita un presupuesto enorme, necesita las decisiones correctas.\n\nPruébalo gratis y sin descargar nada 👉 bathmap.online\n\n#DetrásDeCámaras #BuildInPublic #Startups #Tecnología #HechoEnMéxico"
+  },
+  "du25": {
+    "tipo": "imagen",
+    "titulo": "Feliz Navidad de parte de Dusa",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du25/1.jpg"
+    ],
+    "texto": "Feliz Navidad de parte de todos en Dusa 🎄🪼\n\nGracias por usar BathMap, Blokku, Cumplegratis y Fakturo. Que la pasen increíble con los suyos 💙\n\n#FelizNavidad #Navidad #DusaSolutions #HechoEnMéxico"
+  },
+  "du26": {
+    "tipo": "carrusel",
+    "titulo": "Nuestro 2026 en 6 apps",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du26/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du26/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du26/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du26/4.jpg"
+    ],
+    "texto": "Nuestro 2026 en 6 apps 🪼\n\nYa en vivo (4):\n🚻 BathMap — mapa de baños públicos (bathmap.online)\n🧾 Fakturo — cotiza, factura y cobra, en Google Play (fakturo.cloud)\n🧩 Blokku — puzzle de bloques, gratis en Google Play y App Store\n🎂 Cumplegratis — promos de cumpleaños de México (cumplegratis.fun)\n\nEn camino (2):\n💸 TuLana — finanzas personales · muy pronto\n💪 Coachly — coach de entrenamiento con IA · muy pronto\n\nSeis apps hechas en Guadalajara, México. ¿Cuál ya usaste? 👇\n\nGracias por seguirnos 💙\n\n#DusaSolutions #HechoEnMéxico #Guadalajara #Apps #IndieDev"
+  },
+  "du27": {
+    "tipo": "carrusel",
+    "titulo": "4 propósitos de dinero que sí se cumplen",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du27/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du27/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du27/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du27/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du27/5.jpg"
+    ],
+    "texto": "4 propósitos de dinero que sí se cumplen 🎆\n\n1️⃣ Uno solo y concreto: «ahorrar $200 por quincena», no «ahorrar más»\n2️⃣ Automatízalo: la transferencia, el mismo día que cobras\n3️⃣ Revísalo cada domingo, 10 minutos\n4️⃣ Celébralo cada mes que cumplas\n\nMenos promesas grandes, más hábitos chiquitos.\n\nGuárdalo 🔖 para enero.\n\n#AñoNuevo #Propósitos2027 #FinanzasPersonales #Ahorro #Quincena"
+  },
+  "du28": {
+    "tipo": "carrusel",
+    "titulo": "Gracias, 2026",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du28/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du28/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du28/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du28/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du28/5.jpg"
+    ],
+    "texto": "Gracias, 2026 🪼💙\n\nEste año reconstruimos Dusa como estudio de apps hechas en México. Gracias a quienes probaron, usaron y compartieron nuestras apps.\n\nLo que construimos: BathMap, Blokku (Google Play y App Store), Cumplegratis y Fakturo (Google Play).\n\nLo que seguimos construyendo: Fakturo en iPhone, TuLana y Coachly, muy pronto.\n\nNos vemos en 2027 💙 contacto@dusasolutions.com\n\n#DusaSolutions #HechoEnMéxico #Guadalajara #Apps #2027"
+  },
+  "du29": {
+    "tipo": "imagen",
+    "titulo": "Feliz 2027",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du29/1.jpg"
+    ],
+    "texto": "¡Feliz 2027! 🎆🪼\n\nSeguimos haciendo apps hechas EN México. Gracias por empezar el año con nosotros 💙\n\nCuéntanos: ¿cuál es tu meta de este año? 👇\n\n#FelizAñoNuevo #2027 #DusaSolutions #HechoEnMéxico"
+  },
+  "du30": {
+    "tipo": "carrusel",
+    "titulo": "Blokku: hazlo tuyo con Personalizar",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du30/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du30/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du30/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du30/4.jpg"
+    ],
+    "texto": "Hazlo tuyo 🎨 En Blokku puedes personalizar:\n\n🖼️ Temas\n🧩 Piezas\n✨ Efectos al limpiar líneas\n🪟 Marcos\n\nCambia el look del tablero: Océano, Menta, Noche, Dulce, Lava y más. ¿Cuál es tu tema favorito? 👇\n\nGratis en Google Play y App Store 👉 blokku.online\n\n#Blokku #JuegosMóviles #Puzzle #HechoEnMéxico #IndieDev"
+  },
+  "du31": {
+    "tipo": "carrusel",
+    "titulo": "Día de Reyes: ¿quién paga los tamales?",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du31/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du31/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du31/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du31/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du31/5.jpg"
+    ],
+    "texto": "Día de Reyes 👑 Rosca de Reyes: ¿quién paga los tamales?\n\nQuien saque el muñeco invita el 2 de febrero, Día de la Candelaria 🫔\n\nSi te tocó:\n✅ Avisa con tiempo\n✅ Calcula cuántos van a ir\n✅ Pídelos con anticipación\n✅ Aparta un poquito cada quincena (hay casi un mes)\n\nEtiqueta al que se va a sacar el muñeco 👇\n\n#DíaDeReyes #RoscaDeReyes #Candelaria #Tamales #Enero"
+  },
+  "du32": {
+    "tipo": "carrusel",
+    "titulo": "Cuesta de enero: 5 formas de pasarla",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du32/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du32/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du32/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du32/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du32/5.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du32/6.jpg"
+    ],
+    "texto": "Cuesta de enero 📉 5 formas de pasarla:\n\n1️⃣ Haz el inventario: cuánto tienes, cuánto debes y cuándo cobras\n2️⃣ Pausa 30 días un gasto no esencial\n3️⃣ Cobra lo que te deben\n4️⃣ Evita pagar solo el mínimo de la tarjeta\n5️⃣ Planea tus comidas de la semana\n\nGuárdalo 🔖 para la quincena.\n\n#CuestaDeEnero #FinanzasPersonales #Ahorro #Quincena #Presupuesto"
+  },
+  "du33": {
+    "tipo": "carrusel",
+    "titulo": "3 mensajes de cobro amables (copia y pega)",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du33/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du33/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du33/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du33/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du33/5.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du33/6.jpg"
+    ],
+    "texto": "3 mensajes de cobro amables (para copiar y pegar) 💬\n\n1️⃣ Antes del vencimiento: «Hola Ana 👋 te comparto la factura por $4,500. Vence el 20 de enero. ¡Gracias!»\n2️⃣ El día de pago: «Hola Ana, hoy vence la factura por $4,500. ¿Me confirmas el pago? 🙏»\n3️⃣ Ya vencida: «Hola Ana, la factura por $4,500 venció el 20. ¿Te lo puedo agendar para esta semana?»\n\n(Cambia nombre y monto por los tuyos.)\n\nFakturo registra pagos y abonos y manda el recordatorio por WhatsApp en un toque. Ya está en Google Play 👉 fakturo.cloud\n\nGuárdalo 🔖\n\n#Freelancer #Cobranza #PyMEsMexico #Fakturo #Emprendedores"
+  },
+  "du34": {
+    "tipo": "carrusel",
+    "titulo": "5 cosas que aprendimos haciendo apps en 2026",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du34/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du34/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du34/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du34/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du34/5.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du34/6.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du34/7.jpg"
+    ],
+    "texto": "5 cosas que aprendimos haciendo apps en 2026 🪼\n\n1️⃣ Prueba con gente real: 24 testers encontraron detalles que ya no veíamos\n2️⃣ Publicar es un proceso: 14 días de prueba cerrada y unos 10 de revisión\n3️⃣ Las redes no son tuyas: perdimos nuestras cuentas de Instagram y Facebook; tu web y tus apps sí\n4️⃣ Lo gratis alcanza para empezar: BathMap nos cuesta ~$0 al mes en servidores\n5️⃣ Versiones chicas y seguidas: de la 1.0.1 a la 1.1.3 de Blokku\n\n¿Qué aprendiste tú este año? 👇\n\n#DetrásDeCámaras #BuildInPublic #IndieDev #Aprendizajes #HechoEnMéxico"
+  },
+  "du35": {
+    "tipo": "carrusel",
+    "titulo": "¿Cumples en febrero? Esto te regalan",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du35/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du35/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du35/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du35/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du35/5.jpg"
+    ],
+    "texto": "¿Cumples en febrero? 🎂 Esto te regalan (verificado en la fuente oficial en octubre de 2026):\n\n👕 American Eagle y Aerie: $100 de descuento en tu mes de cumpleaños (Ser miembro de Real Rewards (18 años o más) · Presentar el cupón recibido por correo, SMS o app)\n💊 Farmacias del Ahorro: 10% de descuento en productos Me Quiero Bien (Estar suscrito al Club Me Quiero Bien · Solo en tu mes de cumpleaños)\n🛋️ IKEA Family: Puntos al triple en tu primera compra del mes (Membresía IKEA Family gratuita (mayor de 18 años y celular nacional) · Fecha de nacimiento completa (día y mes) capturada en el registro)\n⛽ BP (BPme Rewards): 150 puntos BPme ($15) en tu primera carga del mes (Cuenta activa en BPme Rewards (registro gratis con tu celular) · Primera carga de combustible bp dentro de tu mes de cumpleaños)\n💅 Sally Beauty: 20% en marcas importadas + kit según nivel (Tener Monedero Sally con fecha de cumpleaños registrada · Identificación oficial en tienda)\n💳 HSBC México: Puntos dobles en compras de tu mes de cumpleaños (Ser titular de tarjeta HSBC Easy Points)\n\nY hay +510 en todo México 👉 cumplegratis.fun\n\nLas marcas pueden cambiar sus promos y no están afiliadas a Cumplegratis.\n\n#Cumpleaños #Febrero #PromosDeCumpleaños #Ahorro #Cumplegratis"
+  },
+  "du36": {
+    "tipo": "carrusel",
+    "titulo": "¿De dónde salen los baños de BathMap?",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du36/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du36/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du36/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du36/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du36/5.jpg"
+    ],
+    "texto": "¿De dónde salen los baños de BathMap? 🚻\n\n🗺️ Parte viene de OpenStreetMap, un mapa abierto hecho por la comunidad (la ficha te dice de dónde sale cada dato)\n➕ Si falta uno, lo agregas en el mapa y aparece al instante para todos\n✅ Si fuiste, toca «Fui aquí» y ayudas a que otros sepan que sigue ahí\n\nGratis y desde el navegador 👉 bathmap.online\n\n#BathMap #OpenStreetMap #HechoEnMéxico #Guadalajara #Apps"
+  },
+  "du37": {
+    "tipo": "carrusel",
+    "titulo": "Calendario fiscal básico para freelancers",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du37/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du37/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du37/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du37/4.jpg"
+    ],
+    "texto": "Calendario fiscal básico para freelancers 📅\n\n📌 Día 17 de cada mes: fecha límite habitual de los pagos provisionales de ISR e IVA del mes anterior (según tu régimen)\n📌 30 de abril: declaración anual de personas físicas\n\nEs una guía general, no asesoría fiscal: confirma tus fechas y obligaciones con tu contador o en sat.gob.mx.\n\nGuárdalo y agéndalo 🔖\n\n#Freelancer #SAT #Impuestos #PyMEsMexico #Emprendedores"
+  },
+  "du38": {
+    "tipo": "carrusel",
+    "titulo": "Muy pronto: TuLana",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du38/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du38/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du38/3.jpg"
+    ],
+    "texto": "Muy pronto: TuLana 💸 Tu lana, organizada sola.\n\n✅ Detecta cada cargo leyendo las notificaciones de tu banco\n✅ Sin login y sin dar tu clave: todo se queda en tu cel\n✅ ¿Pagaste en efectivo? Escríbelo como hablas: \"350 tacos con el jefe\" y listo\n\nSabes en qué se te va la quincena sin anotar nada.\n\nLlega primero a Android. Síguenos para enterarte del lanzamiento 🔔\n\n#TuLana #FinanzasPersonales #Ahorro #Quincena #HechoEnMéxico"
+  },
+  "du39": {
+    "tipo": "carrusel",
+    "titulo": "Blue Monday: el día más triste del año es un invento",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du39/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du39/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du39/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du39/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du39/5.jpg"
+    ],
+    "texto": "Blue Monday 💙 El «día más triste del año» es un invento.\n\nNació en 2005 en un comunicado de una empresa de viajes. No tiene respaldo científico.\n\nLo que sí ayuda:\n☀️ Salir 10 minutos a que te dé el sol\n🏃 Mover el cuerpo, aunque sea poquito\n💬 Hablar con alguien que quieras\n🌱 Una pausa: el modo Zen de Blokku no tiene game over, solo relájate\n\nBlokku es gratis en Google Play y App Store 👉 blokku.online\n\nSi estás pasando por un momento difícil, busca apoyo profesional.\n\n#BlueMonday #BienestarEmocional #Enero #Blokku #SaludMental"
+  },
+  "du40": {
+    "tipo": "carrusel",
+    "titulo": "Muy pronto: Coachly",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du40/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du40/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du40/3.jpg"
+    ],
+    "texto": "Muy pronto: Coachly 💪 Tu coach de entrenamiento con IA.\n\n✅ Rutinas para cada nivel: fuerza, cardio, HIIT, yoga\n✅ Cada ejercicio explicado paso a paso\n✅ Tu progreso: rachas, récords y medidas\n\nPara que entrenes con un plan, no a ciegas.\n\nSíguenos para enterarte del lanzamiento 🔔\n\n#Coachly #Fitness #Entrenamiento #Gym #HechoEnMéxico"
+  },
+  "du41": {
+    "tipo": "carrusel",
+    "titulo": "Los 3 números de tu negocio que debes ver cada semana",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du41/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du41/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du41/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du41/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du41/5.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du41/6.jpg"
+    ],
+    "texto": "Los 3 números de tu negocio que debes ver cada semana 📊\n\n1️⃣ Cobrado: lo que ya entró este mes\n2️⃣ Pendiente: lo que te deben y aún está en tiempo\n3️⃣ Vencido: lo que debió pagarse y no. Es el que más atención necesita\n\n10 minutos los lunes y listo.\n\nP.D. Fakturo (en Google Play) los muestra en una sola pantalla, junto con tus gastos 👉 fakturo.cloud\n\nGuárdalo 🔖\n\n#Freelancer #PyMEsMexico #Cobranza #Negocios #Emprendedores"
+  },
+  "du42": {
+    "tipo": "carrusel",
+    "titulo": "Blokku ya está en iPhone",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du42/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du42/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du42/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du42/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du42/5.jpg"
+    ],
+    "texto": "¡Blokku ya está en iPhone! 🧩🍎\n\nAhora lo encuentras en App Store, además de Google Play. La versión más reciente en las dos tiendas es la 1.1.3, y entre lo que trae:\n✨ Efectos al limpiar líneas, como el Portal\n🏆 Ranking de 100 lugares\n🎨 Personalizar: elige tus temas\n🎁 Cofres y premios\n\nEs gratis y está hecho aquí en México por el equipo de Dusa.\n\nBúscalo como \"Blokku\" o entra a blokku.online 👉\n\nSi te gusta, déjanos tu reseña ⭐ — nos ayuda muchísimo.\n\n#Blokku #JuegosMóviles #Puzzle #iPhone #HechoEnMéxico #IndieDev"
+  },
+  "du43": {
+    "tipo": "carrusel",
+    "titulo": "3 trucos de productividad que sí funcionan",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du43/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du43/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du43/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du43/4.jpg"
+    ],
+    "texto": "3 trucos de productividad que sí funcionan ⏱️\n\n1️⃣ Regla de 2 minutos: si toma menos, hazlo ya\n2️⃣ Bloques de 25 minutos de trabajo y 5 de descanso (técnica Pomodoro)\n3️⃣ Una cosa importante: elige cada mañana la tarea que hace valer tu día\n\nSin apps raras ni rutinas de 5 de la mañana.\n\nGuárdalo 🔖 para tu lunes.\n\n#Productividad #Hábitos #Freelancer #Organización #Enero"
+  },
+  "du44": {
+    "tipo": "carrusel",
+    "titulo": "Apps hechas EN México: 4 detalles que lo notan",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du44/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du44/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du44/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du44/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du44/5.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du44/6.jpg"
+    ],
+    "texto": "Apps hechas EN México 🇲🇽 Algunos detalles que se notan:\n\n💬 Fakturo manda la factura y el recordatorio de cobro por WhatsApp\n🏦 Sus PDF llevan tu CLABE y un QR que la copia\n🚻 BathMap filtra baños gratis o de $5 o menos\n🎂 Cumplegratis cubre los 32 estados, con filtro por ciudad\n\nDesde Guadalajara, para quienes vivimos y cobramos en pesos 💙\n\n#HechoEnMéxico #Guadalajara #Apps #DusaSolutions #IndieDev"
+  },
+  "du45": {
+    "tipo": "carrusel",
+    "titulo": "Blokku: misiones diarias y nivel",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du45/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du45/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du45/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du45/4.jpg"
+    ],
+    "texto": "Misiones diarias en Blokku 🎯\n\nCumple misiones, reclama tu XP y sube de nivel. Piden cosas como lograr combos o usar poderes en la partida.\n\n¿Ya reclamaste las de hoy? 👇\n\nGratis en Google Play y App Store 👉 blokku.online\n\n#Blokku #JuegosMóviles #Puzzle #HechoEnMéxico #IndieDev"
+  },
+  "du46": {
+    "tipo": "carrusel",
+    "titulo": "Fakturo: ¿quién te paga más? Reportes y pagos",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du46/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du46/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du46/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du46/4.jpg"
+    ],
+    "texto": "Fakturo: ¿quién te paga más? 📈\n\n📊 Reportes: ingresos por cliente, ingresos mensuales y utilidad\n💰 Pagos y abonos: cada factura con su avance\n💬 Recordatorio de cobro por WhatsApp en un toque\n\nYa está en Google Play como «Fakturo: Facturas y Cobranza» 👉 fakturo.cloud. En iPhone, muy pronto.\n\n#Fakturo #Freelancer #PyMEsMexico #Cobranza #HechoEnMéxico"
+  },
+  "du47": {
+    "tipo": "carrusel",
+    "titulo": "Día de la Privacidad: qué datos pedimos (y cuáles no)",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du47/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du47/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du47/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du47/4.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du47/5.jpg"
+    ],
+    "texto": "Hoy es el Día Internacional de la Protección de Datos 🔒 Esto hacemos en nuestras apps:\n\n🚻 BathMap: sin cuenta, abres el mapa y listo\n🎂 Cumplegratis: gratis y sin cuenta\n🧾 Fakturo: datos cifrados en tu teléfono, sin crear cuenta\n\nLa regla: pedir lo mínimo. Cada app tiene su aviso de privacidad en su sitio web.\n\n#PrivacidadDeDatos #HechoEnMéxico #DusaSolutions #Apps #Seguridad"
+  },
+  "du48": {
+    "tipo": "carrusel",
+    "titulo": "¿Cumples en marzo? Estas promos piden registro previo",
+    "imagenes": [
+      "https://mdusa11.github.io/dusa-plan/img/du48/1.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du48/2.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du48/3.jpg",
+      "https://mdusa11.github.io/dusa-plan/img/du48/4.jpg"
+    ],
+    "texto": "¿Cumples en marzo? 🎂 Hay promos que piden registro o una compra previa. Revisa sus requisitos (verificados en la fuente oficial en octubre de 2026):\n\n☕ Starbucks: Bebida gratis de cualquier tamaño (Cuenta Starbucks Rewards con fecha de nacimiento registrada · Al menos 1 compra en los 90 días previos · Identificación oficial)\n🍦 Nutrisa: Helado suave sencillo gratis (Cuenta en la app Nutrisa con fecha de nacimiento · Compra de al menos $35 con la app en los 60 días previos al mes de cumpleaños · Identificación oficial)\n👟 Nike: 20% en línea o 10% en tienda (Ser miembro Nike con fecha de nacimiento registrada · Registrarse al menos 1 mes antes del mes de cumpleaños · En tienda: correo de Nike e identificación oficial)\n👜 Todomoda: 900 puntos de regalo (~$40 MXN) en tu cumpleaños (Tener cuenta en mx.todomoda.com e inscribirte a FRIENDS CLUB · Registrar tu fecha de cumpleaños al menos 30 días antes · Los puntos tienen vigencia de 12 meses)\n\nY hay +510 en todo México 👉 cumplegratis.fun\n\nLas marcas pueden cambiar sus promos y no están afiliadas a Cumplegratis.\n\n#Cumpleaños #Marzo #PromosDeCumpleaños #Ahorro #Cumplegratis"
   }
 }
