@@ -208,7 +208,9 @@ footer{margin-top:28px;text-align:center;font-size:12px;color:var(--faint)}
 .tabs a img,.tabs a i{width:20px;height:20px;border-radius:6px;display:block}
 .tabs a[aria-current="page"]{background:var(--ink);color:var(--surf);border-color:var(--ink)}
 @media (max-width:420px){.tabs a{padding:8px 12px;font-size:13.5px}}
-body[data-tab="bk"] .wrap>*:not(#bk),body[data-tab="cg"] .wrap>*:not(#cg),body[data-tab="cl"] .wrap>*:not(#cl),body[data-tab="dusa"] #bk,body[data-tab="dusa"] #cg,body[data-tab="dusa"] #cl{display:none!important}
+.tabs{overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}.tabs::-webkit-scrollbar{display:none}.tabs a{flex:none}
+@media (max-width:760px){.tabs{justify-content:flex-start}}
+body[data-tab="bk"] .wrap>*:not(#bk),body[data-tab="cg"] .wrap>*:not(#cg),body[data-tab="cl"] .wrap>*:not(#cl),body[data-tab="tl"] .wrap>*:not(#tl),body[data-tab="dusa"] #bk,body[data-tab="dusa"] #cg,body[data-tab="dusa"] #cl,body[data-tab="dusa"] #tl{display:none!important}
 .mlabel{font-size:14px;font-weight:800;text-transform:capitalize;margin:18px 0 8px}.mlabel:first-child{margin-top:0}.cell.blank{background:transparent}
 .calbig .grid7{gap:8px}@media(min-width:960px){.calbig .cell{aspect-ratio:1.35;font-size:14px}}
 </style>
@@ -219,6 +221,7 @@ body[data-tab="bk"] .wrap>*:not(#bk),body[data-tab="cg"] .wrap>*:not(#cg),body[d
   <a href="#bk" data-t="bk"><i style="background:linear-gradient(135deg,#4EA1FF,#FF5D8F)"></i>Blokku</a>
   <a href="#cg" data-t="cg"><i style="background:linear-gradient(135deg,#5b7cff,#ffd23f)"></i>Cumplegratis</a>
   <a href="#cl" data-t="cl"><img src="clipo/icons/icon-192.png" alt="">Clipo</a>
+  <a href="#tl" data-t="tl"><img src="tulana/icons/icon-192.png" alt="">TuLana</a>
 </nav>
 <div class="wrap" id="top">
   <!--BKTOP-->
@@ -1596,6 +1599,430 @@ render();
 })();
 </script>
 <!--/CL-->
+  <!--TL--><!-- Sección TuLana dentro del plan de Dusa. Todo va bajo #tl (estilos, ids tl-*, atributos data-tl-*)
+     para no chocar con el código del plan de Dusa. La genera build_panel_tulana.py. -->
+<style>
+#tl{--bg:#0b0b0b;--surf:#2a1520;--surf2:#3a1d2c;--ink:#f3f0e8;--muted:#e3cdd6;--faint:#a88a97;--line:#4a2637;
+  --blue:#B0154F;--blue-t:#FF9DC0;--pink:#FF5D8F;--gold:#ffd23f;--mint:#43D9A3;--cyan:#7cd6ff;--red:#ff9bd9;
+  margin:34px 0 0;padding:22px 16px 24px;border-radius:26px;color:var(--ink);scroll-margin-top:12px;
+  background:#1d0c16;box-shadow:0 10px 30px rgba(20,8,60,.4)}
+#tl *{box-sizing:border-box}
+#tl a{color:var(--blue-t)}
+#tl .tl-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+#tl .tl-brand{display:flex;align-items:center;gap:10px}
+#tl .tl-brand img{width:44px;height:44px;border-radius:11px;box-shadow:0 4px 12px rgba(0,0,0,.4)}
+#tl .tl-brand b{display:block;font-size:17px;line-height:1.1;font-weight:800}#tl .tl-brand b span{color:var(--pink)}
+#tl .tl-brand small{font-size:12.5px;color:var(--muted)}
+#tl .tl-links{display:flex;gap:8px;flex-wrap:wrap}
+#tl .tl-links a{font-size:12.5px;font-weight:700;color:var(--ink);text-decoration:none;background:var(--surf);border:1px solid var(--line);padding:7px 12px;border-radius:999px}
+#tl h2.tl-h{margin-top:16px;font-size:clamp(28px,7vw,40px);line-height:1;letter-spacing:-.025em;font-weight:800}
+#tl h2.tl-h span{color:var(--blue-t)}#tl h2.tl-h em{font-style:normal;color:var(--pink)}
+#tl .tl-sub{margin:8px 0 16px;color:var(--muted);font-size:14.5px}
+#tl .cols{display:grid;gap:14px}
+@media(min-width:960px){#tl .cols{grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);align-items:start}}
+#tl .card{background:var(--surf);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 8px 22px rgba(0,0,0,.25)}
+#tl .stack{display:grid;gap:14px}
+#tl .cols>*,#tl .stack>*{min-width:0}
+#tl .kicker{font-size:11.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan)}
+#tl h3{font-size:17px;font-weight:800}
+#tl .t2{font-size:21px;line-height:1.2;font-weight:800}
+#tl .muted{color:var(--muted)}
+#tl .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 14px;border-radius:14px;font-weight:800;font-size:14.5px;
+  background:var(--surf2);border:1px solid var(--line);color:var(--ink);text-decoration:none}
+#tl .btn.pri{background:var(--blue);border-color:transparent;color:#fff}
+#tl .btn.tt{background:#FF5D8F;border-color:transparent;color:#2A0614}#tl .btn.yt{background:#E5322D;border-color:transparent;color:#fff}
+#tl .pill{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:800;color:var(--muted)}
+#tl .pill::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--c)}
+#tl .st{font-size:11px;font-weight:800;padding:4px 9px;border-radius:999px;white-space:nowrap}
+#tl .st-listo{background:var(--surf2);color:var(--muted)}#tl .st-programado{background:#3a1328;color:#cbb9ff}#tl .st-publicado{background:#0F4A36;color:#7EF0C3}
+#tl .when{display:inline-flex;font-size:13px;font-weight:800;color:var(--blue-t);background:#3a1328;padding:5px 10px;border-radius:999px}
+#tl .when.today{background:#0F4A36;color:#7EF0C3}#tl .when.late{background:#4A1424;color:#FFB0C4}#tl .when.cond{background:#4A3A0E;color:#FFE08A}
+#tl .nextrow{display:flex;gap:14px;align-items:flex-start;margin:12px 0 14px}
+#tl .nthumb{width:92px;aspect-ratio:9/16;object-fit:cover;border-radius:12px;flex:0 0 auto;background:#000}
+#tl .nbody{display:grid;gap:8px;justify-items:start}
+#tl .bar{height:10px;border-radius:6px;background:var(--surf2);overflow:hidden;margin-top:10px;display:flex}
+#tl .bar i{display:block;height:100%}#tl .b-pub{background:var(--mint)}#tl .b-prog{background:var(--blue)}
+#tl .ptop{display:flex;justify-content:space-between;align-items:baseline}
+#tl .legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px;font-size:12.5px;color:var(--muted)}
+#tl .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}
+#tl .calhead{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+#tl .dow,#tl .grid7{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}
+#tl .dow{font-size:11px;font-weight:800;color:var(--faint);text-align:center;margin-bottom:6px}
+#tl .cell{position:relative;aspect-ratio:1;border-radius:10px;background:var(--surf2);font-size:12px;font-weight:800;color:var(--faint);padding:5px 6px;overflow:hidden;text-align:left;display:block;width:100%}
+#tl .cell.post{background-size:cover;background-position:center 30%;color:#fff;box-shadow:inset 0 -3px 0 var(--c)}
+#tl .cell.post::before{content:"";position:absolute;inset:0;background:rgba(10,5,30,.4)}
+#tl .cell span{position:relative}
+#tl .cell.today{outline:2.5px solid var(--gold);outline-offset:1px}
+#tl .cell .n2{position:absolute;right:5px;top:5px;width:11px;height:11px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 2px #1d0c16;font-size:0}
+#tl .cell .mk{position:absolute;right:4px;bottom:5px;width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:900;color:#1d0c16;font-style:normal}
+#tl .mk.publicado{background:var(--mint)}#tl .mk.programado{background:var(--blue-t)}
+#tl .pgroup{margin-top:16px}#tl .pgroup h4{font-size:13px;font-weight:800;margin-bottom:8px}#tl .pgroup h4 span{font-weight:500;color:var(--faint);margin-left:6px}
+#tl .prow{display:flex;gap:10px;flex-wrap:wrap}
+#tl .late-box{margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+#tl .laterow{display:flex;align-items:center;gap:8px;margin-top:8px}
+#tl .laterow .lt{flex:1;min-width:0;font-size:13px;font-weight:700;color:var(--ink)}
+#tl .btn.sm{padding:8px 10px;font-size:12.5px;min-height:auto;flex:none}
+#tl .btn.sm.ok{background:var(--mint);color:#1d0c16}
+#tl .asset{display:flex;flex-direction:column;align-items:center;gap:6px;text-decoration:none;color:var(--muted);font-size:11.5px;font-weight:800}
+#tl .asset img{border:1px solid var(--line);object-fit:cover;background:#000}
+#tl .asset.circle img{width:80px;height:80px;border-radius:50%}
+#tl .asset.st img{width:60px;aspect-ratio:9/16;border-radius:9px}
+#tl .tiles{display:flex;gap:10px;flex-wrap:wrap;padding:12px 16px 2px}
+#tl .tiles .asset{position:relative}
+#tl .tiles .asset img{width:56px;border-radius:9px}
+#tl .tiles .asset b{position:absolute;top:4px;left:4px;font-size:9px;background:#000a;color:#fff;border-radius:5px;padding:1px 4px}
+#tl .cap{margin-top:12px;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+#tl .caphead{display:flex;justify-content:space-between;align-items:center;padding:9px 12px;background:var(--surf2);font-size:12.5px;font-weight:800;color:var(--muted)}
+#tl .caphead button,#tl .caphead a{color:var(--blue-t);font-weight:800;font-size:12.5px}
+#tl .cap pre{white-space:pre-wrap;font:14px/1.55 "Avenir Next","SF Pro Text",system-ui,sans-serif;padding:12px;color:var(--ink);max-height:320px;overflow:auto;margin:0}
+#tl .lhead{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:6px}
+#tl .seg{display:inline-flex;background:var(--surf2);border:1px solid var(--line);border-radius:12px;padding:3px}
+#tl .seg button{font-size:12.5px;font-weight:800;color:var(--muted);padding:7px 11px;border-radius:9px}
+#tl .seg button[aria-pressed="true"]{background:var(--blue);color:#fff}
+#tl .week{margin-top:14px}#tl .wlabel{font-size:12px;font-weight:800;color:var(--faint);letter-spacing:.06em;text-transform:uppercase;margin:0 2px 8px}
+#tl .plist{display:grid;gap:10px}
+#tl .pcard{display:flex;gap:12px;align-items:center;text-align:left;width:100%;background:var(--surf);border:1px solid var(--line);border-radius:16px;padding:10px;color:var(--ink)}
+#tl .pcard.done{opacity:.6}
+#tl .pthumb{width:52px;aspect-ratio:9/16;object-fit:cover;border-radius:9px;flex:0 0 auto;background:#000}
+#tl .pbody{flex:1;min-width:0;display:grid;gap:3px}
+#tl .pdate{font-size:12.5px;font-weight:800;color:var(--blue-t)}#tl .pdate .late{color:var(--red)}#tl .pdate .cond{color:var(--gold)}
+#tl .ptitle{font-size:15px;font-weight:700;line-height:1.25}
+#tl .pmeta{display:flex;gap:10px;align-items:center;flex-wrap:wrap}#tl .fmt{font-size:11.5px;color:var(--faint);font-weight:700}
+#tl .empty{padding:26px 10px;text-align:center;color:var(--muted)}
+#tl-ov{position:fixed;inset:0;z-index:70;background:rgba(2,6,20,.66);backdrop-filter:blur(4px);display:flex;align-items:flex-end;justify-content:center}
+#tl-ov[hidden]{display:none}
+#tl .sheet{background:#22101a;border:1px solid var(--line);width:100%;max-width:560px;max-height:94vh;overflow-y:auto;border-radius:22px 22px 0 0;
+  padding:10px 16px calc(22px + env(safe-area-inset-bottom));outline:none;animation:clup .25s cubic-bezier(.2,.8,.2,1)}
+@media(min-width:700px){#tl-ov{align-items:center}#tl .sheet{border-radius:22px;max-height:90vh}}
+@keyframes clup{from{transform:translateY(40px);opacity:.4}to{transform:none;opacity:1}}
+#tl .grab{width:40px;height:5px;border-radius:3px;background:var(--line);margin:0 auto 10px}
+#tl .mhead{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+#tl .mdate{font-size:13px;font-weight:800;color:var(--blue-t);display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+#tl .x{width:36px;height:36px;border-radius:50%;background:var(--surf2);font-size:18px;flex:0 0 auto;color:var(--ink)}
+#tl .netseg{margin-top:14px;display:flex}#tl .netseg .seg{width:100%}#tl .netseg .seg button{flex:1;font-size:14px;padding:9px}
+#tl .slider{position:relative;margin:14px -16px 0}
+#tl .slides{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;gap:10px;padding:0 16px}
+#tl .slides::-webkit-scrollbar{display:none}
+#tl .slides figure{position:relative;scroll-snap-align:center;border-radius:14px;overflow:hidden;background:#000;margin:0}
+#tl .slides.p figure{aspect-ratio:4/5;flex:0 0 auto;height:min(52vh,560px)}#tl .slides.t figure{aspect-ratio:9/16;flex:0 0 auto;height:min(52vh,600px)}
+#tl .slides.one figure{margin:0 auto}
+#tl .slides img,#tl .slides video{width:100%;height:100%;object-fit:cover;display:block}
+#tl .dots{display:flex;justify-content:center;gap:6px;margin-top:10px}#tl .dots i{width:7px;height:7px;border-radius:50%;background:var(--line)}#tl .dots i.on{background:var(--blue);width:18px;border-radius:4px}
+#tl .note{margin-top:14px;background:#4A3A0E;color:#FFE08A;border-radius:12px;padding:10px 12px;font-size:13.5px;font-weight:700}
+#tl .actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+#tl .hint{font-size:12.5px;color:var(--muted);margin-top:8px;text-align:center}
+#tl .mstatus{margin-top:16px;display:flex}#tl .mstatus .seg{width:100%}#tl .mstatus .seg button{flex:1}
+#tl .how{display:grid;gap:12px;margin-bottom:14px}
+#tl .steps4{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+#tl .step{background:var(--surf);border:1px solid var(--line);border-radius:14px;padding:12px 14px;display:grid;gap:4px}
+#tl .step b{font-size:14.5px;font-weight:800}#tl .step span{font-size:13px;color:var(--muted);line-height:1.45}
+#tl .step i{font-style:normal;display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:8px;font-weight:900;color:#1d0c16;font-size:13px;margin-bottom:2px}
+#tl details{background:var(--surf);border:1px solid var(--line);border-radius:14px;padding:0 14px}
+#tl details summary{cursor:pointer;padding:12px 0;font-weight:800;font-size:14px;list-style:none}
+#tl details summary::-webkit-details-marker{display:none}
+#tl details summary::after{content:"＋";float:right;color:var(--blue-t)}#tl details[open] summary::after{content:"－"}
+#tl details ul{margin:0 0 12px 18px;font-size:13.5px;color:var(--muted);line-height:1.6}#tl details li b{color:var(--ink)}
+#tl details code{font-size:12px;background:var(--surf2);padding:1px 6px;border-radius:6px;color:var(--ink)}
+#tl .todo{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-top:1px solid var(--line);cursor:pointer;text-align:left;width:100%;color:var(--ink)}
+#tl .todo:first-of-type{border-top:0}
+#tl .todo .box{flex:0 0 auto;width:24px;height:24px;border-radius:7px;border:2px solid var(--blue-t);display:flex;align-items:center;justify-content:center;font-weight:900;color:#1d0c16;margin-top:1px}
+#tl .todo.done .box{background:var(--mint);border-color:var(--mint)}#tl .todo.done .tx{opacity:.5;text-decoration:line-through}
+#tl .todo .tx{font-size:14px;line-height:1.45}#tl .todo small{display:block;font-size:11.5px;font-weight:800;color:var(--gold);letter-spacing:.04em;text-transform:uppercase}
+#tl .vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(74px,1fr));gap:10px;margin-top:12px}
+#tl .vt{position:relative;display:block;border-radius:10px;overflow:hidden;aspect-ratio:9/16;background:#000;border:2px solid var(--vc);padding:0}
+#tl .vt img{width:100%;height:100%;object-fit:cover;opacity:.9}
+#tl .vt b{position:absolute;left:4px;top:4px;font-size:10px;font-weight:900;background:rgba(5,10,30,.75);color:#fff;border-radius:6px;padding:1px 5px}
+#tl .vt em{position:absolute;left:0;right:0;bottom:0;font-style:normal;font-size:10px;font-weight:900;text-align:center;padding:3px 0;background:var(--vc);color:#1d0c16}
+#tl .estado{margin-top:14px;border-radius:12px;padding:12px;font-size:13.5px;font-weight:600;line-height:1.45}
+#tl .estado b{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:3px}
+#tl .howto{margin-top:14px;background:var(--surf);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+#tl .howto>b{font-size:12px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:var(--cyan)}
+#tl .howto ol b{color:#fff;font-weight:800}
+#tl .howto ol{margin:8px 0 0 20px;font-size:13.5px;line-height:1.6;color:var(--ink)}
+#tl .vchip{font-size:10.5px;font-weight:900;padding:3px 8px;border-radius:999px;color:#1d0c16;background:var(--vc)}
+#tl-toast{position:fixed;left:50%;bottom:calc(22px + env(safe-area-inset-bottom));transform:translateX(-50%) translateY(20px);background:#F3EEFF;color:#1d0c16;
+  font-size:14px;font-weight:800;padding:11px 16px;border-radius:12px;opacity:0;pointer-events:none;transition:.2s;z-index:80}
+#tl-toast.on{opacity:1;transform:translateX(-50%)}
+#tl .mlabel{font-size:14px;font-weight:800;text-transform:capitalize;margin:18px 0 8px}#tl .mlabel:first-child{margin-top:0}#tl .cell.blank{background:transparent}
+#tl .calbig .grid7{gap:8px}@media(min-width:960px){#tl .calbig .cell{aspect-ratio:1.35;font-size:14px}}
+</style>
+
+<section id="tl" aria-labelledby="tl-h">
+  <div class="tl-head">
+    <div class="tl-brand"><img src="tulana/icons/icon-192.png" alt="" width="44" height="44"><div><b>TULANA</b><small>Instagram + TikTok + YouTube Shorts · su propia marca</small></div></div>
+    <nav class="tl-links"><a href="#top">↑ Dusa</a><a href="https://tulana.online/" target="_blank" rel="noopener">Landing ↗</a></nav>
+  </div>
+  <h2 class="tl-h" id="tl-h"></h2>
+  <p class="tl-sub" id="tl-sub"></p>
+  <div class="how" id="tl-how">
+    <details><summary>¿Cómo funciona este plan?</summary>
+    <div class="steps4">
+      <div class="step"><i style="background:var(--blue-t)">1</i><b>Los videos ya están hechos</b><span>Cinco videos verticales con su portada y sus textos para cada red.</span></div>
+      <div class="step"><i style="background:var(--gold)">2</i><b>Primero las cuentas</b><span>Faltan crear las cuentas de Instagram, TikTok y YouTube y conectarlas en Metricool. Por eso las fechas son tentativas.</span></div>
+      <div class="step"><i style="background:var(--pink)">3</i><b>Revisa la música</b><span>Escucha la música de 1–2 videos antes de programar.</span></div>
+      <div class="step"><i style="background:var(--mint)">4</i><b>Publica desde aquí</b><span>Abre lo del día → ① copia el texto → ② sube a la red → márcalo como Publicado.</span></div>
+    </div>
+    </details>
+    <details><summary>¿Dónde está cada cosa?</summary><ul>
+      <li>Todo vive en tu carpeta de TuLana: <code>Escritorio/TuLana/03-Marketing/Redes/</code></li>
+      <li><b>1-PERFIL/</b>: foto de perfil y bio.</li>
+      <li><b>2-PUBLICACIONES/</b>: una carpeta por video, con portada y los textos de Instagram, TikTok y YouTube.</li>
+    </ul></details>
+    <details><summary>Ritmo y reglas</summary><ul>
+      <li>3 videos por semana (lun, mié, vie) a las 7 pm. <b>Tentativo</b>: arranca cuando existan las cuentas.</li>
+      <li>El <b>mismo video</b> va a Reels, TikTok y YouTube Shorts.</li>
+      <li>La app aún no está en Google Play: siempre decir «Muy pronto en Google Play» y «Solo Android». Nada de IA, iPhone ni precios.</li>
+      <li>Enlace de las tres redes: <b>tulana.online</b>.</li>
+    </ul></details>
+  </div>
+  <div class="stack" style="margin-bottom:14px">
+      <div id="tl-next"></div>
+      <div class="card calbig">
+        <div class="calhead"><h3>Calendario de TuLana</h3><div class="legend" style="margin:0"><span class="pill" style="--c:var(--pink)">Video</span></div></div>
+        <div id="tl-grid"></div>
+      </div>
+  </div>
+  <div class="cols">
+    <div class="stack">
+      <div class="card" id="tl-pend"></div>
+      <div class="card" id="tl-vids"></div>
+      <div class="card" id="tl-prog"></div>
+      <div class="card" id="tl-perfil"></div>
+    </div>
+    <div class="card">
+      <div class="lhead"><h3>Videos de TuLana</h3>
+        <div class="seg" id="tl-filter"><button data-f="pend" aria-pressed="true">Pendientes</button><button data-f="done" aria-pressed="false">Publicados</button><button data-f="all" aria-pressed="false">Todos</button></div>
+      </div>
+      <div id="tl-list"></div>
+    </div>
+  </div>
+
+  <div id="tl-ov" hidden>
+    <div class="sheet" id="tl-sheet" role="dialog" aria-modal="true" aria-labelledby="tl-mTitle" tabindex="-1">
+      <div class="grab"></div>
+      <div class="mhead"><div><div class="mdate" id="tl-mDate"></div><div class="t2" id="tl-mTitle"></div></div><button class="x" id="tl-close" aria-label="Cerrar">✕</button></div>
+      <div class="netseg"><div class="seg" id="tl-net"><button data-n="ig" aria-pressed="true">Instagram</button><button data-n="tt" aria-pressed="false">TikTok</button><button data-n="yt" aria-pressed="false">YouTube</button></div></div>
+      <p class="note" id="tl-note" hidden></p>
+      <div class="estado" id="tl-estado" hidden></div>
+      <div class="slider"><div class="slides" id="tl-slides"></div></div>
+      <div class="dots" id="tl-dots"></div>
+      <div id="tl-dl"></div>
+      <div class="cap" id="tl-corto" hidden><div class="caphead"><span id="tl-cortoT"></span><a id="tl-cortodl" download>Descargar ↓</a></div><video id="tl-cortov" controls playsinline preload="none" style="width:100%;max-height:420px;background:#000;display:block"></video></div>
+      <div class="actions"><button class="btn" id="tl-copy">① Copiar texto</button><button class="btn pri" id="tl-share">② Subir</button></div>
+      <div class="actions" id="tl-coverrow" hidden><a class="btn" id="tl-cover" download>Portada del Reel ↓</a><span></span></div>
+      <p class="hint" id="tl-hint"></p>
+      <div class="howto" id="tl-howto"></div>
+      <div class="mstatus"><div class="seg" id="tl-status"><button data-s="listo">En cola</button><button data-s="programado">Programado</button><button data-s="publicado">Publicado</button></div></div>
+      <div class="cap"><div class="caphead"><span id="tl-capT">Texto</span><button id="tl-copy2">Copiar</button></div><pre id="tl-caption"></pre></div>
+    </div>
+  </div>
+  <div id="tl-toast" role="status" aria-live="polite"></div>
+</section>
+
+<script>
+const TL = {"items": [{"id": "v01", "type": "video", "status": "listo", "date": "2026-12-01", "title": "Tu banco ya te avisa", "when": "Tentativo: falta crear la cuenta", "note": "", "secs": 20, "ig_text": "Tu banco ya te avisa de cada compra. TuLana lo anota sola: lee esa notificación y registra el gasto, aunque tengas la app cerrada. Además te dice cuánto te queda y cuánto puedes gastar al día hasta tu quincena.\nSin claves, sin conectar tu banco: nada sale de tu celular.\n\nMuy pronto en Google Play · Solo Android · tulana.online\n\n#finanzaspersonales #ahorro #quincena #dinero #TuLana", "tt_text": "Tu banco ya te avisa; TuLana lo anota sola. Sin claves y sin conectar tu banco. Muy pronto en Google Play #finanzaspersonales #quincena #TuLana", "yt_text": "Tu banco ya te avisa. TuLana lo anota. #Shorts", "video": "tulana/img/v01/video.mp4?v=86ad2786", "cover": {"full": "tulana/img/v01/portada.jpg?v=372002a8", "thumb": "tulana/img/v01/tportada.jpg?v=c56cbc85"}, "corto": {"video": "tulana/img/v01/corto.mp4?v=0e5c4908", "secs": 10}}, {"id": "v02", "type": "video", "status": "listo", "date": "2026-12-03", "title": "Dile a TuLana", "when": "Tentativo: falta crear la cuenta", "note": "", "secs": 16, "ig_text": "¿Tacos con el jefe y algo para tu meta? Escríbeselo a TuLana como te salga: «350 tacos con el jefe y 200 a la meta». Ella separa las dos cosas, tú revisas y confirmas, y listo. Nada sale de tu celular.\n\nMuy pronto en Google Play · Solo Android · tulana.online\n\n#finanzaspersonales #ahorro #metas #dinero #TuLana", "tt_text": "«350 tacos con el jefe y 200 a la meta». Escríbelo así y TuLana lo acomoda. Muy pronto en Google Play #finanzaspersonales #ahorro #TuLana", "yt_text": "Dile a TuLana: «350 tacos con el jefe y 200 a la meta» #Shorts", "video": "tulana/img/v02/video.mp4?v=c57c117a", "cover": {"full": "tulana/img/v02/portada.jpg?v=86709f76", "thumb": "tulana/img/v02/tportada.jpg?v=c5feb502"}}], "perfil": {"foto": {"file": "tulana/img/perfil/perfil.png?v=3ffc6ae6", "thumb": "tulana/img/perfil/t-perfil.jpg?v=593302ef", "name": "tulana-perfil.png"}, "bio": [{"title": "Usuario (las tres redes)", "text": "tulana.app  (alternativa: tulanamx)"}, {"title": "Nombre (las tres redes)", "text": "TuLana · Tu lana, organizada sola"}, {"title": "Bio de Instagram", "text": "Tu lana, organizada sola 🐑\nLee los avisos de tu banco y anota tus gastos\nMuy pronto en Google Play · Solo Android 👇"}, {"title": "Bio de TikTok", "text": "Tu lana, organizada sola 🐑 Muy pronto en Google Play"}, {"title": "Descripción de YouTube", "text": "TuLana anota tus gastos sola: lee los avisos que tu banco ya te manda, sin pedir claves ni conectarse a tu banco. Nada sale de tu celular. Muy pronto en Google Play (solo Android). Hecho en México por Dusa Solutions."}, {"title": "Enlace (las tres redes)", "text": "https://tulana.online"}]}, "calStart": "2026-11-23", "apertura": "2026-12-01", "pendientes": [{"id": "p1", "cuando": "Antes de publicar", "texto": "Crear las cuentas de Instagram, TikTok y YouTube (TuLana aún no tiene redes; usuario sugerido tulana.app o tulanamx)"}, {"id": "p2", "cuando": "Después de crearlas", "texto": "Conectarlas en Metricool como marca nueva"}, {"id": "p3", "cuando": "Antes de programar", "texto": "Escuchar la música de 1–2 videos antes de programar"}], "h1": "TuLana", "sub": "Cuenta nueva · Instagram + TikTok + YouTube Shorts · Muy pronto en Google Play · Solo Android"};
+(() => {
+const R = document.getElementById('tl');
+const $ = (s) => R.querySelector(s);
+const esc = (s) => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const ST = { listo: 'En cola', programado: 'Programado', publicado: 'Publicado' };
+const DOW = ['dom', 'lun', 'mar', 'mié', 'jue', 'vie', 'sáb'], MON = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+const KEY = 'tulanaPlan.v1', KEYP = 'tulanaPend.v1';
+const EST = { listo: ['Listo', 'var(--mint)'], respaldo: ['De respaldo', 'var(--gold)'], falta: ['Falta video', 'var(--red)'], decision: ['Decides tú', 'var(--cyan)'] };
+const parse = (iso) => { const [y, m, d] = iso.split('-').map(Number); return new Date(y, m - 1, d); };
+const qHoy = new URLSearchParams(location.search).get('hoy');
+const TODAY = qHoy ? parse(qHoy) : new Date(new Date().setHours(0, 0, 0, 0));
+const days = (iso) => Math.round((parse(iso) - TODAY) / 864e5);
+const fmt = (iso) => { const d = parse(iso); return `${DOW[d.getDay()]} ${d.getDate()} ${MON[d.getMonth()]}`; };
+const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+const color = () => 'var(--pink)';
+const NET = { ig: 'Instagram', tt: 'TikTok', yt: 'YouTube Shorts' };
+const textOf = (p, n) => p[n + '_text'];
+let saved = {};
+try { saved = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch {}
+const status = (p) => saved[p.id] || p.status || 'listo';
+let pend = {};
+try { pend = JSON.parse(localStorage.getItem(KEYP) || '{}'); } catch {}
+const est = (p) => p.estado || ['listo', ''];
+const vchip = (p) => { const e = est(p); return e ? `<span class="vchip" style="--vc:${EST[e[0]][1]}">${EST[e[0]][0]}</span>` : ''; };
+const setStatus = (p, s) => { saved[p.id] = s; try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch {} render(); };
+const ITEMS = TL.items, byId = Object.fromEntries(ITEMS.map(p => [p.id, p]));
+const thumb = (p) => p.cover.thumb;
+const format = (p) => `Video ${p.secs} s · Reels + TikTok + Shorts`;
+
+function whenLabel(p) {
+  const d = days(p.date);
+  if (status(p) === 'publicado') return { txt: cap(fmt(p.date)), cls: '' };
+  if (p.when && d >= 0) return { txt: `${cap(fmt(p.date))} · 7 pm · ${p.when}`, cls: 'cond' };
+  if (d === 0) return { txt: 'Hoy · 7 pm', cls: 'today' };
+  if (d === 1) return { txt: `Mañana · ${fmt(p.date)}`, cls: '' };
+  if (d > 1) return { txt: `${cap(fmt(p.date))} · en ${d} días`, cls: '' };
+  return { txt: `Atrasado ${-d} día${d === -1 ? '' : 's'} · era el ${fmt(p.date)}`, cls: 'late' };
+}
+const asset = (a, cls, label) => `<a class="asset ${cls}" href="${a.file}" download="${esc(a.name)}"><img src="${a.thumb}" alt="" loading="lazy"><span>${esc(label)} ↓</span></a>`;
+
+function render() {
+  $('#tl-h').innerHTML = TL.h1; $('#tl-sub').textContent = TL.sub;
+  // Lo de HOY va primero; lo atrasado sale aparte, con un toque para marcarlo como publicado.
+  const pend0 = ITEMS.filter(p => status(p) !== 'publicado');
+  const hoy = pend0.filter(p => days(p.date) === 0), late = pend0.filter(p => days(p.date) < 0);
+  const nxt = hoy[0] || pend0.find(p => days(p.date) > 0);
+  // Lo de hoy que ya está marcado como publicado se sigue viendo (por si se marcó sin querer).
+  const hoyHecho = ITEMS.filter(p => days(p.date) === 0 && status(p) === 'publicado');
+  const hechoHtml = hoyHecho.length ? `<div class="late-box"><div class="kicker" style="color:var(--mint)">Hoy · ya marcado como publicado</div>
+      ${hoyHecho.map(p => `<div class="laterow"><span class="lt">✓ ${esc(p.title)}</span><button class="btn sm" data-tl-open="${p.id}">Abrir</button>
+        <button class="btn sm" data-tl-undo="${p.id}">No lo he subido</button></div>`).join('')}</div>` : '';
+  const lateHtml = late.length ? `<div class="late-box"><div class="kicker" style="color:var(--gold)">De días anteriores (${late.length})</div>
+      <p class="muted" style="font-size:12.5px;margin:4px 0 8px">Si ya los subiste, márcalos; si no, ábrelos y súbelos cuando puedas.</p>
+      ${late.map(p => `<div class="laterow"><span class="lt">${esc(cap(fmt(p.date)))} · ${esc(p.title)}</span>
+        <button class="btn sm" data-tl-open="${p.id}">Abrir</button><button class="btn sm ok" data-tl-done="${p.id}">Ya lo subí ✓</button></div>`).join('')}</div>` : '';
+  if (!nxt) $('#tl-next').innerHTML = `<div class="card"><div class="kicker">TuLana</div><div class="t2">¡Todo publicado! 🎉</div>${lateHtml}${hechoHtml}</div>`;
+  else {
+    const w = whenLabel(nxt), same = pend0.filter(p => p.date === nxt.date && p !== nxt);
+    $('#tl-next').innerHTML = `<div class="card"><div class="kicker">${days(nxt.date) === 0 ? 'Hoy toca en TuLana' : 'Lo que sigue en TuLana'}</div>
+      <div class="nextrow"><img class="nthumb" src="${thumb(nxt)}" alt=""><div class="nbody"><span class="when ${w.cls}">${esc(w.txt)}</span>
+      <div class="t2">${esc(nxt.title)}</div><div class="pmeta"><span class="pill" style="--c:${color(nxt)}">Video</span><span class="fmt">${format(nxt)}</span></div>
+      ${vchip(nxt)}${same.length ? `<span class="fmt">Ese día también: ${same.map(s => esc(s.title)).join(', ')}</span>` : ''}</div></div>
+      <button class="btn pri" style="width:100%" data-tl-open="${nxt.id}">Abrir para publicar</button>
+      ${same.map(s => `<button class="btn" style="width:100%;margin-top:8px" data-tl-open="${s.id}">Abrir: ${esc(s.title)}</button>`).join('')}${lateHtml}${hechoHtml}</div>`;
+  }
+  $('#tl-pend').hidden = !TL.pendientes.length;
+  const dA = days(TL.apertura), hechos = TL.pendientes.filter(t => pend[t.id]).length;
+  $('#tl-pend').innerHTML = `<div class="ptop"><span class="kicker">Tus pendientes</span><b>${hechos} de ${TL.pendientes.length}</b></div>
+    <p class="muted" style="font-size:13px;margin:4px 0 6px">${dA > 0 ? `Primer video (tentativo): <b style="color:var(--ink)">${fmt(TL.apertura)}</b>, en ${dA} día${dA > 1 ? 's' : ''}. Falta crear las cuentas.` : 'Toca una tarea para marcarla.'}</p>
+    ${TL.pendientes.map(t => `<button class="todo${pend[t.id] ? ' done' : ''}" data-tl-todo="${t.id}"><span class="box">${pend[t.id] ? '✓' : ''}</span><span class="tx"><small>${esc(t.cuando)}</small>${esc(t.texto)}</span></button>`).join('')}`;
+  const V = ITEMS.filter(p => p.type === 'video'), cuenta = (k) => V.filter(p => est(p)[0] === k).length;
+  $('#tl-vids').innerHTML = `<div class="ptop"><span class="kicker">Videos</span><b>${cuenta('listo') + cuenta('respaldo')} de ${V.length} listos</b></div>
+    <div class="legend">${Object.entries(EST).map(([k, [t, c]]) => `<span><i class="dot" style="background:${c}"></i>${cuenta(k)} ${t.toLowerCase()}</span>`).join('')}</div>
+    <div class="vgrid">${V.map(p => `<button class="vt" style="--vc:${EST[est(p)[0]][1]}" data-tl-open="${p.id}" aria-label="${p.id.toUpperCase()} ${esc(p.title)}: ${EST[est(p)[0]][0]}"><img src="${p.cover.thumb}" alt="" loading="lazy"><b>${p.id.toUpperCase()}</b><em>${EST[est(p)[0]][0]}</em></button>`).join('')}</div>`;
+  const n = { publicado: 0, programado: 0, listo: 0 }; ITEMS.forEach(p => n[status(p)]++);
+  const pct = (x) => (100 * x / ITEMS.length).toFixed(1) + '%';
+  $('#tl-prog').innerHTML = `<div class="ptop"><span class="kicker">Nov – dic</span><b>${n.publicado} de ${ITEMS.length} publicados</b></div>
+    <div class="bar"><i class="b-pub" style="width:${pct(n.publicado)}"></i><i class="b-prog" style="width:${pct(n.programado)}"></i></div>
+    <div class="legend"><span><i class="dot" style="background:var(--mint)"></i>${n.publicado} publicados</span><span><i class="dot" style="background:var(--blue)"></i>${n.programado} programados</span><span><i class="dot" style="background:var(--surf2)"></i>${n.listo} en cola</span></div>`;
+  let start = parse(TL.calStart), cells = [], months = [], byDate = {};
+  ITEMS.forEach(p => (byDate[p.date] ||= []).push(p));
+  const END = (() => { const last = ITEMS.map(p => p.date).filter(Boolean).sort().pop() || ''; const e = last ? parse(last) : new Date(start); return new Date(e.getFullYear(), e.getMonth() + 1, 0); })();
+  for (let i = 0; ; i++) {
+    const d = new Date(start); d.setDate(start.getDate() + i);
+    if (d > END) break;
+    if (i === 0 || d.getDate() === 1) { cells = []; months.push({ d: new Date(d), cells }); for (let k = 0; k < (d.getDay() + 6) % 7; k++) cells.push('<div class="cell blank"></div>'); }
+    const iso = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+    const ps = byDate[iso], today = +d === +TODAY ? ' today' : '';
+    if (ps) {
+      const p = ps[0], s = status(p);
+      cells.push(`<button class="cell post${today}" data-tl-open="${p.id}" style="--c:${color(p)};background-image:url('${thumb(p)}')" aria-label="${fmt(iso)}: ${esc(ps.map(x => x.title).join(' + '))}"><span>${d.getDate()}</span>${ps.length > 1 ? '<i class="n2">+1</i>' : ''}${s !== 'listo' ? `<i class="mk ${s}">${s === 'publicado' ? '✓' : '⏱'}</i>` : ''}</button>`);
+    } else cells.push(`<div class="cell${today}">${d.getDate()}</div>`);
+  }
+  $('#tl-grid').innerHTML = months.map(m => `<div class="mlabel">${m.d.toLocaleDateString('es-MX', { month: 'long' }) + ' ' + m.d.getFullYear()}</div><div class="dow"><span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span></div><div class="grid7">${m.cells.join('')}</div>`).join('');
+  const P = TL.perfil;
+  $('#tl-perfil').innerHTML = `<h3>Perfil de TuLana</h3><p class="muted" style="font-size:13px;margin-top:4px">Todo esto va al crear las cuentas. Toca la foto para descargarla.</p>
+    <div class="pgroup"><h4>Foto de perfil<span>Instagram, TikTok y YouTube</span></h4><div class="prow">${asset(P.foto, 'circle', 'Foto')}</div></div>
+    ${P.bio.map((b, i) => `<div class="cap"><div class="caphead">${esc(b.title)} <button data-tl-bio="${i}">Copiar</button></div><pre>${esc(b.text)}</pre></div>`).join('')}`;
+  const f = R.querySelector('#tl-filter [aria-pressed="true"]').dataset.f;
+  const keep = (p) => f === 'all' || (f === 'done' ? status(p) === 'publicado' : status(p) !== 'publicado');
+  const weeks = {};
+  ITEMS.filter(keep).forEach(p => {
+    const d = parse(p.date), mon = new Date(d); mon.setDate(d.getDate() - ((d.getDay() + 6) % 7));
+    const sun = new Date(mon); sun.setDate(mon.getDate() + 6);
+    (weeks[+mon] ||= { label: `${mon.getDate()} ${MON[mon.getMonth()]} – ${sun.getDate()} ${MON[sun.getMonth()]}`, items: [] }).items.push(p);
+  });
+  const card = (p) => { const s = status(p), w = whenLabel(p); return `<button class="pcard${s === 'publicado' ? ' done' : ''}" data-tl-open="${p.id}">
+    <img class="pthumb" src="${thumb(p)}" alt="" loading="lazy"><div class="pbody"><div class="pdate"><span class="${w.cls}">${esc(w.txt)}</span></div>
+    <div class="ptitle">${p.id.toUpperCase()} · ${esc(p.title)}</div><div class="pmeta"><span class="pill" style="--c:${color(p)}">Video</span>${vchip(p)}<span class="fmt">${format(p)}</span></div></div>
+    <span class="st st-${s}">${ST[s]}</span></button>`; };
+  const ks = Object.keys(weeks).sort((a, b) => a - b);
+  $('#tl-list').innerHTML = ks.length ? ks.map(k => `<div class="week"><div class="wlabel">Semana del ${weeks[k].label}</div><div class="plist">${weeks[k].items.map(card).join('')}</div></div>`).join('')
+    : `<p class="empty">${f === 'done' ? 'Todavía no hay nada publicado.' : '¡No queda nada pendiente! 🎉'}</p>`;
+  if (current) paint();
+}
+
+function toast(m) { const t = $('#tl-toast'); t.textContent = m; t.classList.add('on'); clearTimeout(toast.t); toast.t = setTimeout(() => t.classList.remove('on'), 2200); }
+async function copy(txt, msg) {
+  try { await navigator.clipboard.writeText(txt); } catch { const ta = document.createElement('textarea'); ta.value = txt; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); }
+  toast(msg || 'Copiado ✓');
+}
+let current = null, net = 'ig', lastFocus = null;
+const ov = $('#tl-ov'), slidesEl = $('#tl-slides');
+function files(p) { return [{ url: p.video, name: `tulana-${p.id}.mp4`, type: 'video/mp4' }]; }
+function paint() {
+  const p = current, s = status(p), w = whenLabel(p);
+  R.querySelectorAll('#tl-status button').forEach(b => b.setAttribute('aria-pressed', b.dataset.s === s));
+  R.querySelectorAll('#tl-net button').forEach(b => b.setAttribute('aria-pressed', b.dataset.n === net));
+  $('#tl-mDate').innerHTML = `<span>${esc(w.txt)}</span><span class="pill" style="--c:${color(p)}">Video</span><span class="fmt">${format(p)}</span>`;
+}
+const PASOS = {
+  ig: ['Toca <b>① Copiar texto</b>.', 'Toca <b>Portada del Reel ↓</b> para bajar la portada.', 'Toca <b>② Subir a Instagram</b> y elige Instagram → <b>Reel</b>.', 'Al final: <b>Editar portada → Agregar desde la galería</b> y elige la portada que bajaste.', 'Pega el texto → <b>Compartir</b>. Márcalo como <b>Publicado</b>.'],
+  tt: ['Toca <b>① Copiar texto</b>.', 'Toca <b>② Subir a TikTok</b> y elige TikTok.', '<b>Siguiente</b> → pega el texto. La portada en TikTok se elige con un cuadro del video (<b>Editar portada</b>).', '<b>Publicar</b> y márcalo como <b>Publicado</b>.'],
+  yt: ['Toca <b>① Copiar título</b> (ya trae #Shorts).', 'Toca <b>② Subir a YouTube Shorts</b> y elige YouTube. Si no aparece, descarga el video y súbelo desde YouTube → <b>＋ → Subir un Short</b>.', 'Pega el título → <b>Siguiente</b> → <b>Subir Short</b>.', 'Márcalo como <b>Publicado</b>.'],
+};
+function fill() {
+  const p = current;
+  R.querySelectorAll('#tl-net button').forEach(b => b.setAttribute('aria-pressed', b.dataset.n === net));
+  slidesEl.className = 'slides t one';
+  slidesEl.innerHTML = `<figure><video src="${p.video}" poster="${p.cover.full}" controls playsinline preload="metadata"></video></figure>`;
+  slidesEl.scrollLeft = 0;
+  $('#tl-dots').innerHTML = '';
+  $('#tl-dl').innerHTML = `<p class="muted" style="font-size:12.5px;padding:0 16px">Toca cada una para descargarla:</p><div class="tiles">
+    <a class="asset" href="${p.video}" download="tulana-${p.id}.mp4"><img src="${p.cover.thumb}" alt="" loading="lazy" style="aspect-ratio:9/16"><b>VIDEO</b><span>Video ↓</span></a>
+    <a class="asset" href="${p.cover.full}" download="tulana-${p.id}-portada.jpg"><img src="${p.cover.thumb}" alt="" loading="lazy" style="aspect-ratio:9/16"><b>PORTADA</b><span>Portada ↓</span></a></div>`;
+  const co = $('#tl-corto'); co.hidden = !p.corto;
+  if (p.corto) { $('#tl-cortoT').textContent = `Corte de ${p.corto.secs} s para anuncios`; $('#tl-cortov').src = p.corto.video; $('#tl-cortov').poster = p.cover.full; $('#tl-cortodl').href = p.corto.video; $('#tl-cortodl').setAttribute('download', `tulana-${p.id}-corto.mp4`); }
+  $('#tl-capT').textContent = net === 'yt' ? 'Título para YouTube Shorts' : `Texto para ${NET[net]}`;
+  $('#tl-caption').textContent = textOf(p, net);
+  $('#tl-copy').textContent = net === 'yt' ? '① Copiar título' : '① Copiar texto';
+  const b = $('#tl-share');
+  b.className = 'btn ' + (net === 'ig' ? 'pri' : net);
+  b.textContent = `② Subir a ${NET[net]}`;
+  $('#tl-howto').innerHTML = `<b>Cómo publicarlo en ${NET[net]}</b><ol>${PASOS[net].map(x => `<li>${x}</li>`).join('')}</ol>`;
+  $('#tl-coverrow').hidden = net !== 'ig';
+  $('#tl-cover').href = p.cover.full; $('#tl-cover').setAttribute('download', `tulana-${p.id}-portada.jpg`);
+  $('#tl-hint').textContent = '';
+}
+function openSheet(p, from) {
+  current = p; lastFocus = from || document.activeElement;
+  $('#tl-mTitle').textContent = `${p.id.toUpperCase()} · ${p.title}`;
+  const note = $('#tl-note'); note.hidden = !p.note; note.textContent = p.note ? '⚠️ ' + p.note : '';
+  const eb = $('#tl-estado'), e = est(p);
+  eb.hidden = !(e && e[1]);
+  if (e && e[1]) { const [t, c] = EST[e[0]]; eb.style.background = `color-mix(in srgb, ${c} 18%, #22101a)`; eb.style.border = `1px solid ${c}`; eb.innerHTML = `<b style="color:${c}">${t}</b>${esc(e[1])}`; }
+  paint(); fill();
+  ov.hidden = false; document.body.style.overflow = 'hidden'; $('#tl-sheet').scrollTop = 0; $('#tl-sheet').focus();
+}
+function closeSheet() { ov.hidden = true; document.body.style.overflow = ''; current = null; lastFocus && lastFocus.focus && lastFocus.focus(); }
+async function share() {
+  const list = files(current);
+  try {
+    const fl = await Promise.all(list.map(async f => new File([await (await fetch(f.url)).blob()], f.name, { type: f.type })));
+    if (navigator.canShare && navigator.canShare({ files: fl })) { await navigator.share({ files: fl }); return; }
+  } catch (e) { if (e && e.name === 'AbortError') return; }
+  for (const f of list) { const a = document.createElement('a'); a.href = f.url; a.download = f.name; document.body.appendChild(a); a.click(); a.remove(); await new Promise(r => setTimeout(r, 400)); }
+  toast(`${list.length} archivo${list.length > 1 ? 's' : ''} descargado${list.length > 1 ? 's' : ''}`);
+}
+R.addEventListener('click', (e) => {
+  const td = e.target.closest('[data-tl-todo]');
+  if (td) { const id = td.dataset.clTodo; pend[id] = !pend[id]; try { localStorage.setItem(KEYP, JSON.stringify(pend)); } catch {} render(); return; }
+  const bb = e.target.closest('[data-tl-bio]'); if (bb) { copy(TL.perfil.bio[+bb.dataset.clBio].text); return; }
+  const un = e.target.closest('[data-tl-undo]'); if (un) { setStatus(byId[un.dataset.clUndo], 'listo'); toast('De vuelta en cola'); return; }
+  const dn = e.target.closest('[data-tl-done]'); if (dn) { setStatus(byId[dn.dataset.clDone], 'publicado'); toast('Marcado: publicado'); return; }
+  const o = e.target.closest('[data-tl-open]'); if (o) { openSheet(byId[o.dataset.clOpen], o); return; }
+  const fb = e.target.closest('#tl-filter button'); if (fb) { R.querySelectorAll('#tl-filter button').forEach(b => b.setAttribute('aria-pressed', b === fb)); render(); }
+});
+slidesEl.addEventListener('scroll', () => {
+  const w = slidesEl.firstElementChild?.getBoundingClientRect().width || 1, i = Math.round(slidesEl.scrollLeft / (w + 10));
+  R.querySelectorAll('#tl-dots i').forEach((d, k) => d.classList.toggle('on', k === i));
+}, { passive: true });
+$('#tl-net').addEventListener('click', (e) => { const b = e.target.closest('button'); if (!b) return; net = b.dataset.n; paint(); fill(); });
+$('#tl-close').onclick = closeSheet;
+ov.addEventListener('click', (e) => { if (e.target === ov) closeSheet(); });
+$('#tl-copy').onclick = $('#tl-copy2').onclick = () => copy(textOf(current, net), net === 'yt' ? 'Título copiado ✓' : 'Texto copiado ✓');
+$('#tl-share').onclick = share;
+$('#tl-status').addEventListener('click', (e) => { const b = e.target.closest('button'); if (!b) return; setStatus(current, b.dataset.s); toast(`Marcado: ${ST[b.dataset.s].toLowerCase()}`); });
+document.addEventListener('keydown', (e) => { if (!ov.hidden && e.key === 'Escape') closeSheet(); });
+render();
+})();
+</script>
+<!--/TL-->
   <footer id="foot"></footer>
 </div>
 
@@ -1926,9 +2353,12 @@ if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catc
 </script>
 <script>
 (() => {
-  const pick = () => { const h = location.hash.slice(1); return h === 'bk' || h.startsWith('bk-') ? 'bk' : h === 'cg' || h.startsWith('cg-') ? 'cg' : h === 'cl' || h.startsWith('cl-') ? 'cl' : 'dusa'; };
+  const pick = () => { const h = location.hash.slice(1); return h === 'bk' || h.startsWith('bk-') ? 'bk' : h === 'cg' || h.startsWith('cg-') ? 'cg' : h === 'cl' || h.startsWith('cl-') ? 'cl' : h === 'tl' || h.startsWith('tl-') ? 'tl' : 'dusa'; };
   const go = () => { const t = pick(); document.body.dataset.tab = t;
     document.querySelectorAll('#tabs a').forEach(a => a.dataset.t === t ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current'));
+    const center = () => { const bar = document.getElementById('tabs'), on = bar && bar.querySelector('a[aria-current]');
+      if (on && bar.scrollWidth > bar.clientWidth) bar.scrollLeft = on.getBoundingClientRect().left - bar.getBoundingClientRect().left + bar.scrollLeft - (bar.clientWidth - on.offsetWidth) / 2; };
+    center(); requestAnimationFrame(center); (document.fonts ? document.fonts.ready : Promise.resolve()).then(center); addEventListener('load', center, { once: true });
     try { localStorage.setItem('dusaTab', t); } catch {} };
   if (!location.hash) { try { const t = localStorage.getItem('dusaTab'); if (t && t !== 'dusa') history.replaceState(null, '', '#' + t); } catch {} }
   addEventListener('hashchange', () => { go(); scrollTo(0, 0); }); go();
