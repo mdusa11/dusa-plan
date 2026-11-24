@@ -2002,11 +2002,11 @@ async function share() {
 }
 R.addEventListener('click', (e) => {
   const td = e.target.closest('[data-tl-todo]');
-  if (td) { const id = td.dataset.clTodo; pend[id] = !pend[id]; try { localStorage.setItem(KEYP, JSON.stringify(pend)); } catch {} render(); return; }
-  const bb = e.target.closest('[data-tl-bio]'); if (bb) { copy(TL.perfil.bio[+bb.dataset.clBio].text); return; }
-  const un = e.target.closest('[data-tl-undo]'); if (un) { setStatus(byId[un.dataset.clUndo], 'listo'); toast('De vuelta en cola'); return; }
-  const dn = e.target.closest('[data-tl-done]'); if (dn) { setStatus(byId[dn.dataset.clDone], 'publicado'); toast('Marcado: publicado'); return; }
-  const o = e.target.closest('[data-tl-open]'); if (o) { openSheet(byId[o.dataset.clOpen], o); return; }
+  if (td) { const id = td.dataset.tlTodo; pend[id] = !pend[id]; try { localStorage.setItem(KEYP, JSON.stringify(pend)); } catch {} render(); return; }
+  const bb = e.target.closest('[data-tl-bio]'); if (bb) { copy(TL.perfil.bio[+bb.dataset.tlBio].text); return; }
+  const un = e.target.closest('[data-tl-undo]'); if (un) { setStatus(byId[un.dataset.tlUndo], 'listo'); toast('De vuelta en cola'); return; }
+  const dn = e.target.closest('[data-tl-done]'); if (dn) { setStatus(byId[dn.dataset.tlDone], 'publicado'); toast('Marcado: publicado'); return; }
+  const o = e.target.closest('[data-tl-open]'); if (o) { openSheet(byId[o.dataset.tlOpen], o); return; }
   const fb = e.target.closest('#tl-filter button'); if (fb) { R.querySelectorAll('#tl-filter button').forEach(b => b.setAttribute('aria-pressed', b === fb)); render(); }
 });
 slidesEl.addEventListener('scroll', () => {
@@ -2426,11 +2426,11 @@ async function share() {
 }
 R.addEventListener('click', (e) => {
   const td = e.target.closest('[data-fk-todo]');
-  if (td) { const id = td.dataset.clTodo; pend[id] = !pend[id]; try { localStorage.setItem(KEYP, JSON.stringify(pend)); } catch {} render(); return; }
-  const bb = e.target.closest('[data-fk-bio]'); if (bb) { copy(FK.perfil.bio[+bb.dataset.clBio].text); return; }
-  const un = e.target.closest('[data-fk-undo]'); if (un) { setStatus(byId[un.dataset.clUndo], 'listo'); toast('De vuelta en cola'); return; }
-  const dn = e.target.closest('[data-fk-done]'); if (dn) { setStatus(byId[dn.dataset.clDone], 'publicado'); toast('Marcado: publicado'); return; }
-  const o = e.target.closest('[data-fk-open]'); if (o) { openSheet(byId[o.dataset.clOpen], o); return; }
+  if (td) { const id = td.dataset.fkTodo; pend[id] = !pend[id]; try { localStorage.setItem(KEYP, JSON.stringify(pend)); } catch {} render(); return; }
+  const bb = e.target.closest('[data-fk-bio]'); if (bb) { copy(FK.perfil.bio[+bb.dataset.fkBio].text); return; }
+  const un = e.target.closest('[data-fk-undo]'); if (un) { setStatus(byId[un.dataset.fkUndo], 'listo'); toast('De vuelta en cola'); return; }
+  const dn = e.target.closest('[data-fk-done]'); if (dn) { setStatus(byId[dn.dataset.fkDone], 'publicado'); toast('Marcado: publicado'); return; }
+  const o = e.target.closest('[data-fk-open]'); if (o) { openSheet(byId[o.dataset.fkOpen], o); return; }
   const fb = e.target.closest('#fk-filter button'); if (fb) { R.querySelectorAll('#fk-filter button').forEach(b => b.setAttribute('aria-pressed', b === fb)); render(); }
 });
 slidesEl.addEventListener('scroll', () => {
